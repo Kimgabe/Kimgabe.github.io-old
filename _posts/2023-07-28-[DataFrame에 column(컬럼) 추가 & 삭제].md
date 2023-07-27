@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "DataFrame에 column(컬럼) 추가 & 삭제"
+---
+
 ```python
 import pandas as pd
 import os
