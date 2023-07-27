@@ -248,7 +248,8 @@ tag_archive:
   type: liquid
   path: /tags/
 #https://github.com/jekyll/jekyll-archives
-jekyll-archives:
+
+jekyll-archives: # 카테고리 및 테그 활성화
   enabled:
     - categories
     - tags
