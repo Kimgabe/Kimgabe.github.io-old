@@ -17,17 +17,17 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Kim Gabe's Ds blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : Andante Grazioso🎵 # site tagline that appears below site title in masthead
 name                     : "Kim Gabe"
-description              : "An amazing website."
+description              : "Gabe의 블로그입니다."
 url                      : "https://Kimgabe.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #"Kimgabe/Kimgabe.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /assets/img/favicons/android-chrome-192x192.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Kim Gabe"
-  avatar           : /assets/img/favicons/favicon.ico # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Knowledge without application is meaningless. True learning lies in educating and empowering others." 
+  avatar           : assets/img/gabe_profile.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : '"Knowledge without application is meaningless. True learning lies in educating and empowering others."' 
   location         : "Somewhere"
   email            :
   links:
@@ -124,32 +124,23 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      # url: "https://github.com/Kimgabe"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: "https://www.instagram.com/koomo_the_cat/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      # url: "https://github.com/Kimgabe"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      # url: "https://www.instagram.com/koomo_the_cat/"
+    - label: "Velog"
+      icon: "fab fa-fw fa-velog"
+      # url: 
 
 
 # Reading Files
@@ -256,17 +247,17 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -290,3 +281,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date : false # 문서작성일 자동 작성 | 포스팅 일자 조절건으로 일단 false
+
+date_format : "%Y-%m-%d"
