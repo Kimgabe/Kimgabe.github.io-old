@@ -139,7 +139,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/koomo_the_cat/"
     - label: "Velog"
-      icon: "fab fa-fw fa-velog"
+      icon: "fab fa-vimeo" #모양 비슷한걸로 입력해둠
       # url: 
 
 
