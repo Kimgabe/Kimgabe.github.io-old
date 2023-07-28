@@ -286,6 +286,6 @@ defaults:
       toc : true
       toc_sticky : true
       toc_label : Table of Contents
-      toc_icon : ""fas fa-list-ol"
+      toc_icon : "fas fa-list-ol"
 
 date_format : "%Y-%m-%d"
