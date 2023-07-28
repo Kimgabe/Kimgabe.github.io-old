@@ -25,11 +25,9 @@ docs:
         url   : /categories/
       - title : "Tag" # 소분류2
         url   : /tags/
-
-
-# 사이드바에 category & tags 개수 표시
-counts:
-  - title: "Categories"
-    use : true
-  - title: "Tags"
-    use : true
+  - title : "By Caterogies & Tags" # 대분류
+    children: # 중분류
+      - title : "Category" # 소분류1
+        url   : /categories/
+      - title : "Tag" # 소분류2
+        url   : /tags/
