@@ -25,3 +25,11 @@ docs:
         url   : /categories/
       - title : "Tag" # 소분류2
         url   : /tags/
+
+
+# 사이드바에 category & tags 개수 표시
+counts:
+  - title: "Categories"
+    use : true
+  - title: "Tags"
+    use : true
