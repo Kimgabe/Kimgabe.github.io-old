@@ -283,5 +283,9 @@ defaults:
       share: true
       related: true
       show_date : false # 문서작성일 자동 작성 | 포스팅 일자 조절건으로 일단 false
+      toc : true
+      toc_sticky : true
+      toc_label : Table of Contents
+      toc_icon : ""fas fa-list-ol"
 
 date_format : "%Y-%m-%d"
