@@ -15,7 +15,8 @@
   animation-delay: 0.15s;
 
   @include breakpoint($x-large) {
-    max-width: $max-width;
+    #max-width: $max-width; // 기존설정
+    max-width: 1200px; //원하는 최대넓이로 변경함
   }
 }
 
