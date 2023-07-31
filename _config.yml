@@ -294,5 +294,6 @@ defaults:
       toc_sticky : true
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
+      classed : wide # 포스팅 페이지 넓이 넓게
 
 date_format : "%Y-%m-%d"
