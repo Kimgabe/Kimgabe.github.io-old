@@ -1,19 +1,3 @@
-# [Blog] 스터디 노트 Day 1 작성 및 업로드
-
-Category: Blog
-Deadline: 📅 Due date : 07/04/화
-What shoud I do?!: 🔥Do it Now! 🔥
-📁 프로젝트 DB: DS-17기 취업준비 (https://www.notion.so/DS-17-8b074b50657243d18b5653ce6e660838?pvs=21), DS 블로그 관리 (https://www.notion.so/DS-d5b7ebfa7d024598bc4c27213b8a4382?pvs=21)
-진행도: 🛌 Waiting...
-긴급도: 😱Yes!!!!!
-중요도: 😱Yes!!!!!
-date: 2023년 7월 4일
-delete: No
-todo type: ⏳ One-Time
-🔩 Setting - Today: 2023년 8월 2일 오후 6:00
-Sub or Not: No
-
-```markdown
 ---
 layout : single
 title:  "[스터디노트] Day__ 타이틀"
@@ -22,7 +6,11 @@ tag: 스터디노트
 header :
     teaser : "/assets/img/teaser/studynote/studynote_day1.png"
 ---
-```
+
+
+# 스터디 노트 Day 1
+---
+
 
 # 💡공부한 내용
 
