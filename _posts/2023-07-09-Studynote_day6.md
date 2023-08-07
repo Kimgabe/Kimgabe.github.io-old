@@ -357,6 +357,7 @@ odd_even_game(user_choice)
 - 미세먼지 측정 수치가 150을 초과하면 차량 2부제 실시
 - 차량 2부제를 실시하더라도 영업용 차량은 5부제 실시
 
+
 ```python
 from datetime import datetime
 
@@ -396,6 +397,7 @@ def check_driving_availability():
     
 check_driving_availability()
 ```
+
 
 ```python
 미세먼지 수치 입력: 200
