@@ -19,15 +19,28 @@ main:
 
 # 포스팅내 사이드바에 메뉴 표시
 docs:
-  - title : "By Caterogies & Tags" # 대분류
-    children: # 중분류
-      - title : "Category" # 소분류1
-        url   : /categories/
-      - title : "Tag" # 소분류2
-        url   : /tags/
-  - title : "By Caterogies & Tags" # 대분류
-    children: # 중분류
-      - title : "Category" # 소분류1
-        url   : /categories/
-      - title : "Tag" # 소분류2
-        url   : /tags/
+  - title: "Personal Study" # Main category 1
+    children: # Sub-categories
+      - title: "Python Basics"        # Sub-category 1
+        url: "/python-basics/"
+      - title: "EDA"
+        url: "/EDA/"
+      - title: "Machine Learning"
+        url: "/machine-learning/"
+      - title: "Deep Learning"
+        url: "/deep-learning/"
+      - title: "Paper/Article Review"
+        url: "/paper-review/"
+      - title: "Code Shadowing"
+        url: "/code-shadowing/"
+      - title: "Portfolio"
+        url: "/portfolio/"
+
+  - title: "Data Science School_17th" # Main category 2
+    children: # Sub-categories
+      - title: "Study Notes"          # Sub-category 1
+        url: "/study-notes/"
+      - title: "Team Study Notes"
+        url: "/team-study-notes/"
+      - title: "Job Position Collection"
+        url: "/Job Position Collection/"
