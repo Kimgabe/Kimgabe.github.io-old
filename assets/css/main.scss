@@ -9,6 +9,7 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 // add thumbnail-container class to img tags
+// posting 썸네일 이미지 크기 조절
 .thumbnail-container {
     max-width: 100%;
     overflow: hidden;
@@ -18,6 +19,6 @@ search: false
 .thumbnail-container img {
     /* margin-top: -11.5%; */
     /* margin-bottom: -11.5%; */
-    width: 150px; 
-    height: 150px;
+    width: 200px; 
+    height: 200px;
 }
