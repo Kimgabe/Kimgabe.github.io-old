@@ -1,6 +1,6 @@
 ---
 layout : single
-title:  "[스터디노트] 파이썬 기초문제 풀이 (연산자, 조건문, 반복문)"
+title:  "[스터디노트] Day6 파이썬 기초문제 풀이 (연산자, 조건문, 반복문)"
 categories: [DS17_Bootcamp, Python Programming]
 tag: [스터디노트, 문제풀이]
 header :
