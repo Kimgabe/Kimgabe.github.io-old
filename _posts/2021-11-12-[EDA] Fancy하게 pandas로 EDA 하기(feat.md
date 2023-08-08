@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "[EDA] Fancy하게 pandas로 EDA 하기(feat. Pandas Profiling)"
-categories: [Personal Study, python, EDA, Tips]
-tag: [python, 시각화, visualization, pandas, Pandas Profiling]
+categories: [Personal Study, Tips, EDA]
+tag: [python, EDA, 시각화, visualization, pandas, Pandas Profiling]
 toc: true
 header :
     teaser : "/assets/img/teaser/Blog_Tips-001.png"
