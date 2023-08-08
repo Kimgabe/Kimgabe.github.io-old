@@ -21,6 +21,14 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
+  // Create scroll default options for html block
+  <style>
+    .scrollable-code {
+        max-height: 200px; /* 최대 높이 지정 */
+        overflow-y: auto; /* 스크롤이 필요할 경우 자동으로 생성 */
+    }
+  </style>
+
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
