@@ -1,7 +1,8 @@
 ---
 title : "Review"
-layout : categories
-permalink : /Paper/Article Review/
+layout : category-archive
+category: Review
+permalink : /Review/
 author profile : true
 sidebar_main : true
 ---
