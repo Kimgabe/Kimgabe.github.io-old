@@ -294,7 +294,6 @@ defaults:
       toc_sticky : true
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
-      use_math: true
       # classed : wide # 포스팅 페이지 넓이 넓게 // 기본 옵연인데 잘 안먹혀서 직접 CSS수정함
 
 
