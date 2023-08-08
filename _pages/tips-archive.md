@@ -1,7 +1,7 @@
 ---
-title : "Tip"
+title : "Tips"
 layout : category-archive
-category: Tip
+category: Tips
 permalink : /tips/
 author profile : true
 sidebar_main : true
