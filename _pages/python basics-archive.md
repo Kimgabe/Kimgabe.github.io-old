@@ -1,6 +1,6 @@
 ---
 title: "Python Basics"
-layout: categories
+layout: collection
 permalink: /python-basics/
 author profile : true
 sidebar_main : true
