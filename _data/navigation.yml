@@ -35,6 +35,8 @@ docs:
         url: "/code-shadowing/"
       - title: "Portfolio"
         url: "/portfolio/"
+      - title: "Tips & cheat sheet"
+        url: "/tips/" 
 
   - title: "Data Science School_17th" # Main category 2
     children: # Sub-categories
