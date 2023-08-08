@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day13 기초수학"
-categories: [DS17_Bootcamp, 기초수학]
+categories: [DS17_Bootcamp, 기초수학, Study Note]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day13.png"

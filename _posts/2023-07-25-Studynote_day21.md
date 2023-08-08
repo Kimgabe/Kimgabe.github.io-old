@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day21 자료구조/알고리즘"
-categories: [DS17_Bootcamp, 자료구조/알고리즘]
+categories: [DS17_Bootcamp, 자료구조/알고리즘, Study Note]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day21.png"

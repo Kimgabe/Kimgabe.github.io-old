@@ -1,7 +1,7 @@
 ---
-title : "Portfolio"
+title : "Study Note"
 layout : categories
-permalink : /Portfolio/
+permalink : /Study Note/
 author profile : true
 sidebar_main : true
 ---

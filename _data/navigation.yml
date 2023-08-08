@@ -1,8 +1,8 @@
 # main links
 main:
-  - title : "Category"
+  - title : "By Category"
     url   : /categories/
-  - title : "Tag"
+  - title : "By Tag"
     url   : /tags/
   - title : "By Year"
     url   : /year-archive-grid/    
@@ -42,5 +42,3 @@ docs:
         url: "/study-notes/"
       - title: "Team Study Notes"
         url: "/team-study-notes/"
-      - title: "Career Opportunities Hub"
-        url: "/Career Opportunities Hub/"

@@ -1,7 +1,7 @@
 ---
-title : "Portfolio"
+title : "Team study Note"
 layout : categories
-permalink : /Portfolio/
+permalink : /Team study Note/
 author profile : true
 sidebar_main : true
 ---
