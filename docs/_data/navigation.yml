@@ -20,19 +20,41 @@ foo:
 
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
+#  - title: "Quick-Start Guide"
+#    url: /docs/quick-start-guide/
+  - auto_categories: true
+  - title: "Posts"
+    url: /year-archive/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Portfolio"
+    url: /portfolio/
   - title: "About"
     url: /about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
 
+# rpi4cluster sidebar
+rpi4cluster:
+  - title: 라즈베리파이 4 클러스터
+    url: /rpi4cluster/
+  - title: "1. 현재 구성"
+    children:
+      - title: "디자인 목표"
+        url: /rpi4cluster/design/
+      - title: "하드웨어"
+        url: /rpi4cluster/hardware/
 
-# documentation links
+# owaf sidebar
+owaf:
+  - title: OWAF
+    url: /owaf/
+  - title: "현재"
+    children:
+      - title: "작성중..."
+        url: /owaf/
+
+# documentation sidebar
 docs:
   - title: Getting Started
     children:
