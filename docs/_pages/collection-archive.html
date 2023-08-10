@@ -1,10 +1,11 @@
 ---
-layout: archive
+layout: archive 
 title: "Posts by Collection"
 permalink: /collection-archive/
 author_profile: true
 ---
 
+<!--
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections %}
@@ -17,6 +18,32 @@ author_profile: true
   {% endunless %}
   {% for post in collection.docs %}
     {% unless collection.output == false or collection.label == "posts" %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+-->
+
+{% capture written_label %}'None'{% endcapture %}  <!-- written_label 변수 초기화 -->
+
+<!-- 모든 콜렉션에 대해 반복 -->
+{% for collection in site.collections %}
+  <!-- 'posts' 콜렉션과 출력 설정이 false로 된 콜렉션을 제외 -->
+  {% unless collection.output == false or collection.label == "posts" %}
+    <!-- 현재 콜렉션의 레이블을 변수에 저장 -->
+    {% capture label %}{{ collection.label }}{% endcapture %}
+    <!-- 이전에 출력한 콜렉션과 현재 콜렉션 이름이 다르다면 콜렉션 이름을 출력 -->
+    {% if label != written_label %}
+      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
+      <!-- 출력한 콜렉션 이름을 변수에 저장 -->
+      {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+  {% endunless %}
+  <!-- 현재 콜렉션에 속한 모든 포스트에 대해 반복 -->
+  {% for post in collection.docs %}
+    <!-- 'posts' 콜렉션과 출력 설정이 false로 된 콜렉션의 포스트를 제외 -->
+    {% unless collection.output == false or collection.label == "posts" %}
+      <!-- 포스트 내용을 archive-single.html 템플릿을 사용하여 출력 -->
       {% include archive-single.html %}
     {% endunless %}
   {% endfor %}
