@@ -325,7 +325,7 @@ defaults:
       comments: true
       share: true
       related: true
-      toc: false
+      toc: True
       toc_sticky: true
       classes: wide
       header:
