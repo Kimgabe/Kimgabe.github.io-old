@@ -11,18 +11,18 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "오원석"
-title_separator          : "-"
+title                    : "Kim Gabe's Ds blog"
+title_separator          : "|"
 subtitle                 : #"소프트웨어 개발 기술과 서버 운영 경험담 나누기" #"A Jekyll theme"
-name                     : &name "오원석" # &name is a YAML anchor which can be *referenced later
-description              : &description "이 웹사이트는 Github Pages와 Minimal-Mistakes Jekyll 테마를 사용해 만들어졌습니다."
-url                      : https://www.owonseok.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Kim Gabe" # &name is a YAML anchor which can be *referenced later
+description              : &description "Kim Gabe의 블로그입니다."
+url                      : https://Kimgabe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
-repository               : "owonseok/owonseok.github.io"
+repository               : "Kimgabe/Kimgabe.github.io"
 teaser                   : https://source.unsplash.com/random # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /assets/images/favicons/home-logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-#breadcrumbs              : true # true, false (default)
+breadcrumbs              : true # true, false (default) # 페이지 네비게이션 기능
 words_per_minute         : 200
 date_format              : "%Y-%m-%d, %H:%M"
 paginate                 : 5
@@ -39,9 +39,9 @@ paginate_path            : /page/:num/
 #     after                : 2
 
 comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
   disqus:
-    shortname            :
+    shortname            : kim-gabes-github-blog
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -50,8 +50,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "github-dark" # "github-light" (default), "github-dark"
-    issue_term           : "pathname" # "pathname" (default)
+    theme                : #"github-dark" # "github-light" (default), "github-dark"
+    issue_term           : #"pathname" # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
@@ -81,68 +81,68 @@ search_provider          : lunr # lunr (default), algolia
 # SEO Related
 google_site_verification : #"UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
 bing_site_verification   :
-naver_site_verification  :
+naver_site_verification  : "0bcef25e94264a9e1c88c9d2b553e516e9816596"
 yandex_site_verification :
 baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter "_wonseok_"
+  username               : 
 facebook:
-  username               : &facebook "wonseoko"
+  username               : 
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
+og_image                 : # "/assets/images/site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles, used in _includes/seo.html
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://twitter.com/_wonseok_"
-    - "https://www.facebook.com/wonseoko"
+    #- "https://twitter.com/_wonseok_"
+    #- "https://www.facebook.com/wonseoko"
 
 # Analytics
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-LDZHKGQ13M" # Replace this with your ID, or delete
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-S8SVCTHDH2" # Replace this with your ID, or delete
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/bluetigero.jpg"
-  bio              : "새로운 기술과 게임을 좋아합니다. 흰머리가 덥수룩하고 게을러서 백발코더 랍니다."
+  avatar           : "/assets/images/gabe_profile.png"
+  bio              : "Knowledge without application is meaningless. True learning lies in educating and empowering others."
   location         : "Republic of Korea"
   links:
-#    - label: "Made Mistakes"
-#      icon: "fas fa-fw fa-link"
+    - label: "Made Mistakes"
+      icon: "fas fa-fw fa-envelope-square"
 #      url: "https://mademistakes.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/_wonseok_"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/_wonseok_"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/wonseoko"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/wonseoko/"
+      url: "https://github.com/Kimgabe"
+#    - label: "LinkedIn"
+#      icon: "fab fa-fw fa-linkedin-in"
+#      url: "https://www.linkedin.com/in/wonseoko/"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/_wonseok_"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/_wonseok_"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/wonseoko"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/wonseoko/"
+      url: "https://github.com/Kimgabe"
+#    - label: "LinkedIn"
+#      icon: "fab fa-fw fa-linkedin-in"
+#      url: "https://www.linkedin.com/in/wonseoko/"
 
 
 # Reading Files
@@ -204,9 +204,10 @@ kramdown:
 
 # Collections
 collections:
+  # docs 컬렉션 설정
   docs:
-    output: true
-    permalink: /:collection/:path/
+    output: true # docs 컬렉션의 각 항목을 개별 페이지로 출력
+    permalink: /:collection/:path/ # docs 컬렉션의 각 항목에 대한 고유한 링크 형식 설정
   recipes:
     output: true
     permalink: /:collection/:path/
@@ -218,23 +219,25 @@ collections:
     permalink: /:collection/:path/
 
 
-# Defaults
+# Defaults (기본설정)
 defaults:
-  # _posts
+  # _posts (포스팅 설정)
   - scope:
-      path: ""
-      type: posts
+      path: "" # 적용될 경로
+      type: posts # posts 타입에만 적용
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-  # _pages
+      layout: single # 사용할 레이아웃 (layout 폴더에서 지정)
+      author_profile: true # config.yml에서 지정한 author_profile 정보를 포스팅에 표기할지 여부
+      read_time: true # 읽는데 소모되는 시간 표시 여부
+      show_date: false # 날짜 표시 여부
+      comments: true # 댓글 섹션 표시 여부
+      share: true # 공유버튼 표시 여부
+      related: true # 관련 글 표시 여부
+      toc: true # Table of contents 표시 여부
+      toc_sticky: true # TOC 고정 여부
+      toc_label : Table of Contents
+      toc_icon : "fas fa-list-ol"
+  # _pages (pages에 대한 설정)
   - scope:
       path: ""
       type: pages
@@ -333,18 +336,19 @@ defaults:
 
 # Sass/SCSS
 sass:
-  sass_dir: _sass
+  sass_dir: _sass # Sass 파일들이 저장된 디렉토리
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-# Outputting
-permalink: /:categories/:title/
+# Outputting (출력관련 설정)
+permalink: /:categories/:title/ # 포스트의 url형식
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
+# 사용할 플러그인 리스트
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -355,6 +359,7 @@ plugins:
   - jekyll-algolia
 
 # mimic GitHub Pages with --safe
+# 허용된 플러그인 리스트
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -376,8 +381,8 @@ whitelist:
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
-  path: /categories/
+  type: liquid # 아카이브 유형
+  path: /categories/ # 카테고리 아카이브 경로
 tag_archive:
   type: liquid
   path: /tags/
