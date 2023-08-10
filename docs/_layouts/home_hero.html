@@ -15,13 +15,11 @@ layout: archive
 {% endif %}
 
 <div id="main" role="main">
-  <!-- 사이드바 추가 -->
-  {% include sidebar.html %}
-
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
+
     {% for post in paginator.posts limit: site.paginate %}
       {% if post %}
         {% assign category = "" %}
@@ -56,4 +54,7 @@ layout: archive
     {% endfor %}
     {% include paginator.html %}
   </div>
+
+  <!-- 사이드바 추가 -->
+  {% include sidebar.html %}
 </div>
