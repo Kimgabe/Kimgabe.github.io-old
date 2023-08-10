@@ -20,12 +20,12 @@ url                      : "https://Kimgabe.github.io" # the base hostname & pro
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #"Kimgabe/Kimgabe.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : /assets/img/favicons/home-logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : /assets/image/favicons/home-logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 date_format              : "%Y-%m-%d, %H:%M"
-paginate                 : 5z
+paginate                 : 5
 paginate_path            : /page/:num/
 # pagination               :
 #   enabled                : true
@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "Kim Gabe"
-  avatar           : assets/img/gabe_profile.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : assets/image/gabe_profile.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : '"Knowledge without application is meaningless. True learning lies in educating and empowering others."' 
   location         : "Somewhere"
   email            :
@@ -226,61 +226,150 @@ collections:
 
 
 # Defaults
-# 기본 설정들: 이 설정은 특정 유형의 포스트나 페이지에 대한 기본 값을 설정합니다.
+# 기본 설정
 defaults:
-  # _posts
-  # 기본 포스트 설정
+  # _posts에 대한 설정
   - scope:
-      path: "" # 경로 설정. 여기서는 모든 경로에 대해 적용됩니다.
-      type: posts # 포스트 유형
+      path: "" # 적용될 경로
+      type: posts # posts 타입에 적용
     values:
-      layout: single # 레이아웃 유형
+      layout: single # 사용할 레이아웃
       author_profile: true # 저자 프로필 표시 여부
       read_time: true # 읽는 시간 표시 여부
       show_date: true # 날짜 표시 여부
-      comments: true # 댓글 표시 여부
+      comments: true # 댓글 섹션 표시 여부
       share: true # 공유 버튼 표시 여부
-      related: true # 관련 포스트 표시 여부
-      toc: true # 목차 표시 여부
-      toc_sticky: true # 목차 고정 여부
-  # ... (이하 내용은 위와 유사한 형태로 다양한 유형의 포스트나 페이지에 대한 기본 설정입니다.)
+      related: true # 관련 글 표시 여부
+      toc: true # 테이블 오브 컨텐츠 표시 여부
+      toc_sticky: true # 테이블 오브 컨텐츠를 고정할지 여부
 
-# Sass/SCSS
-# Sass/SCSS 관련 설정
+  # _pages에 대한 설정
+  - scope:
+      path: "" # 적용될 경로
+      type: pages # pages 타입에 적용
+    values:
+      layout: single # 사용할 레이아웃
+      author_profile: true # 저자 프로필 표시 여부
+      sidebar:
+          nav: "docs" # 사이드바 내비게이션 설정
+
+  # _docs에 대한 설정
+  - scope:
+      path: "" # 적용될 경로
+      type: docs # docs 타입에 적용
+    values:
+      layout: single # 사용할 레이아웃
+      read_time: false # 읽는 시간 표시 여부
+      author_profile: false # 저자 프로필 표시 여부
+      share: false # 공유 버튼 표시 여부
+      comments: false # 댓글 섹션 표시 여부
+      sidebar:
+        nav: "docs" # 사이드바 내비게이션 설정
+
+  # rpi4cluster에 대한 설정
+  - scope:
+      path: "rpi4cluster" # 적용될 경로
+    values:
+      layout: single # 사용할 레이아웃
+      author_profile: true # 저자 프로필 표시 여부
+      read_time: true # 읽는 시간 표시 여부
+      show_date: true # 날짜 표시 여부
+      comments: true # 댓글 섹션 표시 여부
+      share: true # 공유 버튼 표시 여부
+      related: true # 관련 글 표시 여부
+      toc: true # 테이블 오브 컨텐츠 표시 여부
+      toc_sticky: true # 테이블 오브 컨텐츠를 고정할지 여부
+      sidebar:
+        nav: "rpi4cluster" # 사이드바 내비게이션 설정
+      header:
+        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg # 헤더의 티저 이미지
+        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg # 헤더의 배경 이미지
+        overlay_filter: 0.4 # 이미지에 적용될 필터
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)" # 이미지 캡션
+
+  # jekyll에 대한 설정
+  - scope:
+      path: "jekyll" # 적용될 경로
+    values:
+      layout: single # 사용할 레이아웃
+      author_profile: true # 저자 프로필 표시 여부
+      read_time: true # 읽는 시간 표시 여부
+      show_date: true # 날짜 표시 여부
+      comments: true # 댓글 섹션 표시 여부
+      share: true # 공유 버튼 표시 여부
+      related: true # 관련 글 표시 여부
+      toc: true # 테이블 오브 컨텐츠 표시 여부
+      toc_sticky: true # 테이블 오브 컨텐츠를 고정할지 여부
+
+  # owaf에 대한 설정
+  - scope:
+      path: "owaf" # 적용될 경로
+    values:
+      layout: single # 사용할 레이아웃
+      author_profile: false # 저자 프로필 표시 여부
+      read_time: true # 읽는 시간 표시 여부
+      show_date: true # 날짜 표시 여부
+      comments: true # 댓글 섹션 표시 여부
+      share: true # 공유 버튼 표시 여부
+      related: true # 관련 글 표시 여부
+      toc: true # 테이블 오브 컨텐츠 표시 여부
+      toc_sticky: true # 테이블 오브 컨텐츠를 고정할지 여부
+      sidebar:
+        nav: "owaf" # 사이드바 내비게이션 설정
+      header:
+        overlay_image: /assets/images/unsplash/cpp-UjJWhMerJx0.jpg # 헤더의 배경 이미지
+        overlay_filter: 0.4 # 이미지에 적용될 필터
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/UjJWhMerJx0)" # 이미지 캡션
+
+  # portfolio에 대한 설정
+  - scope:
+      path: "" # 적용될 경로
+      type: "portfolio" # portfolio 타입에 적용
+    values:
+      layout: single # 사용할 레이아웃
+      author_profile: true # 저자 프로필 표시 여부
+      read_time: true # 읽는 시간 표시 여부
+      show_date: false # 날짜 표시 여부
+      comments: true # 댓글 섹션 표시 여부
+      share: true # 공유 버튼 표시 여부
+      related: true # 관련 글 표시 여부
+      toc: false # 테이블 오브 컨텐츠 표시 여부
+      toc_sticky: true # 테이블 오브 컨텐츠를 고정할지 여부
+      classes: wide # 페이지의 CSS 클래스
+      header:
+        overlay_image: https://source.unsplash.com/featured/?portfolio # 헤더의 배경 이미지
+        overlay_filter: 0.4 # 이미지에 적용될 필터
+        caption: "Photo credit: [**Unsplash**](https://source.unsplash.com/featured/?portfolio)" # 이미지 캡션
+
+# Sass/SCSS 설정
 sass:
-  sass_dir: _sass # Sass 파일 디렉토리 위치
-  style: compressed # 출력 스타일 설정 (여기서는 압축된 형태로 설정)
+  sass_dir: _sass # Sass 파일들이 저장된 디렉토리
+  style: compressed # 출력 스타일 (압축)
 
-# Outputting
-# 출력 설정
-permalink: /:categories/:title/ # 고유 링크 형식 설정
-timezone: Asia/Seoul # 시간대 설정
+# 출력 관련 설정
+permalink: /:categories/:title/ # 포스트의 URL 형식
+timezone: Asia/Seoul # 사용할 시간대
 
-# Plugins (previously gems:)
-# 사용하는 플러그인 리스트
+# 사용할 플러그인 리스트
 plugins:
   - jekyll-paginate
   - ...
 
-# mimic GitHub Pages with --safe
-# GitHub Pages의 --safe 옵션과 유사한 설정
+# 허용된 플러그인 리스트
 whitelist:
   - jekyll-paginate
   - ...
 
-# Archives
 # 아카이브 관련 설정
 category_archive:
-  type: liquid # 아카이브 유형 설정
-  path: /categories/ # 카테고리 아카이브 경로 설정
+  type: liquid # 아카이브 유형
+  path: /categories/ # 카테고리 아카이브 경로
 tag_archive:
-  type: liquid # 아카이브 유형 설정
-  path: /tags/ # 태그 아카이브 경로 설정
+  type: liquid # 아카이브 유형
+  path: /tags/ # 태그 아카이브 경로
 
-# HTML Compression
-# HTML 압축 관련 설정
+# HTML 압축 설정
 compress_html:
-  clippings: all # 모든 HTML을 압축
+  clippings: all # 압축 옵션
   ignore:
-    envs: development # 개발 환경에서는 압축하지 않음
-
+    envs: development # 압축을 무시할 환경 설정
