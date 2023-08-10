@@ -221,6 +221,14 @@ collections:
 
 # Defaults (기본설정)
 defaults:
+  # home 에 대한 설정
+  - scope:
+      path: ""
+      type: "home"
+    values:
+        layout: home_hero
+        sidebar:
+            nav: sidebar
   # _posts (포스팅 설정)
   - scope:
       path: "" # 적용될 경로

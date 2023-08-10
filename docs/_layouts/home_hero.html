@@ -1,16 +1,19 @@
 ---
-layout: archive
+layout: archive 
 ---
-{{ content }}
+
+{{ content }}  # 페이지의 기본 내용을 출력한다.
 
 {% for post in paginator.posts limit: site.paginate %}
   {% if post %}
+    {# 각 포스트의 카테고리를 처리하는 부분 시작 #}
     {% assign category = "" %}
     {% for cat in post.categories limit: 3 %}
       {% assign cat_name = cat | downcase | replace: " ", "-" %}
       {% capture cat_url %}/{{ cat_name }}/{% endcapture %}
       {% assign cat_page = site.pages | where: "url", cat_url %}
       
+      {# 카테고리의 레이블과 URL을 설정하는 부분 #}
       {% if cat_page != empty %}
         {% assign cat_lbl = cat_page.title %}        
       {% else %}
@@ -26,8 +29,9 @@ layout: archive
       {% if category != empty %}{% assign category = category | append: ", " %}{% endif %}
       {% assign category = category | append: cat_link %}
     {% endfor %}
-    {% if category == empty %}{% assign category = nil %}{% endif %}
+    {# 각 포스트의 카테고리를 처리하는 부분 끝 #}
     
+    {# 포스트의 이미지 및 배경색을 처리하는 부분 시작 #}
     {% assign filter = page.header.overlay_filter | default: post.header.overlay_filter %}
     {% assign color = page.header.overlay_color | default: post.header.overlay_color %}
 
@@ -39,6 +43,7 @@ layout: archive
       {% capture image %}{{ post.header.image }}{% endcapture %}
     {% else %}
       {% unless color %}
+        {# 포스트에 이미지가 없는 경우 랜덤 색상을 생성하는 부분 #}
         {% assign min = 96 %}
         {% assign max = 160 %}
         {% assign diff = max | minus: min %}
@@ -48,7 +53,9 @@ layout: archive
         {% capture color %}rgb({{ r }},{{ g }},{{ b }}){% endcapture %}
       {% endunless %}      
     {% endif %}
+    {# 포스트의 이미지 및 배경색을 처리하는 부분 끝 #}
 
+    {# 포스트의 내용 (제목, 태그라인, 요약 등)을 화면에 표시하는 부분 #}
     {% include excerpt_hero.html 
       url = post.url
       overlay_image = image
@@ -64,4 +71,5 @@ layout: archive
   {% endif %}
 {% endfor %}
 
+{# 페이지네이션을 위한 부분 #}
 {% include paginator.html %}
