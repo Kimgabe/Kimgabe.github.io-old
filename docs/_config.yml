@@ -17,7 +17,7 @@ subtitle                 : #"소프트웨어 개발 기술과 서버 운영 경�
 name                     : &name "Kim Gabe" # &name is a YAML anchor which can be *referenced later
 description              : &description "Kim Gabe의 블로그입니다."
 url                      : https://Kimgabe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : #"/" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "Kimgabe/Kimgabe.github.io"
 teaser                   : https://source.unsplash.com/random # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/favicons/home-logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -205,18 +205,18 @@ kramdown:
 # Collections
 collections:
   # docs 컬렉션 설정
-  Personal Study:
+  docs:
     output: true # docs 컬렉션의 각 항목을 개별 페이지로 출력
     permalink: /:collection/:path/ # docs 컬렉션의 각 항목에 대한 고유한 링크 형식 설정
-  DS17:
+  recipes:
     output: true
     permalink: /:collection/:path/
-#  pets:
-#    output: true
-#    permalink: /:collection/:path/
-#  portfolio:
-#    output: true
-#    permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults (기본설정)
@@ -224,11 +224,8 @@ defaults:
   # home 에 대한 설정
   - scope:
       path: ""
-      type: "home"
+      type: "posts"
     values:
-        layout: home_hero
-        sidebar:
-            nav: sidebar
   # _posts (포스팅 설정)
   - scope:
       path: "" # 적용될 경로
@@ -264,9 +261,9 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # DS17
+  # rpi4cluster
   - scope:
-      path: "DS17"
+      path: "rpi4cluster"
     values:
       layout: single
       author_profile: true
@@ -278,13 +275,13 @@ defaults:
       toc: true
       toc_sticky: true
       sidebar:
-        nav: "DS17"      
+        nav: "rpi4cluster"      
       header:
         teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_filter: 0.4
         caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # Personal Study
+  # jekyll
   - scope:
       path: "jekyll"
     values:
@@ -297,13 +294,30 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
-      sidebar:
-        nav: "Personal_Study"
       # header:
       #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
       #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
       #   overlay_filter: 0.4
       #   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
+  # owaf
+  - scope:
+      path: "owaf"
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "owaf"      
+      header:
+        overlay_image: /assets/images/unsplash/cpp-UjJWhMerJx0.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/UjJWhMerJx0)"
   # portfolio
   - scope:
       path: ""
