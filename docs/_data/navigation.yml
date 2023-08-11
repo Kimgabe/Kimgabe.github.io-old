@@ -32,7 +32,7 @@ ds17:
         url: /ds17/teamstudy/
 
 # Personal Study sidebar
-Personal Study:
+personal_study:
   - title: Personal Study
     url: /personal_study/
   - title: "Personal Study"
