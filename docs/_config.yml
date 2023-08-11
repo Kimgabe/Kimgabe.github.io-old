@@ -283,7 +283,7 @@ defaults:
         caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
   # jekyll
   - scope:
-      path: "jekyll"
+      path: "Personal_Study"
     values:
       layout: single
       author_profile: true
