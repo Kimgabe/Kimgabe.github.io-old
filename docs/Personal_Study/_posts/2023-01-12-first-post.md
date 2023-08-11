@@ -3,8 +3,8 @@ title: "Github Pages 개설"
 date: 2023-01-12 12:03:47 +0900
 last_modified_at: 2023-01-12 18:25:48 +0900
 header:
-  teaser: /assets/images/unsplash/github-842ofHC6MaI.jpg
-  overlay_image: /assets/images/unsplash/github-842ofHC6MaI.jpg
+  teaser: /assets/images/unsplash/luke-chesser-JKUTrJ4vK00-unsplash.jpg
+  overlay_image: /assets/images/unsplash/luke-chesser-JKUTrJ4vK00-unsplash.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/N7OocKwsJ0s)"
 category: blog
