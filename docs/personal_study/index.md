@@ -1,7 +1,7 @@
 ---
 title: "Personal Study"
 layout: category
-taxonomy: "personal_study"
+taxonomy: "python"
 entries_layout: grid
 author_profile: true
 classes: wide
