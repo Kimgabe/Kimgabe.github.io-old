@@ -219,7 +219,7 @@ collections:
     permalink: /:collection/:path/
   studynote:
     output: true
-    permalink: /ds17/studynote/:path/
+    permalink: /ds17/:collection/:path/
 
 
 # Defaults (기본설정)
@@ -288,7 +288,7 @@ defaults:
         caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/FHnnjk1Yj7Y)"
   # Personal Study
   - scope:
-      path: "Personal_Study"
+      path: "personal_study"
     values:
       layout: single
       author_profile: true
@@ -302,7 +302,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "Personal_Study"      
+        nav: "personal_study"      
       header:
         teaser: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
         overlay_image: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
