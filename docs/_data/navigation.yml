@@ -4,7 +4,7 @@ main:
 #    url: /docs/quick-start-guide/
   - auto_categories: true
   - title: "Personal Study"
-    url: /Personal-Study/  
+    url: /Personal_Study/  
   - title: "DS school 17th"
     url: /DS17/  
   - title: "Posts"
