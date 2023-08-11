@@ -8,7 +8,7 @@ header:
   overlay_image: /assets/images/unsplash/github-842ofHC6MaI.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/842ofHC6MaI)"
-categories: [python, matplotlib]
+categories: [Personal-Study, python, matplotlib]
 tags: [python, 시각화, visualization, matplotlib, canvas, subplot, title, fontsize, tick, x축, y축, legend, marker, linestyle, color, alpha, 투명도, grid, 이미지저장]
 ---
 
