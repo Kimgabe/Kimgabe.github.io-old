@@ -7,14 +7,14 @@ main:
     url: /Personal_Study/  
   - title: "DS School 17th"
     url: /DS17/  
+  - title: "Portfolio"
+    url: /portfolio/
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
-    url: /categories/
+    url: /categories-grid/
   - title: "Tags"
     url: /tags/
-  - title: "Portfolio"
-    url: /portfolio/
   - title: "About"
     url: /about/
 
