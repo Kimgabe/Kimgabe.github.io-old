@@ -20,7 +20,7 @@ main:
 
 
 
-# rpi4cluster sidebar
+# ds17 sidebar
 ds17:
   - title: Data Science School 17th
     url: /ds17/
