@@ -264,9 +264,9 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # rpi4cluster
+  # DS17
   - scope:
-      path: "rpi4cluster"
+      path: "DS17"
     values:
       layout: single
       author_profile: true
@@ -278,13 +278,13 @@ defaults:
       toc: true
       toc_sticky: true
       sidebar:
-        nav: "rpi4cluster"      
+        nav: "DS17"      
       header:
         teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_filter: 0.4
         caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # jekyll
+  # Personal Study
   - scope:
       path: "jekyll"
     values:
@@ -297,6 +297,8 @@ defaults:
       related: true
       toc: true
       toc_sticky: true
+      sidebar:
+        nav: "Personal_Study"
       # header:
       #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
       #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
