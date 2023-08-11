@@ -261,10 +261,9 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # rpi4cluster
   # DS17
   - scope:
-      path: "DS17_Bootcamp"
+      path: "DS17"
     values:
       layout: single
       author_profile: true
@@ -304,45 +303,28 @@ defaults:
       #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
       #   overlay_filter: 0.4
       #   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # owaf
+  # portfolio
   - scope:
-      path: "owaf"
+      path: "DS17_Bootcamp"
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       show_date: true
       comments: true
       share: true
       related: true
-      toc: true
-      toc_sticky: true
+      toc: true # Table of contents 표시 여부
+      toc_sticky: true # TOC 고정 여부
+      toc_label : Table of Contents
+      toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "owaf"      
+        nav: "DS17"      
       header:
-        overlay_image: /assets/images/unsplash/cpp-UjJWhMerJx0.jpg
+        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/UjJWhMerJx0)"
-  # portfolio
-  - scope:
-      path: ""
-      type: "portfolio"
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      show_date: false
-      comments: true
-      share: true
-      related: true
-      toc: True
-      toc_sticky: true
-      classes: wide
-      header:
-      #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-        overlay_image: https://source.unsplash.com/featured/?portfolio
-        overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://source.unsplash.com/featured/?portfolio)"
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
 
 # Sass/SCSS
 sass:

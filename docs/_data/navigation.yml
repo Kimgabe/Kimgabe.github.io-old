@@ -5,7 +5,7 @@ main:
   - auto_categories: true
   - title: "Personal Study"
     url: /Personal_Study/  
-  - title: "DS school 17th"
+  - title: "DS School 17th"
     url: /DS17/  
   - title: "Posts"
     url: /year-archive/
