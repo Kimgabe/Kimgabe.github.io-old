@@ -4,8 +4,11 @@ title:  "[matplotlib-basic] 00. matplotlib 기본옵션 설정하는 법"
 categories: matplotlib
 toc: true
 highlight: false
-header :
-    teaser : "/assets/image/teaser/Viz_EDA_-001.png"
+header:
+  teaser: /assets/images/unsplash/visualization.jpg
+  overlay_image: /assets/images/unsplash/visualization.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 tag:
   - python
   - 시각화
