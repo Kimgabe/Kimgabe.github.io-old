@@ -1,7 +1,7 @@
 ---
-title: "Jekyll"
+title: "Personal Study"
 layout: category
-taxonomy: "jekyll"
+taxonomy: "Personal_Study"
 entries_layout: grid
 author_profile: true
 classes: wide
