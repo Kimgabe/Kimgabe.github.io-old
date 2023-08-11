@@ -3,8 +3,11 @@ layout : single
 title:  "[스터디노트] Day1 파이썬 기초"
 categories: [ds17, studynote]
 tag: 스터디노트
-header :
-    teaser : "/assets/image/studynote/studynote_day1.png"
+header:
+  teaser: /assets/images/unsplash/blog-q10VITrVYUM.jpg
+  overlay_image: /assets/images/unsplash/blog-q10VITrVYUM.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/N7OocKwsJ0s)"
 ---
 
 
