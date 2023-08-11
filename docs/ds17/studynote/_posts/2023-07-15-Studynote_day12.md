@@ -2,6 +2,8 @@
 layout : single
 title:  "[스터디노트] Day12 파이썬 중급문제 풀이(1~7)"
 categories: studynote
+toc: true
+highlight: false
 header:
   teaser: /assets/images/unsplash/study_note.jpg
   overlay_image: /assets/images/unsplash/study_note.jpg

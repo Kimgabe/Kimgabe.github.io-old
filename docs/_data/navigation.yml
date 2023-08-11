@@ -18,17 +18,6 @@ main:
   - title: "About"
     url: /about/
 
-# rpi4cluster sidebar
-rpi4cluster:
-  - title: 라즈베리파이 4 클러스터
-    url: /rpi4cluster/
-  - title: "1. 현재 구성"
-    children:
-      - title: "디자인 목표"
-        url: /rpi4cluster/design/
-      - title: "하드웨어"
-        url: /rpi4cluster/hardware/
-
 # ds17 sidebar
 ds17_sidebar:
   - title: Data Science School 17th
@@ -69,4 +58,8 @@ personal_study_sidebar:
       - title: "Math & Statistics"
         url: /personal_study/math/
       - title: "Algorithms"
-        url: /personal_study/algorithm/
+        url: /personal_study/algorithms/
+      - title: "Review Articles"
+        url: /personal_study/review_article/
+      - title: "Code Shadowing"
+        url: /personal_study/shadowing/

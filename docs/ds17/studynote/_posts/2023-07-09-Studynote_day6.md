@@ -2,6 +2,8 @@
 layout : single
 title:  "[스터디노트] Day6 파이썬 기초문제 풀이 (연산자, 조건문, 반복문)"
 categories: studynote
+toc: true
+highlight: false
 header:
   teaser: /assets/images/unsplash/study_note.jpg
   overlay_image: /assets/images/unsplash/study_note.jpg

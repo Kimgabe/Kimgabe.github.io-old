@@ -2,6 +2,8 @@
 layout : single
 title:  "[스터디노트] Day15 기초수학"
 categories: studynote
+toc: true
+highlight: false
 header:
   teaser: /assets/images/unsplash/study_note.jpg
   overlay_image: /assets/images/unsplash/study_note.jpg
