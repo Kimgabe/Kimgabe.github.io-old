@@ -1,10 +1,10 @@
 ---
-title: "Personal Study"
+title: "Jekyll"
 layout: category
-taxonomy: "Personal Study"
+taxonomy: "jekyll"
 entries_layout: grid
 author_profile: true
 classes: wide
 ---
 
-데이터 분석을 위해 개인적으로 공부한 내용을 정리하고 있습니다.
+Jekyll 기반의 정적웹사이트 구축과 관련 한 경험 및 사용법을 정리하고 있습니다.
