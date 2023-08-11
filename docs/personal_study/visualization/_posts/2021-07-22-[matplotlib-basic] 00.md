@@ -1,11 +1,31 @@
 ---
 layout: single
 title:  "[matplotlib-basic] 00. matplotlib 기본옵션 설정하는 법"
-categories: [matplotlib]
-tag: [python, 시각화, visualization, matplotlib, canvas, subplot, title, fontsize, tick, x축, y축, legend, marker, linestyle, color, alpha, 투명도, grid, 이미지저장]
+categories: matplotlib
 toc: true
+highlight: false
 header :
     teaser : "/assets/image/teaser/Viz_EDA_-001.png"
+tag:
+  - python
+  - 시각화
+  - visualization
+  - matplotlib
+  - canvas
+  - subplot
+  - title
+  - fontsize
+  - tick
+  - x축
+  - y축
+  - legend
+  - marker
+  - linestyle
+  - color
+  - alpha
+  - 투명도
+  - grid
+  - 이미지저장
 ---
 
 <head>
