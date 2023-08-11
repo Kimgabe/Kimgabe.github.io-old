@@ -282,10 +282,10 @@ defaults:
       sidebar:
         nav: "DS17"      
       header:
-        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
+        overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
         overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/FHnnjk1Yj7Y)"
   # Personal Study
   - scope:
       path: "Personal_Study"
@@ -301,11 +301,13 @@ defaults:
       toc_sticky: false # TOC 고정 여부
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
-      # header:
-      #   teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-      #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
-      #   overlay_filter: 0.4
-      #   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
+      sidebar:
+        nav: "Personal_Study"      
+      header:
+        teaser: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
+        overlay_image: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
   # portfolio
   - scope:
       path: "portfolio"
