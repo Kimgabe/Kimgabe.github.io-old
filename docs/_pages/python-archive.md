@@ -1,6 +1,6 @@
 ---
 title: "Python"
-layout : category-archive
+layout : categories
 category: python
 permalink: /personal_study/python/
 author profile : true
