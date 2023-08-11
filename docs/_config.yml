@@ -217,6 +217,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  studynote:
+    output: true
+    permalink: /DS17/studynote/:path/
 
 
 # Defaults (기본설정)
