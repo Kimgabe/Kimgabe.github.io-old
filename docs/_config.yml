@@ -205,12 +205,18 @@ kramdown:
 # Collections
 collections:
   # docs 컬렉션 설정
-  ds17_studynote:
+  docs:
     output: true # docs 컬렉션의 각 항목을 개별 페이지로 출력
-    permalink: /DS17/studynote/:path/ # docs 컬렉션의 각 항목에 대한 고유한 링크 형식 설정
-  ds17_teamstudy:
+    permalink: /:collection/:path/ # docs 컬렉션의 각 항목에 대한 고유한 링크 형식 설정
+  recipes:
     output: true
-    permalink: /DS17/teamstudy/:path/
+    permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults (기본설정)
