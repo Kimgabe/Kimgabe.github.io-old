@@ -17,7 +17,7 @@ subtitle                 : #"소프트웨어 개발 기술과 서버 운영 경�
 name                     : &name "Kim Gabe" # &name is a YAML anchor which can be *referenced later
 description              : &description "Kim Gabe의 블로그입니다."
 url                      : https://Kimgabe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/" # the subpath of your site, e.g. "/blog"
+baseurl                  : #"/" # the subpath of your site, e.g. "/blog"
 repository               : "Kimgabe/Kimgabe.github.io"
 teaser                   : https://source.unsplash.com/random # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/favicons/home-logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
