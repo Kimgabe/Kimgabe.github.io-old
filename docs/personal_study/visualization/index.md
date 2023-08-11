@@ -6,6 +6,7 @@ entries_layout: grid
 author_profile: true
 classes: wide
 permalink: personal_study/visualization/
+highlight : false
 ---
 
 # Intro...
