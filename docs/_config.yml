@@ -219,7 +219,7 @@ collections:
     permalink: /:collection/:path/
   studynote:
     output: true
-    permalink: /DS17/studynote/:path/
+    permalink: /ds17/studynote/:path/
 
 
 # Defaults (기본설정)
@@ -264,9 +264,9 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # DS17
+  # ds17
   - scope:
-      path: "DS17"
+      path: "ds17"
     values:
       layout: single
       author_profile: true
@@ -280,7 +280,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "DS17"      
+        nav: "ds17"      
       header:
         teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
         overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
@@ -324,7 +324,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
 #      sidebar:
-#        nav: "DS17"      
+#        nav: "ds17"      
       header:
         teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg

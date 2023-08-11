@@ -6,7 +6,7 @@ main:
   - title: "Personal Study"
     url: /Personal_Study/  
   - title: "DS School 17th"
-    url: /DS17/  
+    url: /ds17/  
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -21,15 +21,15 @@ main:
 
 
 # rpi4cluster sidebar
-DS17:
+ds17:
   - title: Data Science School 17th
-    url: /DS17_Bootcamp/
+    url: /ds17_Bootcamp/
   - title: "DS 17th"
     children:
       - title: "Study Note"
-        url: /DS17/studynote/
+        url: /ds17/studynote/
       - title: "Team Study Note"
-        url: /DS17/teamstudy/
+        url: /ds17/teamstudy/
 
 # Personal Study sidebar
 Personal Study:

@@ -1,5 +1,5 @@
 ---
-permalink: /DS17_Bootcamp/
+permalink: /ds17_Bootcamp/
 title: "Data Science School 17th"
 header:
   overlay_image: https://source.unsplash.com/random
