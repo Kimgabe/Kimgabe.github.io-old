@@ -13,6 +13,7 @@ tags:
   - Markdown
 ---
 
+Github 블로그를 선택한 이유와 
 블로그 운영을 위해 Github Pages를 선택한 이유와 Git, Markdown을 이용한 응용법에 대한 생각입니다.
 
 ### 어떻게 데이터를 유지할 수 있을까?
