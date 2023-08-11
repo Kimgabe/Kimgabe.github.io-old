@@ -46,9 +46,9 @@ personal_study_sidebar:
       - title: "Visualization"
         url: /personal_study/visualization/
       - title: "ML(Machine Learning)"
-        url: /personal_study/ml/
+        url: /personal_study/machine_learning/
       - title: "DL(Deep Learning)"
-        url: /personal_study/dl/
+        url: /personal_study/deep_learning/
       - title: "SQL"
         url: /personal_study/sql/
       - title: "Git"
