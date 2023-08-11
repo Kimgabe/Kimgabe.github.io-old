@@ -205,18 +205,18 @@ kramdown:
 # Collections
 collections:
   # docs 컬렉션 설정
-  docs:
+  Personal Study:
     output: true # docs 컬렉션의 각 항목을 개별 페이지로 출력
     permalink: /:collection/:path/ # docs 컬렉션의 각 항목에 대한 고유한 링크 형식 설정
-  recipes:
+  DS17:
     output: true
     permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+#  pets:
+#    output: true
+#    permalink: /:collection/:path/
+#  portfolio:
+#    output: true
+#    permalink: /:collection/:path/
 
 
 # Defaults (기본설정)
@@ -304,25 +304,6 @@ defaults:
       #   overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
       #   overlay_filter: 0.4
       #   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # owaf
-  - scope:
-      path: "owaf"
-    values:
-      layout: single
-      author_profile: false
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
-      sidebar:
-        nav: "owaf"      
-      header:
-        overlay_image: /assets/images/unsplash/cpp-UjJWhMerJx0.jpg
-        overlay_filter: 0.4
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/UjJWhMerJx0)"
   # portfolio
   - scope:
       path: ""
