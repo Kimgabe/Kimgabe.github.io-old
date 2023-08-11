@@ -264,7 +264,7 @@ defaults:
   # rpi4cluster
   # DS17
   - scope:
-      path: "DS17"
+      path: "DS17_Bootcamp"
     values:
       layout: single
       author_profile: true
