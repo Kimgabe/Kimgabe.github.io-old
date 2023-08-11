@@ -262,8 +262,9 @@ defaults:
       sidebar:
         nav: "docs"
   # rpi4cluster
+  # DS17
   - scope:
-      path: "rpi4cluster"
+      path: "DS17"
     values:
       layout: single
       author_profile: true
@@ -281,7 +282,7 @@ defaults:
         overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_filter: 0.4
         caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
-  # jekyll
+  # Personal Study
   - scope:
       path: "Personal_Study"
     values:

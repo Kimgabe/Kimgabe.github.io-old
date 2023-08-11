@@ -3,6 +3,10 @@ main:
 #  - title: "Quick-Start Guide"
 #    url: /docs/quick-start-guide/
   - auto_categories: true
+  - title: "Personal Study"
+    url: /Personal-Study/  
+  - title: "DS school 17th"
+    url: /DS17/  
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
@@ -13,8 +17,7 @@ main:
   #  url: /portfolio/
   - title: "About"
     url: /about/
-  - title: "Personal Study"
-    url: /personal-study/  
+
 
 
 # rpi4cluster sidebar
