@@ -18,10 +18,19 @@ main:
   - title: "About"
     url: /about/
 
-
+# rpi4cluster sidebar
+rpi4cluster:
+  - title: 라즈베리파이 4 클러스터
+    url: /rpi4cluster/
+  - title: "1. 현재 구성"
+    children:
+      - title: "디자인 목표"
+        url: /rpi4cluster/design/
+      - title: "하드웨어"
+        url: /rpi4cluster/hardware/
 
 # ds17 sidebar
-ds17:
+ds17_sidebar:
   - title: Data Science School 17th
     url: /ds17/
   - title: "DS 17th"
@@ -32,7 +41,7 @@ ds17:
         url: /ds17/teamstudy/
 
 # Personal Study sidebar
-personal_study:
+personal_study_sidebar:
   - title: Personal Study
     url: /personal_study/
   - title: "Personal Study"

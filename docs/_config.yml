@@ -280,7 +280,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "ds17"      
+        nav: "ds17_sidebar"      
       header:
         teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
         overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
@@ -302,7 +302,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "personal_study"      
+        nav: "personal_study_sidebar"      
       header:
         teaser: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
         overlay_image: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
@@ -325,6 +325,27 @@ defaults:
       toc_icon : "fas fa-list-ol"
 #      sidebar:
 #        nav: "ds17"      
+      header:
+        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
+        overlay_filter: 0.4
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)"
+
+# rpi4cluster
+  - scope:
+      path: "rpi4cluster"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "rpi4cluster"      
       header:
         teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
