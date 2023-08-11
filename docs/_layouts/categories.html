@@ -4,23 +4,6 @@ layout: archive
 
 {{ content }}
 
-{% if page.category %} <!-- 페이지에 category 변수가 있는 경우 -->
-  {% assign filtered_posts = site.categories[page.category] %}
-  <h2 class="archive__subtitle">{{ page.category }}</h2>
-  <div class="entries-{{ entries_layout }}">
-    {% for post in filtered_posts %}
-      {% include archive-single.html type=entries_layout %}
-    {% endfor %}
-  </div>
-  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-{% else %}
-  {% assign categories_max = 0 %}
-  {% for category in site.categories %}
-    {% if category[1].size > categories_max %}
-      {% assign categories_max = category[1].size %}
-    {% endif %}
-  {% endfor %}
-
 {% assign categories_max = 0 %}
 {% for category in site.categories %}
   {% if category[1].size > categories_max %}
