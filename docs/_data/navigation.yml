@@ -1,23 +1,3 @@
-# example navigation
-foo:
-  - title: "Parent Link 1"
-    url: /parent-1-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-  - title: "Parent Link 2"
-    url: /parent-2-page-url/
-    children:
-      - title: "Child Link 1"
-        url: /child-1-page-url/
-      - title: "Child Link 2"
-        url: /child-2-page-url/
-      - title: "Child Link 3"
-        url: /child-3-page-url/
-
-
 # main links
 main:
 #  - title: "Quick-Start Guide"
@@ -29,154 +9,49 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Portfolio"
-    url: /portfolio/
+  #- title: "Portfolio"
+  #  url: /portfolio/
   - title: "About"
     url: /about/
 
 # rpi4cluster sidebar
-rpi4cluster:
-  - title: 라즈베리파이 4 클러스터
-    url: /rpi4cluster/
-  - title: "1. 현재 구성"
+DS17:
+  - title: Data Science School 17th
+    url: /ds17/
+  - title: "DS 17th"
     children:
-      - title: "디자인 목표"
-        url: /rpi4cluster/design/
-      - title: "하드웨어"
-        url: /rpi4cluster/hardware/
+      - title: "Study Note"
+        url: /ds17/study_note/
+      - title: "Team Study Note"
+        url: /ds17/team_study/
 
-# owaf sidebar
-owaf:
-  - title: OWAF
-    url: /owaf/
-  - title: "현재"
+# Personal Study
+Personal_Study:
+  - title: Personal Study
+    url: /personal_study/
+  - title: "Personal Study"
     children:
-      - title: "작성중..."
-        url: /owaf/
-
-# documentation sidebar
-docs:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
-  - title: Customization
-    children:
-      - title: "Configuration"
-        url: /docs/configuration/
-      - title: "Overriding Theme Defaults"
-        url: /docs/overriding-theme-defaults/
-      - title: "Navigation"
-        url: /docs/navigation/
-      - title: "UI Text"
-        url: /docs/ui-text/
-      - title: "Authors"
-        url: /docs/authors/
-      - title: "Layouts"
-        url: /docs/layouts/
-  - title: Content
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
-      - title: "Working with Pages"
-        url: /docs/pages/
-      - title: "Working with Collections"
-        url: /docs/collections/
-      - title: "Helpers"
-        url: /docs/helpers/
-      - title: "Utility Classes"
-        url: /docs/utility-classes/
-  - title: Extras
-    children:
-      - title: "Stylesheets"
-        url: /docs/stylesheets/
-      - title: "JavaScript"
-        url: /docs/javascript/
-  - title: Meta
-    children:
-      - title: "History"
-        url: /docs/history/
-      - title: "Contributing"
-        url: /docs/contributing/
-      - title: "Old 2.2 Docs"
-        url: /docs/docs-2-2/
-      - title: "License"
-        url: /docs/license/
-      - title: "Terms &amp; Privacy Policy"
-        url: /terms/
-
-# sidebar navigation list sample
-sidebar-sample:
-  - title: "Parent Page A"
-    children:
-      - title: "Child Page A1"
-        url: /
-      - title: "Child Page A2"
-        url: /
-      - title: "Child Page A3"
-        url: /
-      - title: "Child Page A4"
-        url: /
-  - title: "Parent Page B"
-    children:
-      - title: "Child Page B1"
-        url: /
-      - title: "Child Page B2"
-        url: /
-      - title: "Child Page B3"
-        url: /
-      - title: "Child Page B4"
-        url: /
-      - title: "Child Page B5"
-        url: /
-  - title: "Parent Page C"
-    children:
-      - title: "Child Page C1"
-        url: /
-      - title: "Child Page C2"
-        url: /
-      - title: "Child Page C3"
-        url: /
-      - title: "Child Page C4"
-        url: /
-      - title: "Child Page C5"
-        url: /
-  - title: "Parent Page D"
-    children:
-      - title: "Child Page D1"
-        url: /
-      - title: "Child Page D2"
-        url: /
-
-docs:
-  - title: "Personal Study" # Main category 1
-    children: # Sub-categories
-      - title: "Python Basics"        # Sub-category 1
-        url: "/python-basics/"
-      - title: "EDA"
-        url: "/EDA/"
-      - title: "Machine Learning"
-        url: "/machine-learning/"
-      - title: "Deep Learning"
-        url: "/deep-learning/"
-      - title: "Paper/Article Review"
-        url: "/paper-review/"
-      - title: "Shadowing"
-        url: "/shadowing/"
-      - title: "Portfolio"
-        url: "/portfolio/"
-      - title: "Tips & cheat sheet"
-        url: "/tips/" 
-
-  - title: "Data Science School_17th" # Main category 2
-    children: # Sub-categories
-      - title: "Study Notes"          # Sub-category 1
-        url: "/study-notes/"
-      - title: "Team Study Notes"
-        url: "/team-study-notes/"
+      - title: "Python Basic"
+        url: /personal_study/python/
+      - title: "Pandas"
+        url: /personal_study/pandas/
+      - title: "Numpy"
+        url: /personal_study/numpy/
+      - title: "Pre-processing"
+        url: /personal_study/preprocessing/
+      - title: "Visualization"
+        url: /personal_study/visualization/
+      - title: "ML(Machine Learning)"
+        url: /personal_study/ml/
+      - title: "DL(Deep Learning)"
+        url: /personal_study/dl/
+      - title: "SQL"
+        url: /personal_study/sql/
+      - title: "Git"
+        url: /personal_study/git/
+      - title: "Tableau"
+        url: /personal_study/tableau/
+      - title: "Math & Statistics"
+        url: /personal_study/math/
+      - title: "Algorithms"
+        url: /personal_study/algorithm/
