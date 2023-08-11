@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: category
 title: Study Note
 taxonomy: studynote
 entries_layout: grid
