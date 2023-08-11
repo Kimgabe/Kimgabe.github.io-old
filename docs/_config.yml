@@ -242,7 +242,7 @@ defaults:
       share: true # 공유버튼 표시 여부
       related: true # 관련 글 표시 여부
       toc: true # Table of contents 표시 여부
-      toc_sticky: false # TOC 고정 여부
+      toc_sticky: true # TOC 고정 여부
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
   # _pages (pages에 대한 설정)
@@ -276,7 +276,7 @@ defaults:
       share: true
       related: true
       toc: true # Table of contents 표시 여부
-      toc_sticky: false # TOC 고정 여부
+      toc_sticky: true # TOC 고정 여부
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
@@ -298,7 +298,7 @@ defaults:
       share: true
       related: true
       toc: true # Table of contents 표시 여부
-      toc_sticky: false # TOC 고정 여부
+      toc_sticky: true # TOC 고정 여부
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
@@ -320,7 +320,7 @@ defaults:
       share: true
       related: true
       toc: true # Table of contents 표시 여부
-      toc_sticky: false # TOC 고정 여부
+      toc_sticky: true # TOC 고정 여부
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
 #      sidebar:
