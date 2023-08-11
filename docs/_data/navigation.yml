@@ -2,7 +2,7 @@
 main:
 #  - title: "Quick-Start Guide"
 #    url: /docs/quick-start-guide/
-  - auto_categories: false
+  - auto_categories: True
   - title: "Personal Study"
     url: /Personal_Study/  
   - title: "DS School 17th"
