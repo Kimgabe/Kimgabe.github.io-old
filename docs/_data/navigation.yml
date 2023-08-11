@@ -13,6 +13,9 @@ main:
   #  url: /portfolio/
   - title: "About"
     url: /about/
+  - title: "Personal Study"
+    url: /personal-study/  
+
 
 # rpi4cluster sidebar
 DS17:
@@ -25,7 +28,7 @@ DS17:
       - title: "Team Study Note"
         url: /ds17/team_study/
 
-# Personal Study
+# Personal Study sidebar
 Personal Study:
   - title: Personal Study
     url: /personal_study/
