@@ -1,60 +1,83 @@
 ---
-layout: archive
+layout: archive  
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
+{{ content }}  {% comment %} 페이지의 기본 내용을 출력합니다. {% endcomment %}
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-<div id="main" role="main">
-  <div class="archive">
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title" class="page__title">{{ page.title }}</h1>
-    {% endunless %}
-
-    {% for post in paginator.posts limit: site.paginate %}
-      {% if post %}
-        {% assign category = "" %}
-        {% for cat in post.categories limit: 3 %}
-          <!-- 기존 home_hero.html의 내용 유지 -->
-        {% endfor %}
-        {% if category == empty %}{% assign category = nil %}{% endif %}
-        
-        {% assign filter = page.header.overlay_filter | default: post.header.overlay_filter %}
-        {% assign color = page.header.overlay_color | default: post.header.overlay_color %}
-
-        {% assign image = nil %}
-        {% assign color = nil %}
-        {% if post.header.overlay_image %}      
-          {% capture image %}{{ post.header.overlay_image }}{% endcapture %}
-        {% elsif post.header.image %}      
-          {% capture image %}{{ post.header.image }}{% endcapture %}
-        {% else %}
-          {% unless color %}
-            {% assign min = 96 %}
-            {% assign max = 160 %}
-            {% assign diff = max | minus: min %}
-            {% assign r = "now" | date: "%N" | modulo: diff | plus: min %}
-            {% assign g = "now" | date: "%N" | modulo: diff | plus: min %}
-            {% assign b = "now" | date: "%N" | modulo: diff | plus: min %}
-            {% capture color %}rgb({{ r }},{{ g }},{{ b }}){% endcapture %}
-          {% endunless %}      
-        {% endif %}
-
-        {% include excerpt_hero.html %}
+{% for post in paginator.posts limit: site.paginate %}
+  {% if post %}
+    {% comment %}
+    아래 코드는 각 포스트에 연결된 카테고리를 처리하기 위한 코드입니다.
+    {% endcomment %}
+    {% assign category = "" %}
+    {% for cat in post.categories limit: 3 %}
+      {% assign cat_name = cat | downcase | replace: " ", "-" %}
+      {% capture cat_url %}/{{ cat_name }}/{% endcapture %}
+      {% assign cat_page = site.pages | where: "url", cat_url %}
+      
+      {% comment %}
+      아래 코드는 카테고리의 이름과 URL을 설정합니다.
+      {% endcomment %}
+      {% if cat_page != empty %}
+        {% assign cat_lbl = cat_page.title %}        
+      {% else %}
+        {% assign cat_lbl = cat %}  
+        {% capture cat_url %}/categories/#{{ cat_name }}{% endcapture %}
       {% endif %}
-    {% endfor %}
-    {% include paginator.html %}
-  </div>
 
-  <!-- 사이드바 추가 -->
-  {% include sidebar.html %}
-</div>
+      {% if cat_lbl == nil or cat_lbl == empty %}{% assign cat_lbl = cat %}{% endif %}
+      {% assign cat_lbl = cat_lbl | capitalize %}
+      
+      {% capture cat_link %}[**{{ cat_lbl }}**]({{ cat_url }}){% endcapture %}
+      
+      {% if category != empty %}{% assign category = category | append: ", " %}{% endif %}
+      {% assign category = category | append: cat_link %}
+    {% endfor %}
+    
+    {% comment %}
+    아래 코드는 포스트의 대표 이미지와 배경색을 설정하기 위한 코드입니다.
+    만약 이미지나 배경색이 지정되지 않은 경우, 랜덤한 색상을 생성합니다.
+    {% endcomment %}
+    {% assign filter = page.header.overlay_filter | default: post.header.overlay_filter %}
+    {% assign color = page.header.overlay_color | default: post.header.overlay_color %}
+
+    {% assign image = nil %}
+    {% assign color = nil %}
+    {% if post.header.overlay_image %}      
+      {% capture image %}{{ post.header.overlay_image }}{% endcapture %}
+    {% elsif post.header.image %}      
+      {% capture image %}{{ post.header.image }}{% endcapture %}
+    {% else %}
+      {% unless color %}
+        {% assign min = 96 %}
+        {% assign max = 160 %}
+        {% assign diff = max | minus: min %}
+        {% assign r = "now" | date: "%N" | modulo: diff | plus: min %}
+        {% assign g = "now" | date: "%N" | modulo: diff | plus: min %}
+        {% assign b = "now" | date: "%N" | modulo: diff | plus: min %}
+        {% capture color %}rgb({{ r }},{{ g }},{{ b }}){% endcapture %}
+      {% endunless %}      
+    {% endif %}
+
+    {% comment %}
+    아래 코드는 포스트의 내용 (제목, 태그라인, 요약 등)을 화면에 표시하기 위한 코드입니다.
+    {% endcomment %}
+    {% include excerpt_hero.html 
+      url = post.url
+      overlay_image = image
+      overlay_filter = filter
+      overlay_color = color
+      excerpt = post.excerpt
+      title = post.title
+      tagline = post.tagline
+      style = "padding: 1.5em 0; margin-bottom: 0.5em; border-radius: 20px;"
+      caption = category
+    %}
+
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+아래 코드는 페이지 내에서 페이지네이션을 표시하기 위한 코드입니다.
+{% endcomment %}
+{% include paginator.html %}
