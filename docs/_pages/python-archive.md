@@ -1,8 +1,8 @@
 ---
 title: "Python"
 layout : category-archive
-category: Python
-permalink: /Personal_Study/python/
+category: python
+permalink: /personal_study/python/
 author profile : true
 sidebar_main : true
 ---
