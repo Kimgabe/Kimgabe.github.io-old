@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day1 파이썬 기초"
-categories: [DS17_Bootcamp, Python Programming, Study Note]
+categories: [DS17_Bootcamp, Python Programming, studynote]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day1.png"
