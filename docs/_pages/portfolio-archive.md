@@ -10,6 +10,6 @@ header:
   overlay_image: https://source.unsplash.com/featured/?portfolio
   overlay_filter: 0.4
   caption: "Photo credit: [**Unsplash**](https://source.unsplash.com/featured/?portfolio)"
-excerpt: 지금까지 상업용으로 개발해 왔던 주요 프로그램들을 정리하였습니다.
+excerpt: 지금까지 작업한 포트폴리오들을 정리하였습니다.
 classes: wide
 ---
