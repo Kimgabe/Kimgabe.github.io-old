@@ -23,7 +23,7 @@ main:
 # rpi4cluster sidebar
 ds17:
   - title: Data Science School 17th
-    url: /ds17_Bootcamp/
+    url: /ds17/
   - title: "DS 17th"
     children:
       - title: "Study Note"
