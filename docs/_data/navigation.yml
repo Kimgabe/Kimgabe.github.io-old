@@ -27,9 +27,9 @@ DS17:
   - title: "DS 17th"
     children:
       - title: "Study Note"
-        url: /ds17/studynote/
+        url: /DS17/studynote/
       - title: "Team Study Note"
-        url: /ds17/teamstudy/
+        url: /DS17/teamstudy/
 
 # Personal Study sidebar
 Personal Study:
