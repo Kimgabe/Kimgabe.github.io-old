@@ -38,7 +38,7 @@ tags:
 
 이 웹사이트는 데이터 분석에 대한 다양한 주제들을 학습하고 정리한 내용들을 주로 다루고 있습니다.
 
-이 웹사이트를 구학하기 위해 테디노트님의 깃허브 블로그 만들기 시리즈<a href="https://www.youtube.com/watch?v=--MMmHbSH9k&list=PLIMb_GuNnFwfQBZQwD-vCZENL5YLDZekr">TeddyNote</a> 를 참고하여 기본 틀을 구축하였으며, 세부적인 페이지 구성 및 CSS수정, 스타일링은 오원석님의 깃허브<a href="https://github.com/wonseoko/wonseoko.github.io">wonseoko.github.io</a>를 참고하여 구성하였습니다.
+이 웹사이트를 구학하기 위해 테디노트님의 깃허브 블로그 만들기 시리즈<a href="https://www.youtube.com/watch?v=--MMmHbSH9k&list=PLIMb_GuNnFwfQBZQwD-vCZENL5YLDZekr">[TeddyNote]</a> 를 참고하여 기본 틀을 구축하였으며, 세부적인 페이지 구성 및 CSS수정, 스타일링은 오원석님의 깃허브<a href="https://github.com/wonseoko/wonseoko.github.io">[wonseoko.github.io]</a>를 참고하여 구성하였습니다.
 
 이 웹사이트에서 사용하는 대부분의 이미지는 <a href="https://unsplash.com">Unsplash</a>에서 
 제공하는 이미지를 사용하고 있으며, 일부는 <a href="https://source.unsplash.com/">Unsplash Source</a>의 랜덤 및 검색 서비스를 통해 제공하고 있습니다.
