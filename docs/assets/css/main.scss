@@ -389,17 +389,3 @@ table {
     margin-top: 1em;
   }
 }
-
-.no-highlight {
-  code,
-  pre {
-    background: inherit;
-    color: inherit;
-    border: none;
-    /* 그 외 원하는 스타일 적용 */
-  }
-}
-
-<div class="no-highlight">
-  <!-- 이 안의 코드는 하이라이트가 적용되지 않습니다. -->
-</div>
