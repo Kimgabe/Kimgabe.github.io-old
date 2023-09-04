@@ -15,9 +15,14 @@ permalink: personal_study/math_statistics/
 ---
 
 {% for post in site.posts %}
-  {% if (post.categories contains 'math' or post.categories contains 'statistics') and post.highlight != false %}
+  {% if post.categories contains 'math' and post.highlight != false %}
     - [{{ post.title }}]({{ post.url }})
   {% endif %}
 {% endfor %}
 
 
+{% for post in site.posts %}
+  {% if post.categories contains 'statistics' and post.highlight != false %}
+    - [{{ post.title }}]({{ post.url }})
+  {% endif %}
+{% endfor %}
