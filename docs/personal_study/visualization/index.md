@@ -16,7 +16,7 @@ highlight : false
 ---
 
 {% for post in site.posts %}
-  {% if (post.categories contains 'visualization' or post.categories contains 'matplotlib' or post.categories contains 'seaborn' or post.categories contains 'folium') and post.highlight != true %}
+  {% if (post.categories contains 'visualization' or post.categories contains 'matplotlib' or post.categories contains 'seaborn' or post.categories contains 'folium') and post.highlight == false %}
     {# 여기에 아무 것도 출력하지 않음 #}
   {% else %}
     - [{{ post.title }}]({{ post.url }})
