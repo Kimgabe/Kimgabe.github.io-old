@@ -5,7 +5,7 @@ taxonomy: "studynote"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: ds17/studynote/
+permalink: ds19/studynote/
 ---
 
 # 📌Intro

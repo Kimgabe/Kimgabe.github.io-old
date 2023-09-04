@@ -5,7 +5,7 @@ taxonomy: "teamstudy"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: ds17/teamstudy/
+permalink: ds19/teamstudy/
 ---
 
 # 📌Intro

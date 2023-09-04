@@ -1,8 +1,8 @@
 ---
-title : "DS17_Bootcamp"
+title : "ds19_Bootcamp"
 layout : category-archive
-category: DS17_Bootcamp
-permalink : /DS17_Bootcamp/
+category: ds19_Bootcamp
+permalink : /ds19_Bootcamp/
 author profile : true
 sidebar_main : true
 ---

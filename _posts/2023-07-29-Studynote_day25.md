@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day25 EDA"
-categories: [DS17_Bootcamp, Study Note]
+categories: [ds19_Bootcamp, Study Note]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day25.png"

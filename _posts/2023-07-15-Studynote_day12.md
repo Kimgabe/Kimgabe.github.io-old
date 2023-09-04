@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day12 파이썬 중급문제 풀이(1~7)"
-categories: [DS17_Bootcamp, Python Programming, Study Note]
+categories: [ds19_Bootcamp, Python Programming, Study Note]
 tag: [스터디노트, 문제풀이, 함수, 모듈, 클래스, 예외처리, 텍스트파일]
 header :
     teaser : "/assets/img/studynote/studynote_day12.png"

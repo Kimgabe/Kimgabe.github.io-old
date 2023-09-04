@@ -6,7 +6,7 @@ main:
   - title: "Personal Study"
     url: /personal_study/  
   - title: "DS School 17th"
-    url: /ds17/ 
+    url: /ds19/ 
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -18,16 +18,16 @@ main:
   - title: "About"
     url: /about/
 
-# ds17 sidebar
-ds17_sidebar:
+# ds19 sidebar
+ds19_sidebar:
   - title: Data Science School 17th
-    url: /ds17/
+    url: /ds19/
   - title: "DS 17th"
     children:
       - title: "Study Note"
-        url: /ds17/studynote/
+        url: /ds19/studynote/
       - title: "Team Study Note"
-        url: /ds17/teamstudy/
+        url: /ds19/teamstudy/
 
 # Personal Study sidebar
 personal_study_sidebar:

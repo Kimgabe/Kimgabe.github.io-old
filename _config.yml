@@ -262,7 +262,7 @@ jekyll-archives: # 카테고리 및 테그 활성화
 
 # Collections 추가
 collections:
-  DS17_bootcamp: # collection 이름:포트폴리오
+  ds19_bootcamp: # collection 이름:포트폴리오
     output: true
     permalink: /:collection/:path/
 
