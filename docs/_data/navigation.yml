@@ -20,9 +20,9 @@ main:
 
 # ds19 sidebar
 ds19_sidebar:
-  - title: Data Science School 17th
+  - title: Data Science School 19th
     url: /ds19/
-  - title: "DS 17th"
+  - title: "DS 19th"
     children:
       - title: "Study Note"
         url: /ds19/studynote/
@@ -33,7 +33,7 @@ ds19_sidebar:
 personal_study_sidebar:
   - title: Personal Study
     url: /personal_study/
-  - title: "Personal Study"
+  - title: "List of Categories"
     children:
       - title: "Python Basic"
         url: /personal_study/python/
