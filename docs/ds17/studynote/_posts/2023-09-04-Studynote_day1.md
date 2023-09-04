@@ -22,8 +22,6 @@ tags:
 # 스터디 노트 Day 1
 ---
 
-# ![Python-001]({{site.url}}/images/2023-07-05-Studynote_day1/Python-001.png)
-
 # 💡공부한 내용
 
 ---
