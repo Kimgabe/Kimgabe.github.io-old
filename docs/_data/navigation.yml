@@ -5,7 +5,7 @@ main:
   #- auto_categories: True
   - title: "Personal Study"
     url: /personal_study/  
-  - title: "DS School 17th"
+  - title: "DS School 19th"
     url: /ds19/ 
   - title: "Portfolio"
     url: /portfolio/
