@@ -140,7 +140,7 @@ footer:
       #url: "https://www.instagram.com/koomo_the_cat/"
     - label: "Velog"
       icon: "fab fa-vimeo" #모양 비슷한걸로 입력해둠
-      # url: 
+      url: "https://velog.io/@gabesoon"
 
 
 # Reading Files
