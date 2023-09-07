@@ -1,5 +1,5 @@
 ---
-title: "Coding Test"
+title: "Coding Test Study"
 layout: category
 taxonomy: "coding-test"
 entries_layout: grid
