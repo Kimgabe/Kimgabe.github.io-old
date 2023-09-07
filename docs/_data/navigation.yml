@@ -63,3 +63,5 @@ personal_study_sidebar:
         url: /personal_study/review_article/
       - title: "Code Shadowing"
         url: /personal_study/shadowing/
+      - title: "Coding test examples"
+        url: /personal_study/coding-test/
