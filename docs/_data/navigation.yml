@@ -1,4 +1,4 @@
-# main links / È¨ÆäÀÌÁö »ó´Ü¹Ù ¸Ş´º
+# main links / í™ˆí˜ì´ì§€ ìƒë‹¨ë°” ë©”ë‰´
 main:
 #  - title: "Quick-Start Guide"
 #    url: /docs/quick-start-guide/
@@ -18,7 +18,7 @@ main:
   - title: "About"
     url: /about/
 
-# º°°³ collectionº° sidebar ¼³Á¤
+# ë³„ê°œ collectionë³„ sidebar ì„¤ì •
 # ds19 sidebar
 ds19_sidebar:
   - title: Data Science School 19th
