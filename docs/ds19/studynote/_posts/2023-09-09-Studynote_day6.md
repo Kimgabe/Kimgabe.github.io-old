@@ -380,8 +380,6 @@ odd_even_game(user_choice)
 
 ---
 
-<br>
-<br>
 
 ```python
 from datetime import datetime
