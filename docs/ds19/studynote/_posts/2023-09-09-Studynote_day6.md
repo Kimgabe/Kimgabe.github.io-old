@@ -380,6 +380,8 @@ odd_even_game(user_choice)
 - 차량 2부제를 실시하더라도 영업용 차량은 5부제 실시
 
 
+
+
 ```python
 from datetime import datetime
 
