@@ -26,9 +26,9 @@ tags:
   - Loop or Iteration
   - for loop
   - while loop
-
 ---
 
+다양한 연산자, 조건문, 반복문 등 그동안 배운 개념을 응용한 파이썬 문제풀이
 
 # 💡공부한 내용
 
