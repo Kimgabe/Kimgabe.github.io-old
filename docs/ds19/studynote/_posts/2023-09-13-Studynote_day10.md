@@ -4,6 +4,7 @@ title:  "[스터디노트] Day10 파이썬 기초"
 categories: studynote
 toc: true
 highlight: false
+use_math: true
 header:
   teaser: /assets/images/unsplash/study_note.jpg
   overlay_image: /assets/images/unsplash/study_note.jpg
@@ -15,6 +16,8 @@ tags:
   - Exception 클래스
   - Exception Class
 ---
+
+예외처리에 대한 다양한 예제와 활용방법을 공부했습니다.
 
 
 # 💡공부한 내용
