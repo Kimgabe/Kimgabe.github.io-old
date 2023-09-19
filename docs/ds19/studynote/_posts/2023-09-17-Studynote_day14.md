@@ -4,6 +4,7 @@ title:  "[스터디노트] Day14 기초수학"
 categories: studynote
 toc: true
 highlight: false
+use_math : true
 header:
   teaser: /assets/images/unsplash/study_note.jpg
   overlay_image: /assets/images/unsplash/study_note.jpg
@@ -13,6 +14,8 @@ tags:
   - 등비수열
   - Geometric Sequence
 ---
+
+등비수열에 대한 개념과 파이썬으로 등비수열을 구현하는 법을 학습했습니다.
 
 # 💡공부한 내용
 
