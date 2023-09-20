@@ -4,6 +4,7 @@ title:  "[스터디노트] Day17 기초수학 문제풀이"
 categories: studynote
 toc: true
 highlight: false
+use_math : true
 header:
   teaser: /assets/images/unsplash/study_note.jpg
   overlay_image: /assets/images/unsplash/study_note.jpg
@@ -41,6 +42,9 @@ tags:
   - 확률
   - Probability
 ---
+
+그동안 배운 기초수학을 응용한 문제풀이를 학습했습니다.
+
 
 
 # 💡공부한 내용
