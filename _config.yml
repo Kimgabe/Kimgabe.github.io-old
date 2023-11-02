@@ -128,9 +128,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       #url: "https://www.instagram.com/koomo_the_cat/"
-    - label: "Velog"
-      icon: "fab fa-vimeo"
-      url: "https://velog.io/@gabesoon"
+    # - label: "Velog"
+    #   icon: "fab fa-vimeo"
+    #   url: "https://velog.io/@gabesoon"
 
 # Site Footer
 footer:
