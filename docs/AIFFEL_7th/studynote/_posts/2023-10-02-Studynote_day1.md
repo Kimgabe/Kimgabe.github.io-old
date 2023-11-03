@@ -1,6 +1,6 @@
 ---
 layout : single
-title:  "[스터디노트] Day1 파이썬 기초"
+title:  "[스터디노트] Gitub 기초"
 categories: studynote
 toc: true
 highlight: false

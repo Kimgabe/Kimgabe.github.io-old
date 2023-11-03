@@ -5,8 +5,8 @@ main:
   #- auto_categories: True
   - title: "Personal Study"
     url: /personal_study/  
-  #- title: "DS School 19th"
-  #  url: /AIFFEL_7th/ 
+  - title: "AIFFEL_7th"
+    url: /AIFFEL_7th/ 
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -21,7 +21,7 @@ main:
 # 별개 collection별 sidebar 설정
 # AIFFEL_7th sidebar
 AIFFEL_7th_sidebar:
-  - title: Data Science School 19th
+  - title: AIFFEL_7th
     url: /AIFFEL_7th/
   - title: "DS 19th"
     children:

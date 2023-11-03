@@ -38,7 +38,7 @@ docs:
       - title: "Tips & cheat sheet"
         url: "/tips/" 
 
-  - title: "Data Science School_17th" # Main category 2
+  - title: "AIEFFEL_17th" # Main category 2
     children: # Sub-categories
       - title: "Study Notes"          # Sub-category 1
         url: "/study-notes/"

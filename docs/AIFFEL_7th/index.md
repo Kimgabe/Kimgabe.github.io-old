@@ -1,5 +1,5 @@
 ---
-title: "Data Science School 17th"
+title: "AIEFFEL_7th"
 layout: category
 taxonomy: "AIFFEL_7th"
 entries_layout: grid
