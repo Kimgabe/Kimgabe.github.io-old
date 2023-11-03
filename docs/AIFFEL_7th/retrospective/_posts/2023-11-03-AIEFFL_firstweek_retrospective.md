@@ -1,7 +1,7 @@
 ---
 layout : single
-title:  "[스터디노트] Day18 자료구조/알고리즘"
-categories: studynote
+title:  "[주간 회고] AIEFFL 7th 첫주 온보딩 회고"
+categories: retrospective
 toc: true
 highlight: false
 header:
