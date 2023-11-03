@@ -8,7 +8,7 @@ header:
   teaser: /assets/images/unsplash/retrospective.jpg
   overlay_image: /assets/images/unsplash/retrospective.jpg
   overlay_filter: 0.5
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/842ofHC6MaI)"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EC%8A%A4%ED%8B%B0%EC%BB%A4-%EB%A9%94%EB%AA%A8%EA%B0%80-%EC%9E%88%EB%8A%94-%EB%B2%BD-%EC%95%9E-%EB%B2%A4%EC%B9%98%EC%97%90-%EC%95%89%EC%95%84-%EC%9E%88%EB%8A%94-%EB%82%A8%EC%9E%90-JFyZKVIxtq0)"
 tags:
     - retrospective
     - 회고
@@ -16,8 +16,6 @@ tags:
 ---
 
 # 📜 AIEFFL 7th 첫주 회고 📜
-<br>
-<br>
 
 ## 🚦summary : 
 1. 왜 AIEFFL이었나? : 내가 원하는 걸 얻을 수 있는 커리큘럼과 환경이어서
