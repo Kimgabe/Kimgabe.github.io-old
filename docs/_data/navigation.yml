@@ -23,7 +23,7 @@ main:
 AIFFEL_7th_sidebar:
   - title: AIFFEL_7th
     url: /AIFFEL_7th/
-  - title: "DS 19th"
+  - title: "AIFFEL_7th"
     children:
       - title: "Study Note"
         url: /AIFFEL_7th/studynote/
