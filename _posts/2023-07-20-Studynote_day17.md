@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day17 기초수학 문제풀이"
-categories: [ds19_Bootcamp, 기초수학, Study Note]
+categories: [AIFFEL_7th_Bootcamp, 기초수학, Study Note]
 tag: [스터디노트, 문제풀이, 수학알고리즘]
 header :
     teaser : "/assets/img/studynote/studynote_day17.png"

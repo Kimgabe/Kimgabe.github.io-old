@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day24 자료구조/알고리즘"
-categories: [ds19_Bootcamp, 자료구조/알고리즘, Study Note]
+categories: [AIFFEL_7th_Bootcamp, 자료구조/알고리즘, Study Note]
 tag: [스터디노트, 문제풀이, 검색알고리즘, 정렬알고리즘, 재귀]
 header :
     teaser : "/assets/img/studynote/studynote_day24.png"

@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "Kim Gabe's Ds blog"
 title_separator          : "|"
-subtitle                 : Andante Grazioso?Ÿ? # site tagline that appears below site title in masthead
+subtitle                 : Andante Grazioso?ìœƒ? # site tagline that appears below site title in masthead
 name                     : "Kim Gabe"
-description              : "Gabe?˜ ë¸”ë¡œê·¸ì…?‹ˆ?‹¤."
+description              : "Gabe?ì“½ é‡‰ë¶¾ì¤ˆæ´¹ëª„ì—¯?ë•²?ë–."
 url                      : "https://Kimgabe.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : #"Kimgabe/Kimgabe.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -142,7 +142,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       #url: "https://www.instagram.com/koomo_the_cat/"
     - label: "Velog"
-      icon: "fab fa-vimeo" #ëª¨ì–‘ ë¹„ìŠ·?•œê±¸ë¡œ ?…? ¥?•´?‘ 
+      icon: "fab fa-vimeo" #ï§â‘¥ë¼‡ é®ê¾©ë“‚?ë¸³å«„ëªƒì¤ˆ ?ì—¯?ì °?ë¹?ëªº
       url: "https://velog.io/@gabesoon"
 
 
@@ -252,7 +252,7 @@ tag_archive:
   path: /tags/
 #https://github.com/jekyll/jekyll-archives
 
-jekyll-archives: # ì¹´í…Œê³ ë¦¬ ë°? ?…Œê·? ?™œ?„±?™”
+jekyll-archives: # ç§»ëŒ„ë€’æ€¨ì¢Šâ” è«›? ?ë€’æ´¹? ?ì†¢?ê½¦?ì†•
   enabled:
     - categories
     - tags
@@ -263,9 +263,9 @@ jekyll-archives: # ì¹´í…Œê³ ë¦¬ ë°? ?…Œê·? ?™œ?„±?™”
     category: /categories/:name/
     tag: /tags/:name/
 
-# Collections ì¶”ê??
+# Collections ç•°ë¶½??
 collections:
-  ds19_bootcamp: # collection ?´ë¦?:?¬?Š¸?´ë¦¬ì˜¤
+  AIFFEL_7th_bootcamp: # collection ?ì” ç”±?:?ë£·?ë“ƒ?ë¤ƒç”±ÑŠì‚¤
     output: true
     permalink: /:collection/:path/
 
@@ -292,12 +292,12 @@ defaults:
       comments: true
       share: true
       related: true
-      show_date : false # ë¬¸ì„œ?‘?„±?¼ ??™ ?‘?„± | ?¬?Š¤?Œ… ?¼? ì¡°ì ˆê±´ìœ¼ë¡? ?¼?‹¨ false
+      show_date : false # è‡¾ëª„ê½Œ?ì˜‰?ê½¦?ì”ª ?ì˜„?ë£ ?ì˜‰?ê½¦ | ?ë£·?ë’ª?ë˜¿ ?ì”ª?ì˜„ è­°ê³—ì …å«„ëŒì‘æ¿¡? ?ì”ª?ë–’ false
       toc : true
       toc_sticky : true
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
-      # classed : wide # ?¬?Š¤?Œ… ?˜?´ì§? ?„“?´ ?„“ê²? // ê¸°ë³¸ ?˜µ?—°?¸?° ?˜ ?•ˆë¨¹í???„œ ì§ì ‘ CSS?ˆ˜? •?•¨
+      # classed : wide # ?ë£·?ë’ª?ë˜¿ ?ëŸ¹?ì” ï§? ?ê¼»?ì”  ?ê¼»å¯ƒ? // æ¹²ê³•ë‚¯ ?ìƒƒ?ë¿°?ì”¤?ëœ² ?ì˜’ ?ë¸ç™’ë±???ê½Œ ï§ê³¸ì ’ CSS?ë‹”?ì ™?ë¸¿
 
 
 date_format : "%Y-%m-%d"

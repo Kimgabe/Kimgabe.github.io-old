@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day14 기초수학"
-categories: [ds19_Bootcamp, 기초수학, Study Note]
+categories: [AIFFEL_7th_Bootcamp, 기초수학, Study Note]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day14.png"

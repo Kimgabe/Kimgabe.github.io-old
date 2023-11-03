@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day6 파이썬 기초문제 풀이 (연산자, 조건문, 반복문)"
-categories: [ds19_Bootcamp, Python Programming, Study Note]
+categories: [AIFFEL_7th_Bootcamp, Python Programming, Study Note]
 tag: [스터디노트, 문제풀이]
 header :
     teaser : "/assets/img/teaser/studynote_day6.png"

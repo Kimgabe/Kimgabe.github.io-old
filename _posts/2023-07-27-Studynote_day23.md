@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day23 자료구조/알고리즘"
-categories: [ds19_Bootcamp, 자료구조/알고리즘, Study Note]
+categories: [AIFFEL_7th_Bootcamp, 자료구조/알고리즘, Study Note]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day23.png"

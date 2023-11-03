@@ -1,7 +1,7 @@
 ---
 layout : single
 title:  "[스터디노트] Day7 파이썬 기초"
-categories: [ds19_Bootcamp, Python Programming, Study Note]
+categories: [AIFFEL_7th_Bootcamp, Python Programming, Study Note]
 tag: 스터디노트
 header :
     teaser : "/assets/img/studynote/studynote_day7.png"

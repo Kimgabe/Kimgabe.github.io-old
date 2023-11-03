@@ -6,7 +6,7 @@ main:
   - title: "Personal Study"
     url: /personal_study/  
   #- title: "DS School 19th"
-  #  url: /ds19/ 
+  #  url: /AIFFEL_7th/ 
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -19,16 +19,16 @@ main:
     url: /about/
 
 # 별개 collection별 sidebar 설정
-# ds19 sidebar
-ds19_sidebar:
+# AIFFEL_7th sidebar
+AIFFEL_7th_sidebar:
   - title: Data Science School 19th
-    url: /ds19/
+    url: /AIFFEL_7th/
   - title: "DS 19th"
     children:
       - title: "Study Note"
-        url: /ds19/studynote/
+        url: /AIFFEL_7th/studynote/
       - title: "Team Study Note"
-        url: /ds19/teamstudy/
+        url: /AIFFEL_7th/teamstudy/
 
 # Personal Study sidebar
 personal_study_sidebar:
