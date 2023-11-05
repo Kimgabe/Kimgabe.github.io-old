@@ -29,6 +29,8 @@ AIFFEL_7th_sidebar:
         url: /AIFFEL_7th/studynote/
       - title: "Team Study Note"
         url: /AIFFEL_7th/teamstudy/
+      - title: "Retrospective & Review"
+        url: /AIFFEL_7th/retrospective/
 
 # Personal Study sidebar
 personal_study_sidebar:
