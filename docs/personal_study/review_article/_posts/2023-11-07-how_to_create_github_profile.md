@@ -12,9 +12,7 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---
 
-[![GitHub 프로필로 이력서 만들기 | #해커그라운드](http://img.youtube.com/vi/Pe28SY8Cn5A/0.jpg)](https://www.youtube.com/watch?v=Pe28SY8Cn5A)
-
-<br>
+Hackers Ground에서 진행한 GitHub로 나만의 프로필 및 이력서 만들기에 대한 영상을 보고 내용을 정리+Review 했습니다.
 
 ## 🚦Summary
 - 해당 포스팅은 [Hackers Ground](https://www.youtube.com/@hackersground-kr) 라는 채널에서 소개한 GitHub 프로필로 이력서 만들기 라는 [영상](https://www.youtube.com/live/Pe28SY8Cn5A?si=JOSFY8vPftMzYz0I) 을 보고 내용을 정리한 것을 소개합니다.
@@ -78,3 +76,13 @@ header:
 
 #### GitHub 프로필 생성기 사용법
 ![](https://i.imgur.com/5KdAQtH.png)
+
+### Review
+- 마크다운은 현실적으로 개발자/AI를 다루는사람들이 가장 많이 다루는 문서작성 툴중 하나일 것이다.
+- 그런 면에서 마크다운을 활용해 문서를 다양하게 꾸미고 커스터마이징하는 방법은 확실히 배워둘 필요가 있다.
+- GitHub는 실무에선 협업툴이지만 취업준비를 하는 입장에선 사실 개인 코드저장소와 같은 곳이 되는 곳이다.
+- 스스로 하는 포트폴리오, 공부한 내용등 다양한 코드를 저장해둘 수 있다. 
+- 그렇기에 오히려 내 프로필과 이력서를 보여주는 공간으로서 적합한 것 같다.
+- 하지만 이력서, 프로필을 작성하는것에는 많은 고민이 든다. (이왕이면 잘 보여야 하고 fancy해야 하니까!)
+- 그런면에서 GitHub Profile Readme Generator는 상대적으로 기본적인 틀을 손쉽게 만들 수 있어서 좋은 것 같다.
+- 차후에 포폴이 좀 더 쌓이면 이를 사용해서 GitHub 이력서를 수정해볼 생각이다.
