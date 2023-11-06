@@ -2,7 +2,7 @@
 layout: single
 title:  "[Review] 자동으로 나만의 GitHub 프로필과 이력서를 만들 수 있다?! (feat.GitHub Profile Readme Generator)"
 categories: review_article
-tag: [GitHub, Resume, automated, Profile, README, career]
+tag: [GitHub, Resume, automated, Profile, README, career, 이력서, 깃허브, 프로필, 자동작성, GitHub Prifile Readme Generator]
 toc: true
 highlight: false
 header:
