@@ -5,8 +5,8 @@ main:
   #- auto_categories: True
   - title: "Personal Study"
     url: /personal_study/  
-  - title: "AIFFEL_7th"
-    url: /AIFFEL_7th/ 
+  # - title: "AIFFEL_7th"
+  #   url: /AIFFEL_7th/ 
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -20,17 +20,17 @@ main:
 
 # 별개 collection별 sidebar 설정
 # AIFFEL_7th sidebar
-AIFFEL_7th_sidebar:
-  - title: AIFFEL_7th
-    url: /AIFFEL_7th/
-  - title: "AIFFEL_7th"
-    children:
-      - title: "Study Note"
-        url: /AIFFEL_7th/studynote/
-      - title: "Team Study Note"
-        url: /AIFFEL_7th/teamstudy/
-      - title: "Retrospective & Review"
-        url: /AIFFEL_7th/retrospective/
+# AIFFEL_7th_sidebar:
+#   - title: AIFFEL_7th
+#     url: /AIFFEL_7th/
+#   - title: "AIFFEL_7th"
+#     children:
+#       - title: "Study Note"
+#         url: /AIFFEL_7th/studynote/
+#       - title: "Team Study Note"
+#         url: /AIFFEL_7th/teamstudy/
+#       - title: "Retrospective & Review"
+#         url: /AIFFEL_7th/retrospective/
 
 # Personal Study sidebar
 personal_study_sidebar:
