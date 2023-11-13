@@ -47,7 +47,7 @@ personal_study_sidebar:
       - title: "Pre-processing"
         url: /personal_study/preprocessing/
       - title: "Visualization"
-      #   url: /personal_study/visualization/
+        url: /personal_study/visualization/
       # - title: "ML(Machine Learning)"
       #   url: /personal_study/machine_learning/
       # - title: "DL(Deep Learning)"
@@ -66,5 +66,7 @@ personal_study_sidebar:
         url: /personal_study/review_article/
       - title: "Code Shadowing"
         url: /personal_study/shadowing/
+      - title: "Code Snippets"
+        url: /personal_study/code-snippet/
       - title: "Coding Test Study"
         url: /personal_study/coding-test/
