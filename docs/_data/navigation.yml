@@ -54,8 +54,8 @@ personal_study_sidebar:
       #   url: /personal_study/deep_learning/
       # - title: "SQL"
       #   url: /personal_study/sql/
-      # - title: "Git"
-      #   url: /personal_study/git/
+      - title: "Git"
+        url: /personal_study/git/
       # - title: "Tableau"
       #   url: /personal_study/tableau/
       # - title: "Math & Statistics"
