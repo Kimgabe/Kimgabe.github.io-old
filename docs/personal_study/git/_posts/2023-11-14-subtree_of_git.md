@@ -17,7 +17,7 @@ header:
 	- 정확히는 기존 Repository 를 하나의 Repository 로 옮기고, 기존 Repository 를 삭제하는 방식입니다.
 	- 그럼에도 불구하고! 과거에 commit한 나의 잔디는 지킬 수 있다는 장점이 있습니다. 😀
 	  
-- 이 작업은 [GitHub](GitHub.md) 의 Subtree 라는 개념을 사용한 방법 입니다.
+- 이 작업은 Git 의 Subtree 라는 개념을 사용한 방법 입니다.
 
 
 ## 📌Intro
@@ -76,7 +76,9 @@ header:
 ---
 ### Repository 합치기 (1) - 여러 Repository를 저장할 Repository를 생성
 > 💡 물론 기존의 Repository에 여러 Repository를 저장하는 것도 가능합니다.
+> 
 >  기존에 보유한 Repository에 바로 여러 Repository를 옮기는 것은 Repository 합치기(2) 부터 작업하시면 됩니다.
+>  
 >  💁 Git 설치가 필요하다면 아래의 링크를 통해 다운받을 수 있습니다. 👉 [Git 다운로드](https://git-scm.com/download/win)
 ---
 
