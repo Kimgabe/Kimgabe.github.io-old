@@ -157,7 +157,9 @@ $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_bran
 - <span style="background:#ff4d4f">이제 Subtree로 특정 Repository 에 옮기고난 원본 repository 를 삭제할 수 있습니다.</span>
 - 이미 해당 repository 에 대한 모든 정보가 subtree로 옮겨졌기 때문에 기존 <span style="background:#ff4d4f">repository 를 삭제해도, 과거의 모든 commit을 유지</span>할 수 있습니다.
 
-## 어떻게 이런 작업이 가능한가? (fea.subtree)
+---
+---
+## 어떻게 이런 작업이 가능한가? (feat. subtree)
 - 이제 모든 업이 잘 이뤄지고 원하는대로 구현이 되었으니, 원리를 살펴봅니다.
 - 위 작업에는 git의 subtree라는 개념이 사용되었습니다. 
 - 이 subtree라는 것이 무엇인지, 어떻게 위와 같은 작업이 이뤄지는지, 왜 기존 commit이 유지되는지를 정리합니다.
