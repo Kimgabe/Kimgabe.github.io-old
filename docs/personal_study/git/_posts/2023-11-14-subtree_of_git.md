@@ -77,9 +77,7 @@ header:
 ### Repository 합치기 (1) - 여러 Repository를 저장할 Repository를 생성
 > 💡 물론 기존의 Repository에 여러 Repository를 저장하는 것도 가능합니다.
 >  기존에 보유한 Repository에 바로 여러 Repository를 옮기는 것은 Repository 합치기(2) 부터 작업하시면 됩니다.
-
-
-- Git 설치가 필요하다면 아래의 링크를 통해 다운받을 수 있습니다. 👉 [Git 다운로드](https://git-scm.com/download/win)
+>  💁 Git 설치가 필요하다면 아래의 링크를 통해 다운받을 수 있습니다. 👉 [Git 다운로드](https://git-scm.com/download/win)
 ---
 
 #### 1) 새로운 Repository 생성
