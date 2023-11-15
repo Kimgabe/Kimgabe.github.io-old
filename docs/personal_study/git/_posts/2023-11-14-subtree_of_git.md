@@ -46,13 +46,13 @@ tags:
 
 
 ### 🔭전체 과정 미리보기
-1) 잡다한 repository를 관리할 repository를 새로 만든다.
-   - 정리할 폴더가 이미 있다면 이 단계를 스킵하고 2) 부터 진행하시면 됩니다.
-2) 해당 repository를 내 로컬 pc에 clone한다.
-3) clone한 repository에 git commit을 한다.
-4) 이후 subtree 명령어를 사용해 관리하고 싶은 repository들을 하나의 repository로 이동시킨다.
+1. 잡다한 repository를 관리할 repository를 새로 만든다.
+   - 정리할 폴더가 이미 있다면 이 단계를 스킵하고 2번 부터 진행하시면 됩니다.
+2. 해당 repository를 내 로컬 pc에 clone한다.
+3.  clone한 repository에 git commit을 한다.
+4. 이후 subtree 명령어를 사용해 관리하고 싶은 repository들을 하나의 repository로 이동시킨다.
    - 엄밀히는 해당 'repository의 subtree를 관리할 repository에 생성시킨다.'  가 더 맞는 표현이긴 합니다.
-5) 기존의 repository를 삭제한다.
+5. 기존의 repository를 삭제한다.
 
 ---
 ### Repository 합치기 (1) - 여러 Repository를 저장할 Repository를 를 생성
