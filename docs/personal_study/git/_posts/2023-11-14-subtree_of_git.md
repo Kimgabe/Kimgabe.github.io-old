@@ -34,8 +34,11 @@ header:
 - 하지만 언제 또 이 동료들과 협업을 할지 모르니 fork한 것들을 지우고 싶지는 않습니다. 
 - 자료관리의 기본은 역시 동일 카테고리로 묶는 것인데 깃허브에서는 각각의 Repository 가 하나의 프로그램을 이루는 경우가 많다보니 이것이 쉽지 않습니다.
 - 하지만 Git의 Subtree 개념을 사용한다면 이 작업이 어느정도 구현 가능합니다.
-- ✔️ 제 목표는 제가 <span style="background:#ff4d4f">AIFFEL을 들으면서 Quest를 하는 `AIFFEL_Online_Quest` repository 안에 fork 해온 동료들의 Repository 를 옮기는 것</span>입니다.
-	- 하지만, 이전에 동료들과 했던 소중한 제 <span style="background:#ff4d4f">잔디를 지우고싶지는 않습니다.</span>
+
+
+✔️ 제 목표는 
+- 제가 <span style="background:#ff4d4f">AIFFEL을 들으면서 Quest를 하는 `AIFFEL_Online_Quest` repository 안에 fork 해온 동료들의 Repository 를 옮기는 것</span>입니다.
+- 하지만, 이전에 동료들과 했던 소중한 제 <span style="background:#ff4d4f">잔디를 지우고싶지는 않습니다.</span>
 - 이걸 가능하게 해주는게 Git의 subtree라는 개념입니다. subtree의 개념에 대해서는 포스팅 맨 마지막에 정리하도록 하겠습니다.
 
 ---
@@ -56,6 +59,12 @@ header:
    - 엄밀히는 해당 'repository의 subtree를 관리할 repository에 생성시킨다.'  가 더 맞는 표현이긴 합니다.
 5. 기존의 repository를 삭제한다.
 
+
+- 변경된 Repository 의 구조는 아래 이미지와 같습니다.
+![](https://i.imgur.com/qD66ri7.png)
+
+
+
 ---
 ### Repository 합치기 (1) - 여러 Repository를 저장할 Repository를 를 생성
 > 💡 물론 기존의 Repository에 여러 Repository를 저장하는 것도 가능합니다.
@@ -66,17 +75,19 @@ header:
 ---
 
 #### 1) 새로운 Repository 생성
-- 개별 Github의 프로필에서 우측의 이미지 선택후 <span style="background:#d2cbff">Your Repositories </span> 또는 좌측 상단에 있는 <font color="#8064a2">Repositories</font>를 클릭해 개인 Repository 로 이동 후 <span style="background:#d2cbff">New</span> 를 눌러 새로운 Repository 를 생성합니다.
+- 개별 Github의 프로필에서 우측의 이미지 선택후 <span style="background:#ff4d4f">Your Repositories </span> 또는 좌측 상단에 있는 <font color="#8064a2">Repositories</font>를 클릭해 개인 Repository 로 이동 후 <span style="background:#ff4d4f">New</span> 를 눌러 새로운 Repository 를 생성합니다.
 ![](https://i.imgur.com/TFc9ZQa.png)
 
 
 - 이제 적절한 Repository 이름을 만들고 적당히 설명도 작성해줍니다. 저는 분류하기 애매한 잡다한 코드들을 모아두는 곳이란 의미로 "MiscellaneousRepos" 라고 이름지어봤습니다.
 - 기존에 공부하기 위해 fork했던 repository 나, 굳이 메인에 보일 필요 없는 모든 repository 들을 이곳에 옮길 생각입니다.
+  
 ![](https://i.imgur.com/mvcvqls.png)
 
-- 다음으로는 생성한 Repository를 내 Local로 Clone 합니다.
+- 다음으로는 생성한 Repository를 <span style="background:#ff4d4f">내 Local로 Clone</span> 합니다.
 - 일단 간단하게 README.md 파일 하나 생성해준 뒤, Clone할 Repository 의 주소를 복사합니다.
-	- 다음 단계의 로컬 git에서 첫번째로 할 작업이 commit 인데, 이를위해 미리 README.md를 하나 만들어 두는게 편합니다.
+  💡다음 단계의 로컬 git에서 첫번째로 할 작업이 commit 인데, 이를위해 미리 README.md를 하나 만들어 두는게 편합니다.
+  별도의 수정없이 `git add .` 한 후에 commit을 해도 되지만, 종종 '변동사항이 없어 commit이 불가능하다'고 뜨는 경우가 있어서 미리 생성하는게 더 편리합니다.
 
 ![](https://i.imgur.com/19wUB1e.png)
 
@@ -85,23 +96,26 @@ header:
 - git 만 컴퓨터에 설치한 상태라면 다음의 단계를 따라 작업합니다.
   
 1) Clone할 레포지토리를 저장할 폴더로 이동 또는 생성한다.
-2) 해당 폴더를 우클릭해 <span style="background:#d2cbff">Open Git Bash here</span> 를 클릭해 해당 폴더를 경로로 하는 git command 창을 엽니다.
+2) 해당 폴더를 우클릭해 <span style="background:#ff4d4f">Open Git Bash here 를 클릭</span>해 해당 폴더를 경로로 하는 git command 창을 엽니다.
+
    ![](https://i.imgur.com/XazNTEa.png)
 
-3) 그럼 아래의 이미지와 같이 git command 창이 열리며 해당 경로로 접속된걸 확인할 수 있습니다.
+3) 그럼 아래의 이미지와 같이 git command 창이 열리며 해당 경로로 접속된 걸 확인할 수 있습니다.
+   
    ![](https://i.imgur.com/KQCbixv.png)
 
 4) 이제 아래의 코드를 각각 입력해 줍니다.
+   
    ![](https://i.imgur.com/j66yyLI.png)
 - git init으로 저장소를 생성해줍니다. (저의 경우 해당 폴더에 이미 다른 레포지토리를 클론 해둔 상태라 `Reinitialized existing Git repository in~` 이란 메시지가 뜹니다. 
 - 이후 `git clone + 복사한 repository 주소.git` 를 입력해 clone합니다.
-- 정상적으로 clone이 되었다면 위의 이미지와 같은 메시지들이 출력됩니다.
+- 정상적으로 clone이 되었다면 위의 이미지와 같은 메시지들이 출력 됩니다.
   
 5)  이제 clone된 repository에 에 수정작업을 하고 commit을 해줍니다.
-   - clone한 repository에 아무작업없이 다른 repository를 합치는 작업을 하면 git은 변동사항이 없다고 판단합니다.
+   - clone한 repository에 아무작업 없이 다른 repository를 합치는 작업을 하면 git은 변동사항이 없다고 판단합니다.
    - 이 경우 `Working tree has modification. Cannot add` 라는 에러가 발생합니다.
    - 이를 방지하기 위해 적어도 1번 이상의 commit을 해야 합니다.
-   - 미리 생성해둔 README.md를 열어서 문구를 조금 수정해도 되고, 아무런 작업을 하지 않고도 아래의 코드를 입력해서 commit을 할 수 있습니다.
+   - 미리 생성해둔 README.md를 열어서 문구를 조금 수정해도 되고, 아무런 작업을 하지 않고도 아래의 코드를 입력해서 commit을 할 수 있습니다. (commit 불가하다고 나오면 README를 간단하게 수정하고 다시 시도해주세요🫡)
    ```
    $ git add .
    $ git commit -m "message"
@@ -118,25 +132,30 @@ $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_bran
   
   > 💡이때, 옮기려고 하는 repository 의 branch가 main 또는 master 경우에 따라서는 user가 지정한 별도의 이름일 수도 있으니 이를 잘 확인해야 합니다.
 	- 저같은 경우 SQL용으로 연동해놓은 repository의 경우 branch이름이 2개의 branch가 있었고 이중 하나는 SQL이었습니다.
+	  
 	  ![](https://i.imgur.com/MBgtzpb.png)
 
 - 정상적으로 subtree가 생성되었다면 아래와 같은 메시지가 출력되어야 합니다.
+  
   ![](https://i.imgur.com/YMoHXg5.png)
 
 ### Repository 합치기 (3) - Subtree로 옮긴 Repository에 push하기
 - 이제 Repository를 합치기 위한 최종 작업입니다.
-- 이 작업까지 완료를해야 정상적으로 Repository 합치기 작업이 완료 됩니다.
+- 이 작업까지 완료를 해야 정상적으로 Repository 합치기 작업이 완료 됩니다.
 - (1)~(2) 까지는 여러 Repository를 옮기기 위한 공간을 만들고, 그 공간안에 옮기는 작업을 했습니다.
-- 이제는 원격저장소(GitHub)에 push를 함으로써 git에서 subtree로 여러 repository를 옮긴 것들을 push해서 업데이트 해줘야 합니다.
+- 이제는 원격저장소(GitHub)에 push를 함으로써 <span style="background:#ff4d4f">git에서 subtree로 여러 repository를 옮긴 것들을 push해서 업데이트</span> 해줘야 합니다.
 - `git push origin HEAD:main --force` 코드를 git command 창에 입력해주면 됩니다.
 	- 아래와 같은 결과가 뜬다면 성공적으로 작업이 완료된 것입니다.
+	  
 	  ![](https://i.imgur.com/Zk5hl4u.png)
+	  
 - 이후 실제 저의 [GitHub](GitHub.md) 으로 이동해서 subtree를 생성한 Repository에 가보면 아래와 같이 Repository들이 성공적으로 옮겨진 것을 알 수 있습니다.
+  
 ![](https://i.imgur.com/T3arQo8.png)
 
 ### Repository 합치기 (4) - 옮긴 Repository 원본 삭제하기
-- 이제 Subtree로 특정 Repository 에 옮기고난 원본 repository 를 삭제할 수 있습니다.
-- 이미 해당 repository 에 대한 모든 정보가 subtree로 옮겨졌기 때문에 기존 repository 를 삭제해도, 과거의 모든 commit을 유지할 수 있습니다.
+- <span style="background:#ff4d4f">이제 Subtree로 특정 Repository 에 옮기고난 원본 repository 를 삭제할 수 있습니다.</span>
+- 이미 해당 repository 에 대한 모든 정보가 subtree로 옮겨졌기 때문에 기존 <span style="background:#ff4d4f">repository 를 삭제해도, 과거의 모든 commit을 유지</span>할 수 있습니다.
 
 ## 어떻게 이런 작업이 가능한가? (fea.subtree)
 - 이제 모든 업이 잘 이뤄지고 원하는대로 구현이 되었으니, 원리를 살펴봅니다.
@@ -144,12 +163,12 @@ $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_bran
 - 이 subtree라는 것이 무엇인지, 어떻게 위와 같은 작업이 이뤄지는지, 왜 기존 commit이 유지되는지를 정리합니다.
 
 ##### subtree란?
-- subtre는 Git에서 사용하는 개념으로, 한 repository 안에서 다른 repository로 sub-directory 형태로 통합할 수 있게 해주는 기능입니다.
-- 이는 여러 프로젝트나 라이브러리를 하나의 repository 에서 관리할 수 있게 하고, sub-directory 는 독립적인 repository 로서의 특징을 그대로 유지하는 특성을 가지고 있습니다.
+- subtre는 Git에서 사용하는 개념으로, <span style="background:#ff4d4f">한 repository 안에서 다른 repository로 sub-directory 형태로 통합할 수 있게 해주는 기능</span>입니다.
+- 이는 여러 프로젝트나 라이브러리를 하나의 repository 에서 관리할 수 있게 하고, sub-directory 는 독립적인 repository 로써 본연의 특징을 그대로 유지하는 특성을 가지고 있습니다.
 
 ##### 원래 subtree는 어떨때 쓰는걸까?
 1) 분리된 프로젝트 관리
-   - 서로 다른 프로젝트를 하나의 repository 에서 관리할 수 있기 때문에 각 프로젝트간 의존성 관리 및 코드 공유가 용이합니다.
+   - 서로 다른 프로젝트를 하나의 repository 에서 관리할 수 있기 때문에 각 프로젝트 간 의존성 관리 및 코드 공유가 용이합니다.
 
 2) 독립적인 개발 가능
    - 각 sub-directory 는 독립적인 개발 흐름을 유지할 수 있으므로, 큰 프로젝트 내에서 작은 부분들을 개별적으로 관리할 수 있게 해줍니다.
