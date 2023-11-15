@@ -5,10 +5,10 @@ categories: git
 toc: true
 highlight: false
 header: /assets/images/unsplash/git.jpg
-teaser: /assets/images/unsplash/git.jpg
-overlay_image: /assets/images/unsplash/git.jpg
-overlay_filter: 0.5
-caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-bunch-of-words-on-it-EUzk9BIEq6M)"
+   teaser: /assets/images/unsplash/git.jpg
+   overlay_image: /assets/images/unsplash/git.jpg
+   overlay_filter: 0.5
+   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-bunch-of-words-on-it-EUzk9BIEq6M)"
 tags:
 ---
 ## 🚦Summary
