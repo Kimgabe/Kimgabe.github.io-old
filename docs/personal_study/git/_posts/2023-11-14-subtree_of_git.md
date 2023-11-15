@@ -1,10 +1,10 @@
 ---
 layout: single
-title: '"[GitHub] 여러개의 레포지토리를 하나의 레포지토리에서 관리해보자(feat.subtree)"'
+title: '[GitHub] "여러개의 레포지토리를 하나의 레포지토리에서 관리해보자!" (feat.subtree)'
 categories: git
 toc: true
 highlight: false
-header: 
+header: /assets/images/unsplash/git.jpg
 teaser: /assets/images/unsplash/git.jpg
 overlay_image: /assets/images/unsplash/git.jpg
 overlay_filter: 0.5
