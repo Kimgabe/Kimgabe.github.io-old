@@ -4,12 +4,13 @@ title: '[GitHub] "여러개의 레포지토리를 하나의 레포지토리에�
 categories: git
 toc: true
 highlight: false
-header: /assets/images/unsplash/git.jpg
-   teaser: /assets/images/unsplash/git.jpg
-   overlay_image: /assets/images/unsplash/git.jpg
-   overlay_filter: 0.5
+header: 
+   teaser: /assets/images/unsplash/git.jpg   
+   overlay_image: /assets/images/unsplash/git.jpg   
+   overlay_filter: 0.5   
    caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-bunch-of-words-on-it-EUzk9BIEq6M)"
-tags:
+---
+
 ---
 ## 🚦Summary
 - 이 과정을 거치면 기존에 보유한 여러 Repository를 하나의 Repository 아래에 두어 정리하고 관리할 수 있습니다.
@@ -33,8 +34,8 @@ tags:
 - 하지만 언제 또 이 동료들과 협업을 할지 모르니 fork한 것들을 지우고 싶지는 않습니다. 
 - 자료관리의 기본은 역시 동일 카테고리로 묶는 것인데 깃허브에서는 각각의 Repository 가 하나의 프로그램을 이루는 경우가 많다보니 이것이 쉽지 않습니다.
 - 하지만 Git의 Subtree 개념을 사용한다면 이 작업이 어느정도 구현 가능합니다.
-- ✔️ 제 목표는 제가 <span style="background:#d2cbff">AIFFEL을 들으면서 Quest를 하는 `AIFFEL_Online_Quest` repository 안에 fork 해온 동료들의 Repository 를 옮기는 것</span>입니다.
-	- 하지만, 이전에 동료들과 했던 <span style="background:#d2cbff">소중한 제 잔디를 지우고싶지는 않습니다.</span>
+- ✔️ 제 목표는 제가 <span style="background:#ff4d4f">AIFFEL을 들으면서 Quest를 하는 `AIFFEL_Online_Quest` repository 안에 fork 해온 동료들의 Repository 를 옮기는 것</span>입니다.
+	- 하지만, 이전에 동료들과 했던 소중한 제 <span style="background:#ff4d4f">잔디를 지우고싶지는 않습니다.</span>
 - 이걸 가능하게 해주는게 Git의 subtree라는 개념입니다. subtree의 개념에 대해서는 포스팅 맨 마지막에 정리하도록 하겠습니다.
 
 ---
@@ -43,6 +44,7 @@ tags:
 - 로컬 pc(개인 컴퓨터)에 git이 설치가 되어 있어야 합니다.
 - 그리고 git의 명령어를 어느정도 사용할 줄 알아야 합니다. (하지만 필요한 명령어는 모두 여기에서 알려드립니다!)
 - 왕초보인 저도 하나씩 따라하다보니 가능했습니다. 모두가 가능할거라 생각합니다 😀
+---
 
 
 ### 🔭전체 과정 미리보기
