@@ -183,21 +183,27 @@ $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_bran
 
 ---
 
-
 ## 🤔 어떻게 이런 작업이 가능한가? (feat. subtree)
+
+<details>
+<summary> 🔍 상세내용 살펴보기 </summary>
+<div markdown="1">
+
+
 - 이제 모든 작업이 잘 이뤄지고 원하는대로 구현이 되었으니, 원리를 살펴봅니다.
   
 - 위 작업에는 git의 subtree라는 개념이 사용되었습니다. 
   
 - 이 subtree라는 것이 무엇인지, 어떻게 위와 같은 작업이 이뤄지는지, 왜 기존 commit이 유지되는 지를 정리합니다.
 
-### subtree란?
+✔️ subtree란?
 
 - subtre는 Git에서 사용하는 개념으로, <span style="background:#ff4d4f">한 repository 안에서 다른 repository로 sub-directory 형태로 통합할 수 있게 해주는 기능</span>입니다.
   
 - 이는 여러 프로젝트나 라이브러리를 하나의 repository 에서 관리할 수 있게 하고, sub-directory 는 독립적인 repository 로써 본연의 특징을 그대로 유지하는 특성을 가지고 있습니다.
 
-### 원래 subtree는 어떨때 쓰는걸까?
+✔️  원래 subtree는 어떨때 쓰는걸까?
+
 1) 분리된 프로젝트 관리
    - 서로 다른 프로젝트를 하나의 repository 에서 관리할 수 있기 때문에 각 프로젝트 간 의존성 관리 및 코드 공유가 용이합니다.
 
@@ -206,14 +212,14 @@ $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_bran
 
 ✔️ [git 공식문서](https://git-memo.readthedocs.io/en/latest/subtree.html) 의 내용을 보면 subtree에 대해 더 다양한 정보를 확인할 수 있습니다.
 
-### subtree로 옮긴후 기존 repository 를 삭제해도 기록이 남는 이유?
+✔️ subtree로 옮긴후 기존 repository 를 삭제해도 기록이 남는 이유?
 - subtree 를 할때 기존 repository 의 commit 내역들도 모두 함께 복사가 됩니다.
   
 - 따라서 원본 repository 를 삭제해도 통합된 repository 에 남아있는 commit 기록으로 인해 과거의 기록이 유지됩니다.
   
 - 또한 이렇게 생성된 subtree는 자체적으로 '독립된 repository ' 이기 때문에 원본 repository 의 삭제나 commit등에 영향을 받지 않습니다.
 
-### 그렇다면 branch를 새로 만들어서 작업하는것과 subtree는 뭐가 다른가?!
+✔️ 그렇다면 branch를 새로 만들어서 작업하는것과 subtree는 뭐가 다른가?!
 - 개념적으로 branch를 새로만드는 것과 기존 repository 를 subtree로 작업하는 것은 다르며 그 목적도 다릅니다.
 
 1) Branch 
@@ -233,3 +239,6 @@ $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_bran
    - 또한 기존 repository 와 subtree한 repository 는 별도의 개발 흐름을 가질 수 있습니다.
 
 - 즉, branch는 동일한 repository  내에서 다양한 개발 라인을 관리하는 데 사용되며, subtree는 서로 다른 repository 들을 하나의 repository  안에서 관리하는 데 사용됩니다.
+
+</div>
+</details>
