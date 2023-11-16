@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '[파이썬 기초] 둘 다 그냥 and 조건 아니었어?! :  "&" 와 "and" 연산자 뜯어보기'
+title: '[파이썬 뜯어보기] 둘 다 그냥 and 조건 아니었어?! :  "&" 와 "and" 연산자 뜯어보기'
 categories:
   - python
 tags:
