@@ -235,7 +235,7 @@ result = a & b  # 이진수로 100 & 101 = 100, 결과는 4가 됩니다.
 
 
 ## Reference
-https://www.geeksforgeeks.org/difference-between-and-and-in-python/
-https://byjus.com/gate/difference-between-and-and-in-python/
-https://stackoverflow.com/questions/22646463/and-boolean-vs-bitwise-why-difference-in-behavior-with-lists-vs-nump
-https://docs.python.org/ko/3/reference/expressions.html?highlight=%EB%B9%84%EA%B5%90
+[Geek for Geeks : "Difference between ‘and’ and ‘&’ in Python"](https://www.geeksforgeeks.org/difference-between-and-and-in-python/)
+[Byjus : "Difference Between ‘and’ and ‘&’ in Python" : ](https://byjus.com/gate/difference-between-and-and-in-python/)
+[Stackoverflow : "Why difference in behavior with lists vs numpy arrays?" - 'and' (boolean) vs '&' (bitwise) ](https://stackoverflow.com/questions/22646463/and-boolean-vs-bitwise-why-difference-in-behavior-with-lists-vs-nump)
+[Python Doc : 표현식 ](https://docs.python.org/ko/3/reference/expressions.html?highlight=%EB%B9%84%EA%B5%90)
