@@ -147,13 +147,11 @@ header:
 ```bash
 $ git subtree add --prefix=옮길repo이름 옮길repo주소 옮길_repo의_branch명
 ```
-- 현재 Repository에 합치고자 하는 모든 repository에 대해 위 코드를 사용해 1줄씩 입력해주면 됩니다.
+- 현재 Repository에 합치고자 하는 모든 repository에 대해 위 코드를 사용해 1줄 씩 입력해주면 됩니다.
   
   > 💡이때, 옮기려고 하는 repository 의 branch가 main 또는 master 경우에 따라서는 user가 지정한 별도의 이름일 수도 있으니 이를 잘 확인해야 합니다.
-	- 저같은 경우 SQL용으로 연동해놓은 repository의 경우 branch이름이 2개의 branch가 있었고 이중 하나는 SQL이었습니다.
+	- 저 같은 경우 SQL용으로 연동 해 놓은 repository의 경우 branch이름이 2개의 branch가 있었고 이중 하나는 SQL이었습니다.
 
-
-	  ![](https://i.imgur.com/MBgtzpb.png)
 
 - 정상적으로 subtree가 생성되었다면 아래와 같은 메시지가 출력 되어야 합니다.
   
