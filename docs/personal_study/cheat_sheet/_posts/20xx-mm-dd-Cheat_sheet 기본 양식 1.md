@@ -1,19 +1,22 @@
 ---
----
----
 layout: single
-title: '[Cheat Sheet] "코드 한줄로 EDA 해서 데이터 빠르게 훑어볼 수 있는 방법이 있다면..?!'
-categories: git
+title: '[Cheat Sheet] "코드 한줄로 EDA를 하는 도구가 있다면?!"'
+categories:
+  - cheat-sheet
+tags:
+  - cheat-sheet
+  - EDA
+  - ydata-profiling
+  - 데이터분석
+  - 꿀팁
 toc: true
 highlight: false
 header: 
-   teaser: /assets/images/unsplash/cheat_sheet.jpg
-   overlay_image: /assets/images/unsplash/cheat_sheet.jpg
-   overlay_filter: 0.5   
-   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-bunch-of-words-on-it-EUzk9BIEq6M)"
-
+teaser: /assets/images/unsplash/cheat_sheet.jpg
+overlay_image: /assets/images/unsplash/cheat_sheet.jpg
+overlay_filter: 0.5
+caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 ---
-
 ## 🚦 Summary
 - 이번 포스팅에서는 데이터 분석 및 AI모델링의 가장 기본적 단계인 EDA를 손쉽게 하기 위한 도구를 소개합니다.
 - 샘플 데이터로는 seaborn의 대표적 예제데이터인 planets.csv 파일을 사용합니다.
