@@ -11,7 +11,6 @@ header:
    overlay_filter: 0.5   
    caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-bunch-of-words-on-it-EUzk9BIEq6M)"
 
-
 <head>
   <style>
     table.dataframe {
