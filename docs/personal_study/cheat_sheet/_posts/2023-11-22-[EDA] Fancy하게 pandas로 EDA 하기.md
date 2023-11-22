@@ -1,5 +1,6 @@
 ---
 ---
+---
 layout: single
 title: '[Cheat Sheet] "코드 한줄로 EDA 해서 데이터 빠르게 훑어볼 수 있는 방법이 있다면..?!'
 categories: git
@@ -10,6 +11,15 @@ header:
    overlay_image: /assets/images/unsplash/cheat_sheet.jpg
    overlay_filter: 0.5   
    caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-bunch-of-words-on-it-EUzk9BIEq6M)"
+
+---
+
+## 🚦 Summary
+- 이번 포스팅에서는 데이터 분석 및 AI모델링의 가장 기본적 단계인 EDA를 손쉽게 하기 위한 도구를 소개합니다.
+- 샘플 데이터로는 seaborn의 대표적 예제데이터인 planets.csv 파일을 사용합니다.
+- 이 라이브러리를 사용하면 수십줄에 달하는 EDA 코드를 딱 1줄의 코드로 구현할 수 있습니다.
+- 전통적인 EDA 방법과의 비교를 위해 실제 데이터를 불러와서 EDA 하는 코드를 직접 작성했습니다.
+- 대용량의 파일에 대해서는 리포트 생성에 다소 많은 시간이 필요하지만, 간단하게 데이터를 살펴보고 분석 방향 및 데이터 전처리 방향을 설정하기에 유용한 도구라 생각합니다.
 
 <head>
   <style>
@@ -83,17 +93,7 @@ header:
 </head>
 
 
-
-## 🚦 Summary
-- 이번 포스팅에서는 데이터 분석 및 AI모델링의 가장 기본적 단계인 EDA를 손쉽게 하기 위한 도구를 소개합니다.
-- 샘플 데이터로는 seaborn의 대표적 예제데이터인 planets.csv 파일을 사용합니다.
-- 이 라이브러리를 사용하면 수십줄에 달하는 EDA 코드를 딱 1줄의 코드로 구현할 수 있습니다.
-- 전통적인 EDA 방법과의 비교를 위해 실제 데이터를 불러와서 EDA 하는 코드를 직접 작성했습니다.
-- 대용량의 파일에 대해서는 리포트 생성에 다소 많은 시간이 필요하지만, 간단하게 데이터를 살펴보고 분석 방향 및 데이터 전처리 방향을 설정하기에 유용한 도구라 생각합니다.
-
 ---
-
-
 ## 📌Intro
 
 
