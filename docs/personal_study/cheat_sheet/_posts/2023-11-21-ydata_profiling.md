@@ -12,10 +12,10 @@ tags:
 toc: true
 highlight: false
 header: 
-teaser: /assets/images/unsplash/cheat_sheet.jpg
-overlay_image: /assets/images/unsplash/cheat_sheet.jpg
-overlay_filter: 0.5
-caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
+  teaser: /assets/images/unsplash/cheat_sheet.jpg
+  overlay_image: /assets/images/unsplash/cheat_sheet.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 ---
 ## 🚦 Summary
 - 이번 포스팅에서는 데이터 분석 및 AI모델링의 가장 기본적 단계인 EDA를 손쉽게 하기 위한 도구를 소개합니다.
