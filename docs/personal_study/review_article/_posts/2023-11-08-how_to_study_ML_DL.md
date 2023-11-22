@@ -12,9 +12,6 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---
 
-핸즈온 머신러닝의 저자 박해선님이 강의해주시는 머신러닝, 딥러닝 공부방법에 대한 강연을 보고 정리한 내용입니다.
-<br>
-
 ## 🚦Summary
 
 - 해당 포스팅은 [한빛 미디어](https://www.youtube.com/@HanbitMedia93) 채널에서 소개한 핸즈온 머신러닝의 저자인 박해선님이 23년 10월 18일에 진행한 [온라인 영상](https://youtu.be/kmUyhsRM3Sw?si=CJba04YnMspGhcQ2) 을 보고 내용을 정리한 것을 소개합니다.
