@@ -104,8 +104,8 @@ caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 - 일반적으로 EDA를 함에 있어 가장 많이 활용되는 것은 Pandas입니다. 
 - 보통 이 pandas를 통해 데이터의 `info()`를 살펴보거나, `describe()`를 통해 각종 통계량을 살펴보기도 하며, 데이터의 결측치나 correlation 등을 살펴보며 데이터의 특성과 패턴을 파악하고 분석 방향을 잡는데 활용합니다.
 - 포트폴리오 등을 만들때는 데이터에 대한 EDA를 점진적으로 하면서 통계량을 확인해서 의미를 유추해보고, 데이터의 성질을 파악한 뒤, 전처리를 거쳐 각 데이터를 시각화 하는 과정을 실습해 보는 것은 매우 좋은 일입니다. 다만 이는 많은 시간을 소모하는 일이기도 합니다.
-- 이러한 EDA과정을 (기존의 방식보다는 덜 세세할 수 있지만) 간단한 코드 몇줄로 빠른 시간안에 할 수 있도록 도와주는 module이 Pandas Profiling입니다. 이미 공개된지는 좀 오래된 툴이지만 손쉽게 사용할 수 있다는 점에서 강점이 있고, 빠르게 데이터를 살펴볼때 유용하다 생각합니다.
-- Pandas Profiling은 Interactive한 결과를 통해 데이터의 전체적인 overview, correlation이 높은 feature, feature별 결측치 정도 등을 즉각적으로 확인할 수 있습니다. 
+- 이러한 EDA과정을 (기존의 방식보다는 덜 세세할 수 있지만) 간단한 코드 몇줄로 빠른 시간안에 할 수 있도록 도와주는 module이 ydata profiling입니다. 이미 공개된지는 좀 오래된 툴이지만 손쉽게 사용할 수 있다는 점에서 강점이 있고, 빠르게 데이터를 살펴볼때 유용하다 생각합니다.
+- ydata profiling은 Interactive한 결과를 통해 데이터의 전체적인 overview, correlation이 높은 feature, feature별 결측치 정도 등을 즉각적으로 확인할 수 있습니다. 
 
 ---
 
