@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '"[세미나참여후기] 모두콘2023"'
+title: '"[세미나참여후기] 모두콘 2023"'
 categories:
   - reviews
 tags:
@@ -15,8 +15,8 @@ tags:
 toc: true
 highlight: false
 header: 
-    teaser: /assets/images/reviews/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
-    overlay_image: /assets/images/reviews/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
+    teaser: /assets/images/reviews/moducon2023.jpg
+    overlay_image: /assets/images/reviews/moducon2023.jpg
     overlay_filter: 0.5
     caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---
