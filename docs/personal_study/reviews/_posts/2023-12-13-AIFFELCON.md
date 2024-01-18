@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '"[세미나참여후기] 모두콘 2023"'
+title: '[Review] 모두콘 2023 세미나참여후기'
 categories:
   - reviews
 tags:
@@ -12,6 +12,8 @@ tags:
   - 꿀팁
   - 프로젝트
   - 네트워킹
+  - 세미나
+  - seminar
 toc: true
 highlight: false
 header: 
@@ -41,9 +43,9 @@ header:
   <img src="https://i.imgur.com/nKDqSLs.png" alt="이미지 설명"/>
 </p>
 
-- 모두콘은 [모두의 연구소](https://kdp.modulabs.co.kr/) 2018년부터 진행하고 있는 AI관련 컨퍼런스 입니다.
-- 올해는 Naver Cloud AI의 하정우 센터장님과 테크프론티어의 한상기 대표님이 진행하는 Keynote를 시작으로 여러 세션별로 다양한 강연을 만나볼 수 있었습니다.
-- 저는 주로 아래의 세션들에 대해 관심이 많아서 링크드인에 홍보글을 올리기도 했었습니다.
+- 모두콘은 [모두의 연구소](https://kdp.modulabs.co.kr/) 가 2018년부터 진행하고 있는 AI관련 컨퍼런스 입니다.
+- 올해는 Naver Cloud AI의 하정우 센터장님과 테크프론티어의 한상기 대표님이 진행하는 Keynote speech를 시작으로 여러 세션별로 다양한 강연을 만나볼 수 있었습니다.
+- 저는 주로 아래의 세션들에 대해 관심이 많아서 개인 링크드인에 홍보글을 올리기도 했었습니다.
 	- AI Insight: 카카오브레인의 이미지 생성 모델 'Karlo' 개발 이야기  
 	- 여성 스타트업 리더와 개발자들의 열정을 공유하는 "스우파" 세션 등!
 	- AI Research: 제로 베이스에서 구축하는 추천 시스템  
