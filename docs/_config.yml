@@ -41,7 +41,7 @@ date_format              : "%Y-%m-%d"
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
   disqus:
-    shortname            : Kim gabe's Github blog
+    shortname            : Kim gabe's Github Blog
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
