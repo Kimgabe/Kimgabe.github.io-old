@@ -1,13 +1,13 @@
 ---
 layout: single
 title:  "[Review] 자동으로 나만의 GitHub 프로필과 이력서를 만들 수 있다?! (feat.GitHub Profile Readme Generator)"
-categories: review_article
+categories: reviews
 tag: [GitHub, Resume, automated, Profile, README, career, 이력서, 깃허브, 프로필, 자동작성, GitHub Prifile Readme Generator]
 toc: true
 highlight: false
 header:
-  teaser: /assets/images/review_article/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
-  overlay_image: /assets/images/review_article/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
+  teaser: /assets/images/reviews/github-resume.png
+  overlay_image: /assets/images/reviews/github-resume.png
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---
