@@ -5,8 +5,8 @@ categories: retrospective
 toc: true
 highlight: false
 header:
-  teaser: /assets/images/retrospective.jpg
-  overlay_image: /assets/images/retrospective.jpg
+  teaser: /assets/images/retrospective/retrospective.jpg
+  overlay_image: /assets/images/retrospective/retrospective.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 tags:
