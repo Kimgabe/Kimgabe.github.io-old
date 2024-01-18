@@ -71,4 +71,4 @@ personal_study_sidebar:
       - title: "Coding Test Study"
         url: /personal_study/coding-test/
       - title: "Data Careers"
-      url: /personal_study/career/
+        url: /personal_study/career/
