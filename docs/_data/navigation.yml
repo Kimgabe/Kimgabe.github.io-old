@@ -62,11 +62,13 @@ personal_study_sidebar:
       #   url: /personal_study/math_statistics/
       # - title: "Algorithms"
       #   url: /personal_study/algorithms/
-      - title: "Review Articles"
-        url: /personal_study/review_article/
+      - title: "Reviews"
+        url: /personal_study/reviews/
       - title: "Code Shadowing"
         url: /personal_study/shadowing/
       # - title: "Cheat Sheet"
       #   url: /personal_study/cheat-sheet/
       - title: "Coding Test Study"
         url: /personal_study/coding-test/
+      - title: "Data Careers"
+      url: /personal_study/career/

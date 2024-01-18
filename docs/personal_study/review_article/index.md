@@ -1,11 +1,11 @@
 ---
-title: "Review Articles"
+title: "Reviews"
 layout: category
-taxonomy: "review_article"
+taxonomy: "reviews"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: personal_study/review_article/
+permalink: personal_study/reviews/
 ---
 
 # 📌Intro
