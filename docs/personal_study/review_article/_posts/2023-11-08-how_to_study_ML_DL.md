@@ -1,13 +1,13 @@
 ---
 layout: single
 title:  "[Review] 머신러닝, 딥러닝 어떻게 공부할 것인가? (feat. 핸즈온 머신러닝 저자 특강)"
-categories: review_article
+categories: reviews
 tag: [핸즈온 머신러닝, ML, DL, 머신러닝, 딥러닝, 공부방법, 도서, 리뷰]
 toc: true
 highlight: false
 header:
-  teaser: /assets/images/review_article/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
-  overlay_image: /assets/images/review_article/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
+  teaser: /assets/images/reviews/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
+  overlay_image: /assets/images/reviews/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---

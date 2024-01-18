@@ -15,7 +15,7 @@ permalink: personal_study/reviews/
 ---
 
 {% for post in site.posts %}
-  {% if post.categories contains 'review_article' and post.highlight != false %}
+  {% if post.categories contains 'reviews' and post.highlight != false %}
     - [{{ post.title }}]({{ post.url }})
   {% endif %}
 {% endfor %}
