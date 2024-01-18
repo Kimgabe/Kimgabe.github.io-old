@@ -21,11 +21,19 @@ Hackers Ground에서 진행한 GitHub로 나만의 프로필 및 이력서 만�
 	- 경력과 프로젝트에 대한 내용을 중점적으로 적는 것이 좋다.
 	- GitHub프로필은 기본 프로필 & 다른 프로필로 나눌 수 있으며, 자기 소개와 전문성을 나타내는 파트이다.
 - [GitHub Profile Readme Generator](https://arturssmirnovs.github.io/github-profile-readme-generator/) 를 통해 손쉽게 나만의 GitHub 프로필을 작성할 수 있다.
-- 참고로 해당 스트리밍을 진행해주신 [Justin Yoo님의 GitHub 프로필](https://github.com/justinyoo)은 링크와 같다.
-### ? 이 포스팅은 개인적 경험을 정리하는것을 주목적으로 합니다.
+- 참고로 해당 스트리밍을 진행해주신 [Justin Yoo님의 GitHub 프로필](https://github.com/justinyoo)은 링크와 같습니다.
+
+---
+
+
+### ⛔ 이 포스팅은 개인적 경험을 정리하는것을 주목적으로 합니다.
 - 해당 포스팅의 작성 목적은 제가 배운 내용을 기록하는것이 최우선 목표이며, 포스팅 내용 일부에 개인적 경험, 영상에 없는 타 문서/영상/포스팅의 지식이 포함될 수 있습니다.
 	- 원본 영상에 없는 내용은 다른 색상으로 작성
 - 주요 파트별로 참고하고싶은 내용만을 요약하였으며 더욱 상세한 내용은 원본 영상을 시청해보시길 권장 드립니다.
+
+---
+
+
 
 ## 1. 이력서와 포트폴리오의 차이와 작성방법 [(영상 구간 : Intro~13:24)](https://www.youtube.com/live/Pe28SY8Cn5A?si=Ny4CGvHDDp-yG3RO)
 - 이력서는 객관적인 숫자와 경력을 통해 자신의 적합성을 보여주는 문서이다.
