@@ -283,7 +283,7 @@ with open("README.md", "w") as file:
 <details>
 <summary>📑전체 코드 확인하기📑</summary>
 
-
+<br>
 
 ```python
 import requests
@@ -349,7 +349,7 @@ with open("README.md", "w") as file:
 
 ```
 
-
+<br>
 
 </details>
 
