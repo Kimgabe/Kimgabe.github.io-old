@@ -280,10 +280,10 @@ with open("README.md", "w") as file:
 
 <br>
 
-<details>
-<summary>📑전체 코드 확인하기📑</summary>
 
-- `README.md` 를 업데이트하는 전체 코드 입니다.
+- `README.md` 를 업데이트하는 📑전체 코드📑 입니다.
+
+
 
 ```python
 
@@ -349,10 +349,6 @@ with open("README.md", "w") as file:
     file.write(updated_content)
 
 ```
-
-<br>
-
-</details>
 
 <br>
 
