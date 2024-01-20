@@ -191,7 +191,7 @@ def extract_number(folder_name):
 ```python
 def update_readme(repo, folders, original_content):
 
-    # 기존 "## 📑Quest List📑" 섹션과 그 이하 내용을 제거
+    # 기존 "📑Quest List📑" 섹션과 그 이하 내용을 제거
 
     start_index = original_content.find("## 📑Quest List📑")
 
@@ -283,6 +283,8 @@ with open("README.md", "w") as file:
 <details>
 <summary>📑전체 코드 확인하기📑</summary>
 
+
+
 ```python
 import requests
 import re
@@ -346,6 +348,8 @@ with open("README.md", "w") as file:
     file.write(updated_content)
 
 ```
+
+
 
 </details>
 
