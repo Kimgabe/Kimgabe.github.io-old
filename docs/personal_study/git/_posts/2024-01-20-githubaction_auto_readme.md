@@ -42,12 +42,20 @@ tags:
 > 💡 이런걸 정리합니다.
 - 내 메인 Repository 의 README.md 파일의 생성을 자동화 하는 방법
 - (Sub) Github Action의 기초 개념
-### Before & After 
+
+
+### Target 
+
 ![](https://i.imgur.com/FQ7gUxT.png)
 
 ---
 
 ### GitHub Action 의 주요 개념들
+
+<details>
+<summary>👉 GitHub Action의 주요 개념 살펴보기</summary>
+<br>
+
 1. **GitHub Actions란?**
     - GitHub Actions는 GitHub 저장소에서 직접 CI(Continuous Integration) 및 CD(Continuous Deployment) 워크플로우를 자동화할 수 있는 도구입니다.
       
@@ -80,6 +88,9 @@ tags:
 9. **아티팩트(Artifacts)**
     - 워크플로우 실행 동안 생성된 파일을 저장하고, 나중에 다운로드할 수 있게 하는 기능입니다.
 
+</details>
+
+
 ### GitHub Actions 사용 방법
 
 1. **워크플로우 파일 생성**
@@ -100,17 +111,20 @@ tags:
 ---
 
 
-- 기능 구현을 위해 몇가지 단계를 거쳐야 합니다.
+> 💡 기능 구현을 위해 몇가지 단계를 거쳐야 합니다.
 	1. Python 스크립트 작성
 	2. GitHub Action 설정
 	3. 스크립트 실행 및 확인
+
+
+
 ### 1. Python 스크립트 작성
 - 제가 작성한 코드를 예제코드로 하여 코드별로 상세한 설명을 드리겠습니다.
-- 예제 코드의 경우 표를 만들때 2가지 전제 조건을 설정했습니다.
+- 예제 코드의 경우 표를 만들때 몇가지 전제 조건을 설정했습니다.
 	- 기존 README.md의 작성 내용 밑에 표를 추가합니다.
+	- 추가되는 표는 가장 최신의 repository 정보를 사용해 항상 기존표를 삭제하고 새로 생성한 표를 입력합니다. (중복 생성 방지)
 	- 이름이 `.` 으로 시작하는 폴더(GitHub Action의 workflow 가 저장된 폴더) 를 제외한 나머지 폴더만을 표로 정리
 	- 폴더명 앞에 붙은 숫자를 기준으로 Ascending하게 Sorting하도록 되어 있습니다.
-	- 신규 commit이 되면 이전에 작성한 README.md의 표와 비교해 추가사항을 검토하고 추가 사항이 있다면 추가합니다.
 - 이를 위해 GitHub API를 사용해서 리포지토리의 폴더 목록을 가져오고, 이를 `README.md` 파일에 업데이트하는 Python 코드를 작성했습니다.
 
 > 1. GitHub API를 통한 폴더 목록 가져오기
@@ -324,6 +338,8 @@ with open("README.md", "w") as file:
 - 제가 사용하는 것과 동일하게 사용하고자 한다면 예제코드에서 본인의 github user명과 적용할 respsitory만 변경하여 사용하면 됩니다.
 - `update_readme.py` 로 repository의 가장 main 페이지에 저장하면 됩니다.
 - 이후 이 `update_readme.py`를 GitHub Action에서 불러와서 사용하도록 할 예정입니다.
+
+
 ### 2. GitHub Action 설정
 
 - 이제 위에서 설정한 Python 스크립드가 GitHub의 Repository에 새로운 commit이 있을 때 마다 자동으로 실행되도록 GitHub Action을 설정합니다.
@@ -331,19 +347,22 @@ with open("README.md", "w") as file:
   
   > 1) GitHub Action 설정 항목 몇 가지를 조정
 
-![](https://i.imgur.com/3VLcF30.png)
-
-
 - `settings` 👉 `Actions` 👉 `General` 을 선택해 GitHub Action의 옵션으로 이동합니다.
 
 
-![](https://i.imgur.com/lEAJB2k.png)
+![](https://i.imgur.com/3VLcF30.png)
+
 
 - 2가지 옵션을 확인합니다.
 	- Actions permisssions
 		- `Allow all actions and reusable workflows` 에 체크가 되어야 합니다.
 	- `Workflow permissions` 
 		- `Read and write permissions` 에 체크가 되어 있어야 합니다.
+
+
+![](https://i.imgur.com/lEAJB2k.png)
+
+
 
 > 2) `.github/workflows` 폴더 생성
 - 작업을 적용할 Repository의 root dir에 `.github/workflows` 라는 폴더를 생성합니다.
@@ -411,6 +430,10 @@ jobs:
     - **Install dependencies**: 필요한 Python 패키지를 설치합니다. 여기서는 `requests` 모듈을 설치합니다.
     - **Update README**: `update_readme.py`라는 Python 스크립트를 실행합니다. 이 스크립트는 `README.md` 파일을 업데이트하는 로직을 포함하고 있습니다.
     - **Commit and Push**: 변경된 `README.md` 파일을 깃허브 리포지토리에 커밋하고 푸시합니다. 사용자 이름과 이메일 주소를 설정한 후, `git add`, `git commit`, `git push` 명령을 사용합니다.
+
+---
+
+
 ### 3. 스크립트 실행 및 확인
 - 이제 생성한 워크플로우 파일을 저장한 뒤 실제 스크립트가 잘 작동하는지 확인합니다.
 - 새로운 폴더를 추가하거나 기존 폴더 이름을 변경해 `README.md`의 파일이 올바르게 업데이트 되는지 확인합니다.
