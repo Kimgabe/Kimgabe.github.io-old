@@ -50,8 +50,8 @@ personal_study_sidebar:
         url: /personal_study/visualization/
       # - title: "ML(Machine Learning)"
       #   url: /personal_study/machine_learning/
-      # - title: "DL(Deep Learning)"
-      #   url: /personal_study/deep_learning/
+      - title: "DL(Deep Learning)"
+        url: /personal_study/deep_learning/
       # - title: "SQL"
       #   url: /personal_study/sql/
       - title: "Git & GitHub"
@@ -66,8 +66,8 @@ personal_study_sidebar:
         url: /personal_study/reviews/
       - title: "Code Shadowing"
         url: /personal_study/shadowing/
-      # - title: "Cheat Sheet"
-      #   url: /personal_study/cheat-sheet/
+      - title: "Cheat Sheet"
+        url: /personal_study/cheat-sheet/
       - title: "Coding Test Study"
         url: /personal_study/coding-test/
       - title: "Data Careers"
