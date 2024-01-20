@@ -200,7 +200,9 @@ $test \times \beta$
 	- $f$ : (input) 이미지/영상
 	- $g$ : <font color="#ff0000">R</font>(ed) / <font color="#00b050">G</font>(reen) 를 통과시키는 필터 👉 RGB중 R과 G의 성분을 감지/추출
 	- $h$ : <font color="#ff0000">R</font>(ed) 를 통과시키는 필터 👉 <font color="#ff0000">R</font>/G 중 <font color="#ff0000">R</font>(ed) 의 성분만을 추출하는 필터
+    
 - 이는 입력 이미지 $f$에 먼저 빨간색/녹색을 강조하는 필터 $g$를 적용한 후, 그 결과에 다시 빨간색을 강조하는 필터 $h$를 적용하는 것과, 먼저 $g$와 $h$ 필터를 결합한 후, 그 결합된 필터를 입력 이미지 $f$에 적용하는 것은 결과적으로 동일한 출력을 가져오는 것을 의미합니다. 
+
 ---
 
 <br>
