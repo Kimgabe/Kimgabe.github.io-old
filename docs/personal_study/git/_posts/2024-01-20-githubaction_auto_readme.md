@@ -107,10 +107,14 @@ tags:
 ---
 
 
+## 단계별 구현 방법 설명
+
 > 💡 기능 구현을 위해 몇가지 단계를 거쳐야 합니다.
 	1. Python 스크립트 작성
 	2. GitHub Action 설정
 	3. 스크립트 실행 및 확인
+
+- 해당 과정을 단계별로 예제 코드와 함께 설명드리도록 하겠습니다.
 
 
 
@@ -123,7 +127,10 @@ tags:
 	- 폴더명 앞에 붙은 숫자를 기준으로 Ascending하게 Sorting하도록 되어 있습니다.
 - 이를 위해 GitHub API를 사용해서 리포지토리의 폴더 목록을 가져오고, 이를 `README.md` 파일에 업데이트하는 Python 코드를 작성했습니다.
 
-> 1. GitHub API를 통한 폴더 목록 가져오기
+<br>
+
+> 1️⃣ GitHub API를 통한 폴더 목록 가져오기
+
 ```python
 import requests
 import re
@@ -150,7 +157,9 @@ def get_folders(repo):
 - 숨김 폴더나 특수 폴더(예: `.`으로 시작하는 폴더)는 제외됩니다.
 - 결과는 폴더 객체의 리스트로 반환됩니다.
 
-> 2. 폴더 이름에서 숫자 추출
+<br>
+
+> 2️⃣ 폴더 이름에서 숫자 추출
 
 ```python
 # 폴더 이름에서 숫자를 추출하는 함수
@@ -172,7 +181,9 @@ def extract_number(folder_name):
 - 폴더 이름에 숫자가 포함되어 있으면 해당 숫자를 반환하고, 없으면 매우 큰 수(`float('inf')`)를 반환합니다.
 - 이는 폴더를 숫자 순으로 정렬할 때 사용됩니다.
 
-> 3. README.md 파일 업데이트 로직
+<br>
+
+> 3️⃣ README.md 파일 업데이트 로직
 
 ```python
 def update_readme(repo, folders, original_content):
@@ -223,7 +234,9 @@ def update_readme(repo, folders, original_content):
 - 새로운 테이블을 생성하여 폴더 목록을 추가합니다.
 - `README.md` 파일의 기존 내용 끝에 새로운 테이블을 추가합니다.
 
-> 4. 로직 실행
+<br>
+
+> 4️⃣ 로직 실행
 
 ```python
 # GitHub 저장소와 폴더 목록을 설정
@@ -262,8 +275,10 @@ with open("README.md", "w") as file:
 
 - 위 코드를 적용할 수 있도록 예제 코드로 만든 전체 코드는 다음과 같습니다.
 
+<br>
+
 <details>
-<summary>전체 코드 확인하기</summary>
+<summary>📑전체 코드 확인하기📑</summary>
 
 ```python
 import requests
@@ -331,23 +346,31 @@ with open("README.md", "w") as file:
 
 </details>
 
-- 제가 사용하는 것과 동일하게 사용하고자 한다면 예제코드에서 본인의 github user명과 적용할 respsitory만 변경하여 사용하면 됩니다.
-- `update_readme.py` 로 repository의 가장 main 페이지에 저장하면 됩니다.
-- 이후 이 `update_readme.py`를 GitHub Action에서 불러와서 사용하도록 할 예정입니다.
+<br>
 
+- 제가 사용하는 것과 동일하게 사용하고자 한다면 예제코드에서 본인의 github user명과 적용할 respsitory만 변경하여 사용하면 됩니다.
+  - `update_readme.py` 로 repository의 가장 main 페이지에 저장하면 됩니다.
+  - 이후 이 `update_readme.py`를 GitHub Action에서 불러와서 사용하도록 할 예정입니다.
+- 표의 내용을 바꾸고 싶다면 `update_readme` 함수의 내용을 수정하시면 됩니다.
+
+---
+
+<br>
 
 ### 2. GitHub Action 설정
 
-- 이제 위에서 설정한 Python 스크립드가 GitHub의 Repository에 새로운 commit이 있을 때 마다 자동으로 실행되도록 GitHub Action을 설정합니다.
+- 이제 위에서 설정한 Python 스크립트가 GitHub의 Repository에 새로운 commit이 있을 때 마다 자동으로 실행되도록 GitHub Action을 설정합니다.
   
-  
-  > 1) GitHub Action 설정 항목 몇 가지를 조정
+<br>
+
+  > 1️⃣ GitHub Action 설정 항목 몇 가지를 조정
 
 - `settings` 👉 `Actions` 👉 `General` 을 선택해 GitHub Action의 옵션으로 이동합니다.
 
 
 ![](https://i.imgur.com/3VLcF30.png)
 
+<br>
 
 - 2가지 옵션을 확인합니다.
 	- Actions permisssions
@@ -358,19 +381,23 @@ with open("README.md", "w") as file:
 
 ![](https://i.imgur.com/lEAJB2k.png)
 
+<br>
 
-
-> 2) `.github/workflows` 폴더 생성
+> 2️⃣ `.github/workflows` 폴더 생성
 - 작업을 적용할 Repository의 root dir에 `.github/workflows` 라는 폴더를 생성합니다.
 - 이 폴더는 GitHub Action의 워크플로우 설정 파일들을 저장하는 곳입니다.
 
-> 3) 워크 플로우 설정 파일 생성 및 설정 작성
+<br>
+
+> 3️⃣ 워크플로우 설정 파일 생성 및 설정 작성
 
 - `update-readme.yml` 파일을 생성한 뒤 워크플로우 설정을 작성합니다.
 - 워크플로우 작성시에는 2가지를 설정해주면 됩니다.
 	- 트리거 : 워크플로우가 언제 실행될지 설정
 	- 작업설정 : 워크플로우에서 실행할 작업 설정정
 - 제가 사용하고 있는 워크플로우 설정은 아래와 같습니다.
+
+<br>
 
 ```yml
 name: Update README
@@ -406,8 +433,12 @@ jobs:
           git commit -m "Update README"
           git push
 ```
+<br>
 
 - 각 내용에 대한 설명은 아래와 같습니다.
+
+<br>
+
 
 1. **워크플로우 이름 설정 (`name`)**:
     - `Update README`: 이 워크플로우의 이름입니다. GitHub Actions 탭에서 이 이름으로 워크플로우를 찾을 수 있습니다.
@@ -429,13 +460,20 @@ jobs:
 
 ---
 
+<br>
 
 ### 3. 스크립트 실행 및 확인
 - 이제 생성한 워크플로우 파일을 저장한 뒤 실제 스크립트가 잘 작동하는지 확인합니다.
 - 새로운 폴더를 추가하거나 기존 폴더 이름을 변경해 `README.md`의 파일이 올바르게 업데이트 되는지 확인합니다.
 - 올바르게 작성이 되었다면 아래의 이미지처럼 기존 README.md의 내용을 유지하면서 repository에 포함된 폴더명을 기반으로 표를 만들고 링크가 작성되어 있을 것입니다.
 
+<br>
+
 ![](https://i.imgur.com/FQ7gUxT.png)
+
+
+- 위 작업이 적용된 저의 Repository입니다. 👉 [Repository 구경하기](https://github.com/Kimgabe/AIFFEL_Online_Quest)
+
 
 ---
 
