@@ -360,7 +360,7 @@ with open("README.md", "w") as file:
   - `update_readme.py` 로 repository의 가장 main 페이지에 저장하면 됩니다.
   - 이후 이 `update_readme.py`를 GitHub Action에서 불러와서 사용하도록 할 예정입니다.
 - 표의 내용을 바꾸고 싶다면 `update_readme` 함수의 내용을 수정하시면 됩니다.
-- 예제 코드 다운 받기 👉 [파일 다운로드 링크](../../assets/attached_files/update_readme.py)
+- 예제 코드 다운 받기 👉 [파일 다운로드 링크](../../../../assets/attached_files/update_readme.py)
 
 
 ---
@@ -470,7 +470,7 @@ jobs:
 
 ---
 
-- 예제 코드 다운 받기 👉 [파일 다운로드 링크](../../assets/attached_files/update_readme.yml)
+- 예제 코드 다운 받기 👉 [파일 다운로드 링크](../../../../assets/attached_files/update_readme.yml)
 
 <br>
 
