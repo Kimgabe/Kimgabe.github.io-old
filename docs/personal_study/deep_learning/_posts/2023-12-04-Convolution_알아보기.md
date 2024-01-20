@@ -9,6 +9,7 @@ tags:
   - 딥러닝
 toc: true
 highlight: false
+use_math : true
 header:
   teaser: /assets/images/DL/deep_learing_thumbnail.jpg
   overlay_image: /assets/images/DL/deep_learing_thumbnail.jpg
@@ -205,7 +206,6 @@ $test \times \beta$
 
 ---
 
-<br>
 ## 3. Convolution 으로 영상분석은 어떻게 하는 걸까?
 - 위에 살펴본 것 처럼 Convolution 연산을 통해 영상/이미지에서 특징을 뽑아낼 수 있습니다.
 - 영상에서 중요한 특징은 꼭짓점(corner) 입니다.
@@ -222,13 +222,11 @@ $test \times \beta$
 - Convolution 연산으로 이러한 영상의 다양한 특징을 찾아낼 수는 있는데 이때, 서로 다른 크기의 영상을 뽑아낼 수 있는 방법이 필요합니다.
 
 <br>
-
 ### 서로 다른 크기의 feature 찾기
 - 하나의 영상에서 여러가지 특징을 찾아내기 위해 서로 다른 크기의 feature map을 만드는 방법은 크게 2가지 입니다.
 - 하나는 필터 사이즈를 점점 키우는 방식이고, 다른 하나는 원본(영상/이미지)의 사이즈르 점점 작게 만드는 것입니다.
 
 <br>
-
 #### 방법 1) 필터 사이즈를 점점 키우면서 Convolution을 한다.
 ![](https://i.imgur.com/n9gyNaN.png)
 
