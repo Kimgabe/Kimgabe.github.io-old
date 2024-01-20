@@ -283,9 +283,10 @@ with open("README.md", "w") as file:
 <details>
 <summary>📑전체 코드 확인하기📑</summary>
 
-<br>
+- `README.md` 를 업데이트하는 전체 코드 입니다.
 
 ```python
+
 import requests
 import re
 
