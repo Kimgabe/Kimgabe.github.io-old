@@ -52,10 +52,6 @@ tags:
 
 ### GitHub Action 의 주요 개념들
 
-<details>
-<summary>👉 GitHub Action의 주요 개념 살펴보기</summary>
-<br>
-
 1. **GitHub Actions란?**
     - GitHub Actions는 GitHub 저장소에서 직접 CI(Continuous Integration) 및 CD(Continuous Deployment) 워크플로우를 자동화할 수 있는 도구입니다.
       
@@ -88,8 +84,8 @@ tags:
 9. **아티팩트(Artifacts)**
     - 워크플로우 실행 동안 생성된 파일을 저장하고, 나중에 다운로드할 수 있게 하는 기능입니다.
 
-</details>
 
+---
 
 ### GitHub Actions 사용 방법
 
