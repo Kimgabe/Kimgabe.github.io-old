@@ -43,6 +43,8 @@ tags:
 <br>
 
 > 📰 `_config.yml` 파일 수정 하기
+
+
 - GitHub 블로그를 생성한 Repository의 루트 디렉토리로 이동합니다.
 - `_config.yml` 파일을 열고 'plugins' 부분을 찾아서 아래와 같이 `jekyll-remote-theme` 플러그인을 추가합니다.
 
@@ -63,10 +65,14 @@ remote_theme: "mmistakes/minimal-mistakes"
 
 > 💡 `_layouts` 과 `default.html` 파일?
 
+
 - `_layouts` 디렉토리는 GitHub 블로그의 페이지 레이아웃을 정의하는 곳입니다.
 - `default.html` 파일은 블로그의 기본 레이아웃을 정의하며, 모든 페이지에 공통으로 적용됩니다.
 
+<br> 
+
 > 📰 `default.html` 파일 수정 하기
+
 
 - 만약 `_layouts` 폴더가 없다면 생성하고 `default.html` 을 생성해 줍니다.
 - 생성한 `default.html` 파일의 하단에 아래의 코드를 추가합니다.
