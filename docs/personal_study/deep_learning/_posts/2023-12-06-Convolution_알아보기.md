@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '"[DL] Convolution 에 대한 기초지식 정리"'
+title: '"[DL] Convolution을 이해하고 이미지 처리하기: 딥러닝의 기본 개념과 응용"'
 categories:
   - deep_learning
 tags:
@@ -10,8 +10,8 @@ tags:
 toc: true
 highlight: false
 header:
-  teaser: /assets/images/review_article/deep_learing_thumbnail.jpg
-  overlay_image: /assets/images/review_article/deep_learing_thumbnail.jpg
+  teaser: /assets/images/deep_learing_thumbnail.jpg
+  overlay_image: /assets/images/deep_learing_thumbnail.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---
