@@ -10,8 +10,8 @@ tags:
 toc: true
 highlight: false
 header:
-  teaser: /assets/images/deep_learing_thumbnail.jpg
-  overlay_image: /assets/images/deep_learing_thumbnail.jpg
+  teaser: /assets/images/DL/deep_learing_thumbnail.jpg
+  overlay_image: /assets/images/DL/deep_learing_thumbnail.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/XJXWbfSo2f0)"
 ---
