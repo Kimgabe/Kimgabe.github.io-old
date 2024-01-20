@@ -55,3 +55,39 @@
 
   </body>
 </html>
+
+
+<!--
+minimal-mistakes 의 코드창에 복사버튼 추가 기능 추가
+-->
+{% raw %}
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const codeBlocks = document.querySelectorAll('pre');
+      codeBlocks.forEach(function (codeBlock) {
+        const button = document.createElement('button');
+        button.className = 'copy-code-button';
+        button.textContent = '복사';
+        const code = codeBlock.querySelector('code');
+        button.addEventListener('click', function () {
+          const textArea = document.createElement('textarea');
+          textArea.value = code.textContent;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+          alert('코드가 복사되었습니다.');
+        });
+        codeBlock.parentNode.insertBefore(button, codeBlock);
+      });
+    });
+  </script>
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
+{% endraw %}
