@@ -11,8 +11,8 @@ tags:
   - 회고
   - 방학
 header:
-  teaser: /assets/images/[이미지.확장자]
-  overlay_image: /assets/images/[이미지.확장자]
+  teaser: /assets/images/retrospective/retrospective.jpg
+  overlay_image: /assets/images/retrospective/retrospective.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 ---
@@ -29,7 +29,7 @@ header:
 - "누구나 그럴싸한 계획을 갖고 있다.." 라는 마이크 타이슨의 유명한 밈이 아니라도 매번 계획이란것은 이상이고 현실은 다른 것 같습니다.
 
 ## 방학을 시작할 때의  나의 모습
-![](https://i.imgur.com/cV7Acik.jpg)
+![](https://i.imgur.com/tmBX3uK.png)
 
 - 누구나 이런 기승전결이 있는 아름다운 방학 계획을 생각할 것 입니다.
 - 저라고 다르지 않았습니다. 타이밍이 참 좋게도 연초에 생기는 꿀같은 방학이라 많은 것들을 시도해볼 생각이었습니다.
