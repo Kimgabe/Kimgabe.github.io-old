@@ -9,6 +9,7 @@ use_math: true
 tags:
   - retrospective
   - 회고
+  - 방학
 header:
   teaser: /assets/images/[이미지.확장자]
   overlay_image: /assets/images/[이미지.확장자]
