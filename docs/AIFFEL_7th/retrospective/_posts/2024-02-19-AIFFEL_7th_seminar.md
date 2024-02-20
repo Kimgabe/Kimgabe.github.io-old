@@ -9,9 +9,11 @@ use_math: true
 tags:
   - retrospective
   - 회고
+  - 논문리뷰
+  - 딥러닝논문
 header:
-  teaser: /assets/images/[이미지.확장자]
-  overlay_image: /assets/images/[이미지.확장자]
+  teaser: /assets/images/retrospective/retrospective.jpg
+  overlay_image: /assets/images/retrospective/retrospective.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/52jRtc2S_VE)"
 ---
