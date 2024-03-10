@@ -5,7 +5,7 @@ taxonomy: "retrospective"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: Gabe's AI Journey/retrospective/
+permalink: gabe_ai_journey/retrospective/
 ---
 
 # 📌Intro

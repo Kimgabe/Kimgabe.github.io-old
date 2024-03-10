@@ -5,7 +5,7 @@ taxonomy: "conference_seminar"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: Gabe's AI Journey/conference_seminar/
+permalink: gabe_ai_journey/conference_seminar/
 ---
 
 # 📌Intro

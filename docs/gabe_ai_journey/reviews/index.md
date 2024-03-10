@@ -5,7 +5,7 @@ taxonomy: "reviews"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: personal_study/reviews/
+permalink: gabe_ai_journey/reviews/
 ---
 
 # 📌Intro
