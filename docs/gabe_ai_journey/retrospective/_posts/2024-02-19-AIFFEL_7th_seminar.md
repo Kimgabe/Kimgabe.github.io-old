@@ -79,13 +79,11 @@ Transformer 부터 CLIP, MAMBA 까지 CV, NLP의 다양한 기초 논문부터 �
 <br>
 
 - **포지셔널 인코딩(Positional Encoding)**
-  <p align="center">
+
+<p align="center">
   <img src="https://machinelearningmastery.com/wp-content/uploads/2022/01/PE1-1024x545.png" alt="Positional Encoding">
   <br>
   Positional Encoding 구조
-
-
-
 </p>
 
 
