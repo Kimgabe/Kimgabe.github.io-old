@@ -10,8 +10,7 @@ permalink: gabe_ai_journey/retrospective/
 
 # 📌Intro
 ---
-AIFFEL에서 공부하면서 경험하는 다양한 일상(공부, 세미나, 프로젝트, etc.) 등에 대한 경험을 공유합니다. 차후에는 KPT(Keep, Problem, Try) 기반의 회고에 대해서도 공유해볼까 합니다.
-
+참여했던 다양한 활동에 대한 회고를 작성해 공유합니다. 
 ---
 
 
