@@ -222,7 +222,7 @@ collections:
     permalink: /:collection/:path/
   studynote:
     output: true
-    permalink: /Gabe's AI Journey/:collection/:path/
+    permalink: /gabe_ai_journey/:collection/:path/
 
 
 # Defaults (기본설정)
@@ -269,7 +269,7 @@ defaults:
         nav: "docs"
   # Gabe's AI Journey
   - scope:
-      path: "Gabe's AI Journey"
+      path: "gabe_ai_journey"
     values:
       layout: single
       author_profile: true
@@ -283,7 +283,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "Gabe's AI Journey_sidebar"      
+        nav: "gabe_ai_journey_sidebar"      
       header:
         teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
         overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
