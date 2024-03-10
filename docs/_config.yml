@@ -283,7 +283,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "gabe_ai_journey_sidebar"      
+        nav: "Gabe's AI Journey_sidebar"      
       header:
         teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
         overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
