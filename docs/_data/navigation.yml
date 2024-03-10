@@ -25,8 +25,8 @@ Gabe's AI Journey_sidebar:
     url: /gabe_ai_journey/
   - title: "Gabe's AI Journey"
     children:
-      - title: "Conferences & Seminar"
-        url: /gabe_ai_journey/conference_seminar/
+      # - title: "Conferences & Seminar"
+      #   url: /gabe_ai_journey/conference_seminar/
       - title: "Retrospective & Review"
         url: /gabe_ai_journey/retrospective/
       - title: "Reviews"
@@ -48,9 +48,9 @@ personal_study_sidebar:
         url: /personal_study/preprocessing/
       - title: "Visualization"
         url: /personal_study/visualization/
-      # - title: "ML(Machine Learning)"
+      # - title: "Machine Learning"
       #   url: /personal_study/machine_learning/
-      - title: "DL(Deep Learning)"
+      - title: "Deep Learning"
         url: /personal_study/deep_learning/
       # - title: "SQL"
       #   url: /personal_study/sql/
