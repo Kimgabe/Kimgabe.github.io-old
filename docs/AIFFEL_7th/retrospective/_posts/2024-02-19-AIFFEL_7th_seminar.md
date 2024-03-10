@@ -19,8 +19,8 @@ header:
 ---
 
 ## 🚦Summary  
-1. 리서치 과정 그루들의 다양한 논문 리뷰
-2. 다가오는 졸업, 그리고 취업을 위한 준비 아이펠톤에서 얻을 수 있는것, 그리고 얻어야 할 것들
+Transformer 부터 CLIP, MAMBA 까지 CV, NLP의 다양한 기초 논문부터 핫한 논문까지 아이펠 리서치 과정 그루들의 다양한 논문 리뷰!
+
 
 ---
 
@@ -83,6 +83,7 @@ header:
   <img src="https://machinelearningmastery.com/wp-content/uploads/2022/01/PE1-1024x545.png" alt="Positional Encoding">
   <br>
   Positional Encoding 구조
+
 
 
 </p>
