@@ -29,6 +29,8 @@ Gabe's AI Journey_sidebar:
         url: /gabe_ai_journey/conference_seminar/
       - title: "Retrospective & Review"
         url: /gabe_ai_journey/retrospective/
+      - title: "Reviews"
+        url: /gabe_ai_journey/reviews/
 
 # AI Study Notes sidebar
 personal_study_sidebar:
@@ -60,8 +62,6 @@ personal_study_sidebar:
       #   url: /personal_study/math_statistics/
       # - title: "Algorithms"
       #   url: /personal_study/algorithms/
-      - title: "Reviews"
-        url: /personal_study/reviews/
       - title: "Code Shadowing"
         url: /personal_study/shadowing/
       - title: "Cheat Sheet"
