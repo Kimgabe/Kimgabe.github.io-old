@@ -23,11 +23,11 @@ main:
 Gabe's AI Journey_sidebar:
   - title: Gabe's AI Journey
     url: /gabe_ai_journey/
-  - title: "Gabe's AI Journey"
+  - title: "List of Categories"
     children:
       # - title: "Conferences & Seminar"
       #   url: /gabe_ai_journey/conference_seminar/
-      - title: "Retrospective & Review"
+      - title: "Retrospective"
         url: /gabe_ai_journey/retrospective/
       - title: "Reviews"
         url: /gabe_ai_journey/reviews/
