@@ -1,5 +1,5 @@
 ---
-title: "Personal Study"
+title: "AI Study Notes"
 layout: category
 taxonomy: "personal_study"
 entries_layout: grid

@@ -3,10 +3,10 @@ main:
 #  - title: "Quick-Start Guide"
 #    url: /docs/quick-start-guide/
   #- auto_categories: True
-  - title: "Personal Study"
+  - title: "AI Study Notes"
     url: /personal_study/  
-  - title: "AIFFEL_7th"
-    url: /AIFFEL_7th/ 
+  - title: "Gabe's AI Journey"
+    url: /gabe_ai_journey/ 
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -19,22 +19,20 @@ main:
     url: /about/
 
 # 별개 collection별 sidebar 설정
-# AIFFEL_7th sidebar
-AIFFEL_7th_sidebar:
-  - title: AIFFEL_7th
-    url: /AIFFEL_7th/
-  - title: "AIFFEL_7th"
+# Gabe's AI Journey sidebar
+Gabe's AI Journey_sidebar:
+  - title: Gabe's AI Journey
+    url: /gabe_ai_journey/
+  - title: "Gabe's AI Journey"
     children:
-      - title: "Study Note"
-        url: /AIFFEL_7th/studynote/
-      - title: "Team Study Note"
-        url: /AIFFEL_7th/teamstudy/
+      - title: "Conferences & Seminar"
+        url: /gabe_ai_journey/conference_seminar/
       - title: "Retrospective & Review"
-        url: /AIFFEL_7th/retrospective/
+        url: /gabe_ai_journey/retrospective/
 
-# Personal Study sidebar
+# AI Study Notes sidebar
 personal_study_sidebar:
-  - title: Personal Study
+  - title: AI Study Notes
     url: /personal_study/
   - title: "List of Categories"
     children:

@@ -222,7 +222,7 @@ collections:
     permalink: /:collection/:path/
   studynote:
     output: true
-    permalink: /AIFFEL_7th/:collection/:path/
+    permalink: /Gabe's AI Journey/:collection/:path/
 
 
 # Defaults (기본설정)
@@ -267,9 +267,9 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # AIFFEL_7th
+  # Gabe's AI Journey
   - scope:
-      path: "AIFFEL_7th"
+      path: "Gabe's AI Journey"
     values:
       layout: single
       author_profile: true
@@ -283,7 +283,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
       sidebar:
-        nav: "AIFFEL_7th_sidebar"      
+        nav: "Gabe's AI Journey_sidebar"      
       header:
         teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
         overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg
@@ -327,7 +327,7 @@ defaults:
       toc_label : Table of Contents
       toc_icon : "fas fa-list-ol"
 #      sidebar:
-#        nav: "AIFFEL_7th"      
+#        nav: "Gabe's AI Journey"      
       header:
         teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg
         overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg

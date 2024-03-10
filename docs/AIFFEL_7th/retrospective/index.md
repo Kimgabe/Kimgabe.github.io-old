@@ -5,7 +5,7 @@ taxonomy: "retrospective"
 entries_layout: grid
 author_profile: true
 classes: wide
-permalink: AIFFEL_7th/retrospective/
+permalink: Gabe's AI Journey/retrospective/
 ---
 
 # 📌Intro
