@@ -56,8 +56,8 @@ personal_study_sidebar:
         url: /personal_study/sql/
       - title: "Git & GitHub"
         url: /personal_study/git/
-      # - title: "Tableau"
-      #   url: /personal_study/tableau/
+      - title: "Tableau"
+        url: /personal_study/tableau/
       # - title: "Math & Statistics"
       #   url: /personal_study/math_statistics/
       # - title: "Algorithms"
