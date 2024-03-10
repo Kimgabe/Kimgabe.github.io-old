@@ -14,7 +14,6 @@ permalink: gabe_ai_journey/
 
 ## ◀️ 좌측의 Sidebar를 통해 Category별로 포스팅을 확인할 수 있습니다.
 
-✔️ 학습한 내용은 각 파트별로 별도의 게시물로 정리하여 [AI Study Notes](https://kimgabe.github.io/personal_study/) 섹션에 정리하고 있으니 상세한 내용들은 해당 페이지를 참고해주시면 감사드리겠습니다.
 
 ---
 <br>
