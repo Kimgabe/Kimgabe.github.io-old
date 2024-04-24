@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '"[SQLD Day 1] 1과목 데이터모델링의 이해 - 04. 관계(Relationship)"'
+title: '"[SQLD Day 1] 1일차 : 데이터모델링의 이해 - 04. 관계(Relationship)"'
 categories:
   - sql
 tags:
