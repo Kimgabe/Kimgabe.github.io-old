@@ -1,6 +1,6 @@
 ---
 layout: single
-title: '"[SQLD Day 1] 1일차 : 데이터모델링의 이해 - 05. 식별자(Identifier)"'
+title: '"[SQLD] 1일차 : 데이터모델링의 이해 - 05. 식별자(Identifier)"'
 categories:
   - sql
 tags:
