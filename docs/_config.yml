@@ -149,35 +149,41 @@ footer:
 
 
 # Reading Files
+# Jekyll이 읽어들일 파일과 디렉토리를 설정합니다.
 include:
-  - .htaccess
-  - _pages
+  - .htaccess # Apache 웹 서버의 설정 파일인 .htaccess를 포함합니다.
+  - _pages # _pages 디렉토리를 포함합니다. 이 디렉토리 내의 파일들은 개별 페이지로 생성됩니다.
+
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-  - x-pages
-  - x-posts
+  # Jekyll에서 제외할 파일과 디렉토리를 설정합니다.
+  - "*.sublime-project" # Sublime Text 프로젝트 파일을 제외합니다.
+  - "*.sublime-workspace" # Sublime Text 작업 공간 파일을 제외합니다.
+  - vendor # vendor 디렉토리를 제외합니다. 주로 플러그인이나 라이브러리 파일들이 위치합니다.
+  - .asset-cache # .asset-cache 디렉토리를 제외합니다.
+  - .bundle # .bundle 디렉토리를 제외합니다. Ruby의 번들러 관련 파일들이 위치합니다.
+  - .jekyll-assets-cache # .jekyll-assets-cache 디렉토리를 제외합니다. Jekyll의 에셋 캐시 파일들이 위치합니다.
+  - .sass-cache # .sass-cache 디렉토리를 제외합니다. Sass 컴파일러의 캐시 파일들이 위치합니다.
+  - assets/js/plugins # assets/js/plugins 디렉토리를 제외합니다.
+  - assets/js/_main.js # assets/js/_main.js 파일을 제외합니다.
+  - assets/js/vendor # assets/js/vendor 디렉토리를 제외합니다.
+  - Capfile # Capfile을 제외합니다. Capistrano 배포 도구의 설정 파일입니다.
+  - CHANGELOG # CHANGELOG 파일을 제외합니다.
+  - config # config 디렉토리를 제외합니다.
+  - Gemfile # Gemfile을 제외합니다. 프로젝트의 Ruby 의존성을 정의하는 파일입니다.
+  - Gruntfile.js # Gruntfile.js를 제외합니다. Grunt 태스크 러너의 설정 파일입니다.
+  - gulpfile.js # gulpfile.js를 제외합니다. Gulp 태스크 러너의 설정 파일입니다.
+  - LICENSE # LICENSE 파일을 제외합니다.
+  - log # log 디렉토리를 제외합니다.
+  - node_modules # node_modules 디렉토리를 제외합니다. Node.js 패키지들이 설치되는 디렉토리입니다.
+  - package.json # package.json 파일을 제외합니다. Node.js 프로젝트의 의존성과 스크립트를 정의하는 파일입니다.
+  - Rakefile # Rakefile을 제외합니다. Ruby의 Rake 태스크 러너의 설정 파일입니다.
+  - README # README 파일을 제외합니다.
+  - tmp # tmp 디렉토리를 제외합니다.
+  - x-pages # x-pages 디렉토리를 제외합니다.
+  - x-posts # x-posts 디렉토리를 제외합니다.
+  - _docs
+  - _drafts
+
 keep_files:
   - .git
   - .svn
@@ -190,19 +196,25 @@ markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
+incremental: true
 
 
 # Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  # kramdown 마크다운 프로세서의 설정을 지정합니다.
+  input: GFM # GitHub Flavored Markdown(GFM) 입력 형식을 사용합니다.
+  hard_wrap: true # md파일내 줄바꿈 동일하게 포스팅에 적용
+  auto_ids: true # 헤딩에 자동으로 ID를 생성합니다.
+  footnote_nr: 1 # 각주의 번호를 1부터 시작합니다.
+  entity_output: as_char # 엔티티를 문자로 출력합니다.
+  toc_levels: 1..3 # 목차(Table of Contents)에 포함할 헤딩 레벨을 1부터 3까지로 설정합니다. (최대 6까지 적용됨 : 6 은 # 6개를 의미)
+  smart_quotes: lsquo,rsquo,ldquo,rdquo # 스마트 인용 부호를 사용합니다. (lsquo: 왼쪽 작은 따옴표, rsquo: 오른쪽 작은 따옴표, ldquo : 큰 따옴표)
+  enable_coderay: false # CodeRay 코드 하이라이팅을 비활성화합니다.
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true    # 코드 블록에 줄 번호를 표시합니다.
+  block_html: true          # HTML 블록 태그를 허용합니다. 이를 true로 설정하면 마크다운 내에서 HTML 블록 level 요소를 사용할 수 있습니다.
+                            # HTML 블록 태그 : <div>, <table>, <pre>, <p> 등
 
 
 # Collections
@@ -231,7 +243,7 @@ defaults:
   - scope:
       path: ""
       type: "posts"
-    values:
+    value:
   # _posts (포스팅 설정)
   - scope:
       path: "" # 적용될 경로
