@@ -1,12 +1,10 @@
-# main links / 홈페이지 상단바 메뉴
+# main links
+# 홈페이지 상단 메뉴를 설정합니다.
 main:
-#  - title: "Quick-Start Guide"
-#    url: /docs/quick-start-guide/
-  #- auto_categories: True
-  - title: "AI Study Notes"
-    url: /personal_study/  
+  - title: "AI Study Notes" # 메뉴 항목의 제목을 설정합니다.
+    url: /personal_study/ # 메뉴 항목을 클릭했을 때 이동할 URL을 설정합니다.
   - title: "Gabe's AI Journey"
-    url: /gabe_ai_journey/ 
+    url: /gabe_ai_journey/
   - title: "Portfolio"
     url: /portfolio/
   - title: "Posts"
@@ -21,12 +19,10 @@ main:
 # 별개 collection별 sidebar 설정
 # Gabe's AI Journey sidebar
 Gabe's AI Journey_sidebar:
-  - title: Gabe's AI Journey
-    url: /gabe_ai_journey/
-  - title: "List of Categories"
-    children:
-      # - title: "Conferences & Seminar"
-      #   url: /gabe_ai_journey/conference_seminar/
+  - title: Gabe's AI Journey # 사이드바 메뉴의 제목을 설정합니다.
+    url: /gabe_ai_journey/ # 사이드바 메뉴를 클릭했을 때 이동할 URL을 설정합니다.
+  - title: "List of Categories" # 사이드바 메뉴의 하위 항목 제목을 설정합니다.
+    children: # 하위 메뉴 항목들을 설정합니다.
       - title: "Retrospective"
         url: /gabe_ai_journey/retrospective/
       - title: "Reviews"

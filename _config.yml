@@ -32,6 +32,9 @@ comments:
 search                   : true # 검색 기능을 활성화합니다.
 search_full_content      : true # 전체 내용 검색을 활성화합니다.
 search_provider          : lunr # 검색 제공자로 Lunr을 사용합니다.
+lunr:
+  excludes: # 검색 제외 대상 설정
+    - _docs  # _docs 폴더내에 있는 페이지들은 블로그에서 검색하지 않음
 
 # SEO 관련 설정입니다.
 naver_site_verification  : "0bcef25e94264a9e1c88c9d2b553e516e9816596" # 네이버 사이트 인증 코드를 입력합니다.
@@ -116,26 +119,34 @@ incremental: false # 증분 재생성을 비활성화합니다. 증분 재생성
 kramdown:
   # kramdown 마크다운 프로세서의 설정을 지정합니다.
   input: GFM # GitHub Flavored Markdown(GFM) 입력 형식을 사용합니다.
-  hard_wrap: false # 줄바꿈을 강제로 적용하지 않습니다.
+  hard_wrap: true # md파일내 줄바꿈 동일하게 포스팅에 적용
   auto_ids: true # 헤딩에 자동으로 ID를 생성합니다.
   footnote_nr: 1 # 각주의 번호를 1부터 시작합니다.
   entity_output: as_char # 엔티티를 문자로 출력합니다.
-  toc_levels: 1..6 # 목차(Table of Contents)에 포함할 헤딩 레벨을 1부터 6까지로 설정합니다.
-  smart_quotes: lsquo,rsquo,ldquo,rdquo # 스마트 인용 부호를 사용합니다.
+  toc_levels: 1..3 # 목차(Table of Contents)에 포함할 헤딩 레벨을 1부터 3까지로 설정합니다. (최대 6까지 적용됨 : 6 은 # 6개를 의미)
+  smart_quotes: lsquo,rsquo,ldquo,rdquo # 스마트 인용 부호를 사용합니다. (lsquo: 왼쪽 작은 따옴표, rsquo: 오른쪽 작은 따옴표, ldquo : 큰 따옴표)
   enable_coderay: false # CodeRay 코드 하이라이팅을 비활성화합니다.
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true    # 코드 블록에 줄 번호를 표시합니다.
+  block_html: true          # HTML 블록 태그를 허용합니다. 이를 true로 설정하면 마크다운 내에서 HTML 블록 level 요소를 사용할 수 있습니다.
+                            # HTML 블록 태그 : <div>, <table>, <pre>, <p> 등
 
 # Collections
 collections:
   # 사이트에서 사용할 컬렉션을 정의합니다.
+  # 현재 사용 테마에서 default로 사용중인 테마 값에서 T/F로 사용 여부만 결정
   docs:
-    output: true # docs 컬렉션의 각 문서를 별도의 페이지로 출력합니다.
+    output: false # docs 컬렉션의 각 문서를 별도의 페이지로 출력할지 여부 를 선택합니다.(false로 해야 빈 페이지가 안생김)
     permalink: /:collection/:path/ # docs 컬렉션의 문서 URL 형식을 설정합니다.
   recipes:
-    output: true
+    output: false
     permalink: /:collection/:path/
   pets:
-    output: true
+    output: false
     permalink: /:collection/:path/
+
+  # 사용할 페이지들
   portfolio:
     output: true
     permalink: /:collection/:path/
