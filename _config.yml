@@ -101,6 +101,9 @@ exclude:
   - tmp # tmp 디렉토리를 제외합니다.
   - x-pages # x-pages 디렉토리를 제외합니다.
   - x-posts # x-posts 디렉토리를 제외합니다.
+  - _docs
+  - _drafts
+
 keep_files:
   # 생성된 사이트를 빌드할 때 유지할 파일들을 지정합니다.
   - .git # Git 저장소의 .git 디렉토리를 유지합니다.
