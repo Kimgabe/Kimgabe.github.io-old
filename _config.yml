@@ -30,8 +30,8 @@ comments:
 
 # 검색 관련 설정입니다.
 search                   : true # 검색 기능을 활성화합니다.
-search_full_content      : true # 전체 내용 검색을 활성화합니다.
-search_provider          : lunr # 검색 제공자로 Lunr을 사용합니다.
+search_full_content      : false # 전체 내용 검색을 활성화합니다. (elastic search이긴한데 설정 파일도 같이 검색됨.)
+search_provider          : lunr # 검색 제공자로 Lunr을 사용합니다. (algolia, google 등 사용 가능)
 lunr:
   excludes: # 검색 제외 대상 설정
     - _docs  # _docs 폴더내에 있는 페이지들은 블로그에서 검색하지 않음
@@ -74,6 +74,7 @@ footer:
 include:
   - .htaccess # Apache 웹 서버의 설정 파일인 .htaccess를 포함합니다.
   - _pages # _pages 디렉토리를 포함합니다. 이 디렉토리 내의 파일들은 개별 페이지로 생성됩니다.
+
 exclude:
   # Jekyll에서 제외할 파일과 디렉토리를 설정합니다.
   - "*.sublime-project" # Sublime Text 프로젝트 파일을 제외합니다.
