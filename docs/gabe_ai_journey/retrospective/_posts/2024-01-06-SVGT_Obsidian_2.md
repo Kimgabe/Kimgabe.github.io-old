@@ -248,7 +248,8 @@ Notes/Papers/{{citekey}}
 
 `Add Import Format`에 다음 템플릿을 추가합니다.
 
-```css
+{% raw %}
+```
 ---
 cssclass: research-note
 type: "{{itemType}}"{% for type, creators in creators | groupby("creatorType") -%}{% if loop.first %}
@@ -370,6 +371,7 @@ citekey: {{citekey}}
 ### 후속 연구 아이디어
 -
 ```
+{% endraw %}
 
 ### 템플릿 구성 요소 설명
 
