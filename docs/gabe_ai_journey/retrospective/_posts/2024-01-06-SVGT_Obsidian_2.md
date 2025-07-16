@@ -1,29 +1,25 @@
 ---
-title: "[쉐벨그투] 옵시디언으로 AI 논문 읽기(2) - Zotero 연동과 실제 적용"
-excerpt: "AI 논문을 수집부터 정리까지! Zotero 설치, 옵시디언 연동, 실제 논문 읽기 워크플로우를 완전 정복해보세요"
+layout: single
+title: '"[쉐벨그투] 옵시디언으로 AI 논문 읽기(2) - Zotero 연동과 실제 적용"'
 categories:
-  - AI Study
-  - Productivity
-  - Tools
+  - retrospective
+toc: true
+highlight: false
+use_math: true
 tags:
+  - retrospective
+  - 회고
   - 옵시디언
   - Obsidian
   - Zotero
-  - AI 논문
-  - 논문 읽기
+  - 논문읽기
   - 생산성
-  - 노트 정리
-  - 연구 방법론
-  - 지식 관리
-toc: true
-toc_sticky: true
-toc_label: "목차"
-author_profile: true
+  - 노트정리
 header:
   teaser: /assets/images/obsidian.png
   overlay_image: /assets/images/obsidian.png
   overlay_filter: 0.5
-  caption: "AI 논문 읽기의 혁신적 워크플로우"
+  caption: "Photo credit: [**Obsidian**](https://obsidian.md/)"
 ---
 
 > 💡 **시리즈 안내**  

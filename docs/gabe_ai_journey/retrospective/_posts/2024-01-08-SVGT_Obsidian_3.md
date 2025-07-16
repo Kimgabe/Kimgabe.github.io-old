@@ -1,27 +1,26 @@
 ---
-title: "[쉐벨그투] 옵시디언으로 AI 논문 읽기(3) - 효율적인 논문 읽기 방법론"
-excerpt: "Andrew Ng의 3단계 논문 읽기법부터 체계적인 논문 분석까지! 논문 읽기의 모든 것을 완전 정복해보세요"
+layout: single
+title: '"[쉐벨그투] 옵시디언으로 AI 논문 읽기(3) - 효율적인 논문 읽기 방법론"'
 categories:
-  - AI Study
-  - Productivity
-  - Research Method
+  - retrospective
+toc: true
+highlight: false
+use_math: true
 tags:
+  - retrospective
+  - 회고
   - 옵시디언
   - Obsidian
-  - 논문 읽기
-  - 연구 방법론
+  - 논문읽기
+  - 연구방법론
   - 학습법
   - 생산성
-  - 지식 관리
-toc: true
-toc_sticky: true
-toc_label: "목차"
-author_profile: true
+  - 노트정리
 header:
   teaser: /assets/images/obsidian.png
   overlay_image: /assets/images/obsidian.png
   overlay_filter: 0.5
-  caption: "스마트한 논문 읽기의 완성"
+  caption: "Photo credit: [**Obsidian**](https://obsidian.md/)"
 ---
 
 > 💡 **시리즈 최종편 안내**  
