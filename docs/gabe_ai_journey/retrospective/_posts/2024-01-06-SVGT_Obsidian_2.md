@@ -16,8 +16,8 @@ tags:
   - 생산성
   - 노트정리
 header:
-  teaser: /assets/images/obsidian.png
-  overlay_image: /assets/images/obsidian.png
+  teaser: /assets/images/retrospective/obsidian.png
+  overlay_image: /assets/images/retrospective/obsidian.png
   overlay_filter: 0.5
   caption: "Photo credit: [**Obsidian**](https://obsidian.md/)"
 ---
