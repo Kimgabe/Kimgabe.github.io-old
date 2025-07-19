@@ -1,0 +1,33 @@
+mixin field(item)
+    if item.link
+        - var postTitleIcon = '<i class="ic i-link-alt"></i>'
+    li(class="item")
+        +BCRender(item, false)
+        - var postText = item.title || item.link || __('post.untitled')
+        - var link1 = item.link || item.path
+        span
+            != _url(link1, postText + (postTitleIcon || ''))
+
+mixin WRender(item)
+    - var tk = theme?.twikoo?.enable
+    - var waline = theme.waline.enable
+    if theme.widgets.random_posts
+        // 첫 번째 Random Posts 위젯 (1-10개)
+        div(class="rpost pjax")
+            h2
+                != __('index.random_posts')
+            ul
+                - var allPosts = site.posts.shuffle().toArray()
+                - var firstPosts = allPosts.slice(0, 10)
+                each item in firstPosts
+                    +field(item)
+        
+        // 두 번째 Random Posts 위젯 (11-20개, Recent Comments 자리 대체)
+        div(class="rpost pjax")
+            h2
+                != __('index.random_posts') + " (More)"
+            ul
+                - var secondPosts = allPosts.slice(10, 20)
+                each item in secondPosts
+                    +field(item)
+

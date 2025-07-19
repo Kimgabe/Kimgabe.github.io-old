@@ -1,0 +1,83 @@
+extends _partials/layout.pug
+include _mixin/sidebar.pug
+include _mixin/comment.pug
+
+block head
+    != _css('post.css')
+    if page.type === 'statistics'
+        != _css('statistics.css')
+    if page.type === 'categories'
+        != _css('category-groups.css')
+    // 临时处理
+    link(rel="stylesheet" media="none" onload="this.media='all'" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css")
+
+block title
+    if page.type === 'categories'
+        != __('title.all') + __('title.category')
+    else if page.type === 'tags'
+        != __('title.all') + __('title.tag')
+    else if page.type === 'statistics'
+        != __('statistics')
+    else if page.type === '404'
+        != __('title.not_found')
+    else
+        != page.title
+
+block header
+    h1(itemprop="name headline")
+        if page.link
+            - var postTitleIcon = '<i class="ic i-link-alt"></i>'
+            - var postText = page.title || page.link
+            != _url(page.link, postText + postTitleIcon, {class: 'link external', itemprop: 'url'})
+        else
+            if page.type === 'categories'
+                != __('title.all') + __('title.category')
+            else if page.type === 'tags'
+                != __('title.all') + __('title.tag')
+            else if page.type === 'statistics'
+                != __('statistics')
+            else if page.type === '404'
+                != __('title.not_found')
+            else
+                != page.title
+
+block content
+    if page.type === 'categories'
+        div(class="collapse wrap")
+            h2(class="item title")
+                a(href=url_for(site.path))
+                    != __('menu.home')
+                small
+                != _p('counter.categories', site.categories.length)
+            
+            // 그룹별 카테고리 표시
+            - var groupedCategories = get_grouped_categories()
+            each categories, groupName in groupedCategories
+                div(class="category-group")
+                    h3(class="group-title")
+                        span(class="group-icon")!= get_category_icon(groupName)
+                        span(class="group-name")!= groupName
+                        small (#{categories.length}개)
+                    div(class="group-categories")
+                        each cat in categories
+                            div(class="category-item")
+                                a(href=url_for(cat.path) class="category-link")
+                                    span(class="category-name")!= cat.prettyName
+                                    span(class="category-count") #{cat.count}개
+    else if page.type === 'tags'
+        div(class="collapse wrap")
+            h2(class="item title")
+                a(href=url_for(site.path))
+                    != __('menu.home')
+                small
+                != _p('counter.tag_cloud', site.tags.length)
+            div(class="tag cloud")
+                != tagcloud({min_font: theme.tagcloud.min,max_font: theme.tagcloud.max,amount: theme.tagcloud.amount,color: true,start_color: theme.tagcloud.start,end_color: theme.tagcloud.end})
+
+    else
+        div(class="page wrap")
+            != partial('_partials/post/post.pug', {post: page})
+        +CommentRender
+
+block sidebar
+    +sidebarRender(true)

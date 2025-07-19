@@ -1,0 +1,36 @@
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/tags/${{ github.event.release.tag_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: npm install pnpm -g
+
+      - name: Build TypeScript files
+        run: |
+          pnpm install
+          pnpm run build
+
+      - run: npm publish
+        if: "!github.event.release.prerelease"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+
+      - run: npm publish --tag beta
+        if: "github.event.release.prerelease"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}

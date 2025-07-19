@@ -1,0 +1,131 @@
+/* 카테고리 그룹 스타일링 */
+
+.category-group {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--color-card, #fff);
+}
+
+.group-title {
+  background: linear-gradient(135deg, var(--color-primary, #4CAF50), var(--color-primary-light, #66BB6A));
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.group-icon {
+  font-size: 1.4rem;
+}
+
+.group-name {
+  flex: 1;
+}
+
+.group-title small {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.group-categories {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.category-item {
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.category-item:hover {
+  border-color: var(--color-primary, #4CAF50);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+  transform: translateY(-1px);
+}
+
+.category-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: var(--color-text, #333);
+}
+
+.category-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.category-count {
+  background: var(--color-primary, #4CAF50);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* 그룹별 색상 테마 */
+.category-group:nth-child(1) .group-title {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A); /* Programming - Green */
+}
+
+.category-group:nth-child(2) .group-title {
+  background: linear-gradient(135deg, #2196F3, #42A5F5); /* Data Science - Blue */
+}
+
+.category-group:nth-child(3) .group-title {
+  background: linear-gradient(135deg, #FF5722, #FF7043); /* AI/ML - Orange */
+}
+
+.category-group:nth-child(4) .group-title {
+  background: linear-gradient(135deg, #9C27B0, #BA68C8); /* Career - Purple */
+}
+
+.category-group:nth-child(5) .group-title {
+  background: linear-gradient(135deg, #607D8B, #78909C); /* Portfolio - Blue Grey */
+}
+
+/* 다크 모드 지원 */
+[data-theme="dark"] .category-group {
+  background: var(--color-card-dark, #2d2d2d);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .category-item {
+  border-color: var(--color-border-dark, #444);
+}
+
+[data-theme="dark"] .category-link {
+  color: var(--color-text-dark, #e0e0e0);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .group-categories {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+  
+  .group-title {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .category-link {
+    padding: 0.6rem 0.8rem;
+  }
+} 

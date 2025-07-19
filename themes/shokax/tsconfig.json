@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "typeAcquisition": {
+    "enable": true
+  },
+  "references": [
+    {
+      "path": "./source"
+    },
+    {
+      "path": "./scripts"
+    }
+  ]
+}

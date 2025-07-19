@@ -1,319 +1,145 @@
-# 사용할 원격 테마를 지정합니다. 여기서는 "mmistakes/minimal-mistakes" 테마를 사용하고 있습니다.
-# 테마를 변경하면 블로그의 전체적인 디자인과 레이아웃이 변경됩니다.
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-# 테마의 스킨 색상을 설정합니다. 
-# 스킨을 변경하면 블로그의 전체적인 색상 테마가 변경됩니다.
-minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# Site
+title: Kim Gabe's DS Blog
+subtitle: 'Data Science & AI Journey'
+description: 'Kim Gabe의 블로그입니다. 데이터 사이언스, AI, 머신러닝 학습 과정을 기록합니다.'
+keywords: 'Data Science, AI, Machine Learning, Python, 김가베, 데이터분석, 인공지능'
+author: Kim Gabe
+language: en
+timezone: 'Asia/Seoul'
 
-# Site Settings
-locale                   : "ko-KR" # 사이트의 언어를 한국어로 설정합니다.
-title                    : "Kim Gabe's Ds blog" # 블로그의 제목을 설정합니다.
-title_separator          : "|" # 제목과 부제목을 구분하는 구분자를 설정합니다.
-subtitle                 : # 블로그의 부제목을 설정합니다. 현재는 비어있습니다.
-name                     : &name "Kim Gabe" # 블로그 소유자의 이름을 설정합니다. &name은 뒤에서 재사용할 수 있는 앵커(anchor)입니다.
-description              : &description "Kim Gabe의 블로그입니다." # 블로그에 대한 간단한 설명을 입력합니다.
-url                      : https://Kimgabe.github.io # 블로그의 기본 URL을 설정합니다.
-baseurl                  : "/" # 블로그의 하위 경로를 설정합니다. 루트 경로로 설정되어 있습니다.
-repository               : "Kimgabe/Kimgabe.github.io" # 블로그의 GitHub 저장소 이름을 설정합니다.
-teaser                   : https://source.unsplash.com/random # 티저 이미지의 기본 경로를 설정합니다.
-logo                     : /assets/images/favicons/home-logo.png # 로고 이미지의 경로를 설정합니다.
-masthead_title           : # 마스트헤드에 표시될 제목을 설정합니다. 현재는 비어있습니다.
-breadcrumbs              : true # 브래드크럼 네비게이션을 활성화합니다.
-words_per_minute         : 200 # 글을 읽는데 걸리는 시간을 계산하기 위한 분당 단어 수를 설정합니다.
-date_format              : "%Y-%m-%d" # 날짜 형식을 설정합니다.
+# URL
+url: https://Kimgabe.github.io
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
 
-comments:
-  provider               : "disqus" # 댓글 시스템으로 Disqus를 사용합니다.
-  disqus:
-    shortname            : Kim gabe's Github Blog # Disqus의 숏네임(shortname)을 설정합니다.
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
-# 검색 관련 설정입니다.
-search                   : true # 검색 기능을 활성화합니다.
-search_full_content      : false # 전체 내용 검색을 활성화합니다. (elastic search이긴한데 설정 파일도 같이 검색됨.)
-search_provider          : lunr # 검색 제공자로 Lunr을 사용합니다. (algolia, google 등 사용 가능)
-lunr:
-  excludes: # 검색 제외 대상 설정
-    - _docs  # _docs 폴더내에 있는 페이지들은 블로그에서 검색하지 않음
+# Writing
+new_post_name: :year-:month-:day-:title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
 
-# SEO 관련 설정입니다.
-naver_site_verification  : "0bcef25e94264a9e1c88c9d2b553e516e9816596" # 네이버 사이트 인증 코드를 입력합니다.
+# ShokaX 공식 문서 설정: 코드 하이라이팅 비활성화
+syntax_highlighter: false
+highlight:
+  enable: false
+prismjs:
+  enable: false
 
-# 소셜 공유 관련 설정입니다.
-og_image                 : # 오픈 그래프(Open Graph) 이미지의 경로를 설정합니다. 현재는 비어있습니다.
+# ShokaX 공식 문서 설정: markdown 렌더러
+markdown:
+  render:
+    html: false
+    xhtmlOut: true
+    breaks: true
+    linkify: true
+    typographer: false
+  plugins:
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options:
+          tocClassName: "toc"
+          anchorClassName: "anchor"
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
 
-# 애널리틱스 관련 설정입니다.
-analytics:
-  provider               : "google-gtag" # 애널리틱스 제공자로 Google Analytics의 gtag를 사용합니다.
-  google:
-    tracking_id          : "G-S8SVCTHDH2" # Google Analytics의 추적 ID를 입력합니다.
-    anonymize_ip         : false # IP 익명화 옵션을 비활성화합니다.
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
-# Site Author
-author:
-  name             : *name # 앞에서 정의한 &name 앵커를 사용하여 작성자 이름을 설정합니다.
-  avatar           : "/assets/images/gabe_profile.png" # 작성자의 아바타 이미지 경로를 설정합니다.
-  bio              : "Knowledge without application is meaningless. True learning lies in educating and empowering others." # 작성자의 짧은 소개글을 입력합니다.
-  location         : "Republic of Korea" # 작성자의 위치를 입력합니다.
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github" 
-      url: "https://github.com/Kimgabe" # 작성자의 GitHub 프로필 링크를 입력합니다.
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-# Site Footer
-# 사이트 하단에 표시되는 푸터 영역에 대한 설정입니다.
-footer:
-  links:
-    # 푸터에 표시할 링크들을 설정합니다.
-    - label: "GitHub" # 링크의 텍스트 라벨을 설정합니다.
-      icon: "fab fa-fw fa-github" # 링크 옆에 표시할 Font Awesome 아이콘을 설정합니다.
-      url: "https://github.com/Kimgabe" # 링크의 URL을 설정합니다. 여기서는 GitHub 프로필 링크를 입력합니다.
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
 
-# Reading Files
-# Jekyll이 읽어들일 파일과 디렉토리를 설정합니다.
-include:
-  - .htaccess # Apache 웹 서버의 설정 파일인 .htaccess를 포함합니다.
-  - _pages # _pages 디렉토리를 포함합니다. 이 디렉토리 내의 파일들은 개별 페이지로 생성됩니다.
+# Pagination
+per_page: 10
+pagination_dir: page
 
-exclude:
-  # Jekyll에서 제외할 파일과 디렉토리를 설정합니다.
-  - "*.sublime-project" # Sublime Text 프로젝트 파일을 제외합니다.
-  - "*.sublime-workspace" # Sublime Text 작업 공간 파일을 제외합니다.
-  - vendor # vendor 디렉토리를 제외합니다. 주로 플러그인이나 라이브러리 파일들이 위치합니다.
-  - .asset-cache # .asset-cache 디렉토리를 제외합니다.
-  - .bundle # .bundle 디렉토리를 제외합니다. Ruby의 번들러 관련 파일들이 위치합니다.
-  - .jekyll-assets-cache # .jekyll-assets-cache 디렉토리를 제외합니다. Jekyll의 에셋 캐시 파일들이 위치합니다.
-  - .sass-cache # .sass-cache 디렉토리를 제외합니다. Sass 컴파일러의 캐시 파일들이 위치합니다.
-  - assets/js/plugins # assets/js/plugins 디렉토리를 제외합니다.
-  - assets/js/_main.js # assets/js/_main.js 파일을 제외합니다.
-  - assets/js/vendor # assets/js/vendor 디렉토리를 제외합니다.
-  - Capfile # Capfile을 제외합니다. Capistrano 배포 도구의 설정 파일입니다.
-  - CHANGELOG # CHANGELOG 파일을 제외합니다.
-  - config # config 디렉토리를 제외합니다.
-  - Gemfile # Gemfile을 제외합니다. 프로젝트의 Ruby 의존성을 정의하는 파일입니다.
-  - Gruntfile.js # Gruntfile.js를 제외합니다. Grunt 태스크 러너의 설정 파일입니다.
-  - gulpfile.js # gulpfile.js를 제외합니다. Gulp 태스크 러너의 설정 파일입니다.
-  - LICENSE # LICENSE 파일을 제외합니다.
-  - log # log 디렉토리를 제외합니다.
-  - node_modules # node_modules 디렉토리를 제외합니다. Node.js 패키지들이 설치되는 디렉토리입니다.
-  - package.json # package.json 파일을 제외합니다. Node.js 프로젝트의 의존성과 스크립트를 정의하는 파일입니다.
-  - Rakefile # Rakefile을 제외합니다. Ruby의 Rake 태스크 러너의 설정 파일입니다.
-  - README # README 파일을 제외합니다.
-  - tmp # tmp 디렉토리를 제외합니다.
-  - x-pages # x-pages 디렉토리를 제외합니다.
-  - x-posts # x-posts 디렉토리를 제외합니다.
-  - _docs
-  - _drafts
+# Include / Exclude file(s)
+include: []
+exclude: []
+ignore: []
 
-keep_files:
-  # 생성된 사이트를 빌드할 때 유지할 파일들을 지정합니다.
-  - .git # Git 저장소의 .git 디렉토리를 유지합니다.
-  - .svn # Subversion 저장소의 .svn 디렉토리를 유지합니다.
-encoding: "utf-8" # 파일 인코딩을 UTF-8로 설정합니다.
-markdown_ext: "markdown,mkdown,mkdn,mkd,md" # Markdown 파일 확장자를 지정합니다.
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: shokax
 
-# Conversion
-markdown: kramdown # Markdown 변환에 사용할 엔진으로 kramdown을 설정합니다.
-highlighter: rouge # 구문 강조에 사용할 하이라이터로 rouge를 설정합니다.
-lsi: false # Latent Semantic Indexing(LSI)을 사용하지 않습니다.
-excerpt_separator: "\n\n" # 포스트 요약을 생성할 때 사용할 구분자를 설정합니다. 여기서는 두 개의 줄바꿈(\n\n)으로 설정되어 있습니다.
-incremental: false # 증분 재생성을 비활성화합니다. 증분 재생성은 변경된 파일만 다시 빌드하여 사이트 생성 속도를 향상시킵니다.
+# 심볼 카운트 (읽기 시간) 설정
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: "mins."
 
-# Markdown Processing
-kramdown:
-  # kramdown 마크다운 프로세서의 설정을 지정합니다.
-  input: GFM # GitHub Flavored Markdown(GFM) 입력 형식을 사용합니다.
-  hard_wrap: true # md파일내 줄바꿈 동일하게 포스팅에 적용
-  auto_ids: true # 헤딩에 자동으로 ID를 생성합니다.
-  footnote_nr: 1 # 각주의 번호를 1부터 시작합니다.
-  entity_output: as_char # 엔티티를 문자로 출력합니다.
-  toc_levels: 1..3 # 목차(Table of Contents)에 포함할 헤딩 레벨을 1부터 3까지로 설정합니다. (최대 6까지 적용됨 : 6 은 # 6개를 의미)
-  smart_quotes: lsquo,rsquo,ldquo,rdquo # 스마트 인용 부호를 사용합니다. (lsquo: 왼쪽 작은 따옴표, rsquo: 오른쪽 작은 따옴표, ldquo : 큰 따옴표)
-  enable_coderay: false # CodeRay 코드 하이라이팅을 비활성화합니다.
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true    # 코드 블록에 줄 번호를 표시합니다.
-  block_html: true          # HTML 블록 태그를 허용합니다. 이를 true로 설정하면 마크다운 내에서 HTML 블록 level 요소를 사용할 수 있습니다.
-                            # HTML 블록 태그 : <div>, <table>, <pre>, <p> 등
+# Deployment
+deploy:
+  type: git
+  repo: https://github.com/Kimgabe/Kimgabe.github.io.git
+  branch: main
 
-# Collections
-collections:
-  # 사이트에서 사용할 컬렉션을 정의합니다.
-  # 현재 사용 테마에서 default로 사용중인 테마 값에서 T/F로 사용 여부만 결정
-  docs:
-    output: false # docs 컬렉션의 각 문서를 별도의 페이지로 출력할지 여부 를 선택합니다.(false로 해야 빈 페이지가 안생김)
-    permalink: /:collection/:path/ # docs 컬렉션의 문서 URL 형식을 설정합니다.
-  recipes:
-    output: false
-    permalink: /:collection/:path/
-  pets:
-    output: false
-    permalink: /:collection/:path/
-
-  # 사용할 페이지들
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  studynote:
-    output: true
-    permalink: /gabe_ai_journey/:collection/:path/
-
-# Defaults
-defaults:
-  # 컬렉션이나 경로에 따라 기본 설정을 지정합니다.
-  - scope:
-      path: "" # 모든 경로에 적용됩니다.
-      type: posts # 포스트 컬렉션에만 적용됩니다.
-    values:
-      # 포스트의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      author_profile: true # 작성자 프로필을 표시합니다.
-      read_time: true # 읽는 시간을 표시합니다.
-      show_date: false # 날짜를 표시하지 않습니다.
-      comments: true # 댓글을 사용합니다.
-      share: true # 공유 기능을 사용합니다.
-      related: true # 관련 글을 표시합니다.
-      toc: true # 목차를 사용합니다.
-      toc_sticky: true # 목차를 화면에 고정합니다.
-      toc_label: Table of Contents # 목차의 레이블을 설정합니다.
-      toc_icon: "fas fa-list-ol" # 목차의 아이콘을 설정합니다.
-  - scope:
-      path: "" # 모든 경로에 적용됩니다.
-      type: pages # 페이지 컬렉션에만 적용됩니다.
-    values:
-      # 페이지의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      author_profile: true # 작성자 프로필을 표시합니다.
-  - scope:
-      path: "" # 모든 경로에 적용됩니다.
-      type: docs # docs 컬렉션에만 적용됩니다.
-    values:
-      # docs 컬렉션의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      read_time: false # 읽는 시간을 표시하지 않습니다.
-      author_profile: false # 작성자 프로필을 표시하지 않습니다.
-      share: false # 공유 기능을 사용하지 않습니다.
-      comments: false # 댓글을 사용하지 않습니다.
-      sidebar:
-        nav: "docs" # 사이드바 내비게이션을 "docs"로 설정합니다.
-  - scope:
-      path: "gabe_ai_journey" # "gabe_ai_journey" 경로에 적용됩니다.
-    values:
-      # "gabe_ai_journey" 경로의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      author_profile: true # 작성자 프로필을 표시합니다.
-      read_time: true # 읽는 시간을 표시합니다.
-      show_date: true # 날짜를 표시합니다.
-      comments: true # 댓글을 사용합니다.
-      share: true # 공유 기능을 사용합니다.
-      related: true # 관련 글을 표시합니다.
-      toc: true # 목차를 사용합니다.
-      toc_sticky: true # 목차를 화면에 고정합니다.
-      toc_label: Table of Contents # 목차의 레이블을 설정합니다.
-      toc_icon: "fas fa-list-ol" # 목차의 아이콘을 설정합니다.
-      sidebar:
-        nav: "Gabe's AI Journey_sidebar" # 사이드바 내비게이션을 "Gabe's AI Journey_sidebar"로 설정합니다.
-      header:
-        # 헤더 이미지와 관련된 설정을 지정합니다.
-        teaser: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg # 티저 이미지를 설정합니다.
-        overlay_image: /assets/images/unsplash/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg # 오버레이 이미지를 설정합니다.
-        overlay_filter: 0.4 # 오버레이 필터의 투명도를 설정합니다.
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/FHnnjk1Yj7Y)" # 이미지 캡션을 설정합니다.
-  - scope:
-      path: "personal_study" # "personal_study" 경로에 적용됩니다.
-    values:
-      # "personal_study" 경로의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      author_profile: true # 작성자 프로필을 표시합니다.
-      read_time: true # 읽는 시간을 표시합니다.
-      show_date: true # 날짜를 표시합니다.
-      comments: true # 댓글을 사용합니다.
-      share: true # 공유 기능을 사용합니다.
-      related: true # 관련 글을 표시합니다.
-      toc: true # 목차를 사용합니다.
-      toc_sticky: true # 목차를 화면에 고정합니다.
-      toc_label: Table of Contents # 목차의 레이블을 설정합니다.
-      toc_icon: "fas fa-list-ol" # 목차의 아이콘을 설정합니다.
-      sidebar:
-        nav: "personal_study_sidebar" # 사이드바 내비게이션을 "personal_study_sidebar"로 설정합니다.
-      header:
-        # 헤더 이미지와 관련된 설정을 지정합니다.
-        teaser: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg # 티저 이미지를 설정합니다.
-        overlay_image: /assets/images/unsplash/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg # 오버레이 이미지를 설정합니다.
-        overlay_filter: 0.4 # 오버레이 필터의 투명도를 설정합니다.
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)" # 이미지 캡션을 설정합니다.
-  - scope:
-      path: "portfolio" # "portfolio" 경로에 적용됩니다.
-    values:
-      # "portfolio" 경로의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      author_profile: true # 작성자 프로필을 표시합니다.
-      read_time: true # 읽는 시간을 표시합니다.
-      show_date: true # 날짜를 표시합니다.
-      comments: true # 댓글을 사용합니다.
-      share: true # 공유 기능을 사용합니다.
-      related: true # 관련 글을 표시합니다.
-      toc: true # 목차를 사용합니다.
-      toc_sticky: true # 목차를 화면에 고정합니다.
-      toc_label: Table of Contents # 목차의 레이블을 설정합니다.
-      toc_icon: "fas fa-list-ol" # 목차의 아이콘을 설정합니다.
-      header:
-        # 헤더 이미지와 관련된 설정을 지정합니다.
-        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg # 티저 이미지를 설정합니다.
-        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg # 오버레이 이미지를 설정합니다.
-        overlay_filter: 0.4 # 오버레이 필터의 투명도를 설정합니다.
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)" # 이미지 캡션을 설정합니다.
-
-  - scope:
-      path: "rpi4cluster" # "rpi4cluster" 경로에 적용됩니다.
-    values:
-      # "rpi4cluster" 경로의 기본 설정값을 지정합니다.
-      layout: single # 레이아웃을 single로 설정합니다.
-      author_profile: true # 작성자 프로필을 표시합니다.
-      read_time: true # 읽는 시간을 표시합니다.
-      show_date: true # 날짜를 표시합니다.
-      comments: true # 댓글을 사용합니다.
-      share: true # 공유 기능을 사용합니다.
-      related: true # 관련 글을 표시합니다.
-      toc: true # 목차를 사용합니다.
-      toc_sticky: true # 목차를 화면에 고정합니다.
-      sidebar:
-        nav: "rpi4cluster" # 사이드바 내비게이션을 "rpi4cluster"로 설정합니다.
-      header:
-        # 헤더 이미지와 관련된 설정을 지정합니다.
-        teaser: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg # 티저 이미지를 설정합니다.
-        overlay_image: /assets/images/unsplash/rpi4-rZKdS0wI8Ks.jpg # 오버레이 이미지를 설정합니다.
-        overlay_filter: 0.4 # 오버레이 필터의 투명도를 설정합니다.
-        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/rZKdS0wI8Ks)" # 이미지 캡션을 설정합니다.
-
-# Sass/SCSS
-sass:
- sass_dir: _sass # Sass 파일이 위치한 디렉토리를 지정합니다.
- style: compressed # 생성된 CSS 파일의 스타일을 압축(compressed)으로 설정합니다.
-
-# Outputting
-permalink: /:categories/:title/ # 생성된 페이지의 고유 주소(permalink) 형식을 설정합니다.
-paginate: 5 # 한 페이지에 표시할 포스트의 개수를 설정합니다.
-paginate_path: /page:num/ # 페이지 번호가 포함된 페이지의 경로를 설정합니다.
-timezone: Asia/Seoul # 타임존을 서울로 설정합니다.
-
-# Plugins
-plugins:
- # 사용할 플러그인을 나열합니다.
- - jekyll-paginate # 페이지 번호 매기기 플러그인
- - jekyll-sitemap # 사이트맵 생성 플러그인
- - jekyll-gist # GitHub Gist 삽입 플러그인
- - jekyll-feed # RSS 피드 생성 플러그인
- - jemoji # 이모지 지원 플러그인
- - jekyll-include-cache # 포함(include) 캐싱 플러그인
- - jekyll-algolia # Algolia 검색 플러그인
-
-whitelist:
- # GitHub Pages에서 사용 가능한 플러그인을 나열합니다.
- - jekyll-paginate
- - jekyll-sitemap
- - jekyll-gist
- - jekyll-feed
- - jemoji
- - jekyll-include-cache
- - jekyll-algolia
+# ShokaX 테마 설정 - Hexo 덮어쓰기 방식
+theme_config:
+  image_list:
+    - "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920&h=1080&fit=crop"
+    - "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1920&h=1080&fit=crop"
+    - "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=1920&h=1080&fit=crop"
+    - "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&h=1080&fit=crop"
+    - "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920&h=1080&fit=crop"
+    - "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920&h=1080&fit=crop"
+  menu:
+    home: / || home
+    posts:
+      default: / || feather
+      archives: /archives/ || list-alt
+      categories: /categories/ || th
+      tags: /tags/ || tags
+  modules:
+    debug: false
+    player: false
+    fireworks: true
+    visibilityListener: true
+    tabs: true
+    quiz: true
+    cloudflarePatch: false
